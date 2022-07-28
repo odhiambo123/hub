@@ -11,7 +11,7 @@ GEM
     eventmachine (1.2.7)
     faraday (0.17.5)
       multipart-post (>= 1.2, < 3)
-    ffi (1.15.5)
+    ffi (1.15.5-x64-mingw-ucrt)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
     i18n (1.12.0)
@@ -76,9 +76,10 @@ GEM
     treetop (1.6.11)
       polyglot (~> 0.3)
     unicode-display_width (1.8.0)
+    webrick (1.7.0)
 
 PLATFORMS
-  ruby
+  x64-mingw-ucrt
 
 DEPENDENCIES
   jekyll
@@ -87,6 +88,7 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-theme-slate (~> 0.2.0)
   slate (~> 1.1)
+  webrick (~> 1.7)
 
 BUNDLED WITH
-   1.17.2
+   2.3.19

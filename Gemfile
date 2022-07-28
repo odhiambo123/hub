@@ -10,3 +10,5 @@ end
 gem "slate", "~> 1.1"
 
 gem "jekyll-theme-slate", "~> 0.2.0"
+
+gem "webrick", "~> 1.7"
