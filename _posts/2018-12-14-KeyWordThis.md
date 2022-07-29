@@ -1,6 +1,8 @@
 ---
 layout: post
-author: David Odhiambo
+title: "Keyword This"
+date: 2018-12-14
+categories: Javascript
 ---
 
 when a function is invoked a new execution context is created

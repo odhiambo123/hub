@@ -14,7 +14,7 @@ categories: JavaScript
       <th>Individual operators</th>
     </tr>
     <tr>
-      <td>18</td>
+      <td>18 Highest</td>
       <td>
         {{jsxref("Operators/Grouping", "Grouping", "", 1)}}
       </td>
