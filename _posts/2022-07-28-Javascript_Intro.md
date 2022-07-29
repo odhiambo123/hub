@@ -1,8 +1,8 @@
 ---
-
 layout: post
-author: David
-
+title:  "Intro"
+date:   2022-07-28 16:30:13 -0700
+categories: Javascript
 ---
 
 ### Intro

@@ -1,9 +1,8 @@
 ---
-
-
-layout : posts
-author: David
-
+layout: post
+title:  "Operator Precedence"
+date:   2022-07-28 18:06
+categories: JavaScript
 ---
 
 <table class="fullwidth-table">
