@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-28T16:44:53-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-07-28T16:30:13-07:00</published><updated>2022-07-28T16:30:13-07:00</updated><id>http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-28T17:43:12-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-07-28T16:30:13-07:00</published><updated>2022-07-28T16:30:13-07:00</updated><id>http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>Jekyll requires blog post files to be named according to the following format:</p>
 
@@ -14,7 +14,92 @@
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Functions</title><link href="http://localhost:4000/2018/12/14/Functions.html" rel="alternate" type="text/html" title="Functions" /><published>2018-12-14T00:00:00-08:00</published><updated>2018-12-14T00:00:00-08:00</updated><id>http://localhost:4000/2018/12/14/Functions</id><content type="html" xml:base="http://localhost:4000/2018/12/14/Functions.html"><![CDATA[<p>It’s time for a new section of this course, called Objects and Functions.In a lot of JavaScript courses,they treat these two concepts as two different subjects to teach.I think that’s a big mistake.Because while in other programming languages, objects andlanguages are two distinct things to talk about, in JavaScript,they’re very, very much related.They’re really, in many ways, the same subject.So let’s talk about objects and functions.The first subject or the first topic we’ll discuss is objects and the dot.Remember we’ve already said that objects are collections of name value pairs
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Javascript_intro</title><link href="http://localhost:4000/2022/07/28/Javascript_Intro.html" rel="alternate" type="text/html" title="Javascript_intro" /><published>2022-07-28T00:00:00-07:00</published><updated>2022-07-28T00:00:00-07:00</updated><id>http://localhost:4000/2022/07/28/Javascript_Intro</id><content type="html" xml:base="http://localhost:4000/2022/07/28/Javascript_Intro.html"><![CDATA[<h3 id="intro">Intro</h3>
+<ul>
+  <li>Javascript is an interpret language that web browsers can parse and execute.</li>
+  <li>It is  single threaded ; meaning that JavaScript engines will run and execute code one process at a time.</li>
+  <li>It is multi-paradigm ; meaning that it can be
+    <ul>
+      <li>functional</li>
+      <li>object oriented</li>
+      <li>or procedural</li>
+    </ul>
+  </li>
+  <li>It is loosely typed and dynamically typed:
+    <ul>
+      <li>No need to declare type when declaring the variables</li>
+      <li>The variable types are declared at runtime.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="data-types">Data Types</h3>
+
+<ul>
+  <li>Number</li>
+  <li>String</li>
+  <li>Boolean</li>
+  <li>Undefined</li>
+  <li>Symbol</li>
+  <li>Null</li>
+  <li>BigInt</li>
+</ul>
+
+<h3 id="variable-declarations">Variable Declarations</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">var</code> - hoisted</li>
+  <li><code class="language-plaintext highlighter-rouge">let</code> - not hoisted</li>
+  <li><code class="language-plaintext highlighter-rouge">const</code> - not hoisted</li>
+  <li>
+    <h3 id="hoisting">Hoisting</h3>
+  </li>
+</ul>
+
+<h3 id="type-coercion">Type Coercion</h3>
+
+<ul>
+  <li>Implicit conversion of the variable from one data type to another</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Value</td>
+      <td>Becomes…</td>
+    </tr>
+    <tr>
+      <td><strong>__</strong></td>
+      <td><strong>__</strong>_____</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Undefined</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Nan</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">null</code></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">true</code></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">false</code></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>String</td>
+      <td>white space from the start and end of the string are removed. string with empty values are converted to 0. If possible, a string will be converted to number, else it will be converted to <code class="language-plaintext highlighter-rouge">NaN</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>If one of the values is a String and the operator is <code class="language-plaintext highlighter-rouge">+</code>, the other value will be converted to a string as well.</li>
+  <li>Using <code class="language-plaintext highlighter-rouge">==</code> to compare two entities? Javascript will try tio convert both to numbers.</li>
+  <li>To check equality without type coercion, use the <code class="language-plaintext highlighter-rouge">===</code></li>
+</ul>]]></content><author><name>David</name></author><summary type="html"><![CDATA[Intro Javascript is an interpret language that web browsers can parse and execute. It is single threaded ; meaning that JavaScript engines will run and execute code one process at a time. It is multi-paradigm ; meaning that it can be functional object oriented or procedural It is loosely typed and dynamically typed: No need to declare type when declaring the variables The variable types are declared at runtime.]]></summary></entry><entry><title type="html">Functions</title><link href="http://localhost:4000/2018/12/14/Functions.html" rel="alternate" type="text/html" title="Functions" /><published>2018-12-14T00:00:00-08:00</published><updated>2018-12-14T00:00:00-08:00</updated><id>http://localhost:4000/2018/12/14/Functions</id><content type="html" xml:base="http://localhost:4000/2018/12/14/Functions.html"><![CDATA[<p>It’s time for a new section of this course, called Objects and Functions.In a lot of JavaScript courses,they treat these two concepts as two different subjects to teach.I think that’s a big mistake.Because while in other programming languages, objects andlanguages are two distinct things to talk about, in JavaScript,they’re very, very much related.They’re really, in many ways, the same subject.So let’s talk about objects and functions.The first subject or the first topic we’ll discuss is objects and the dot.Remember we’ve already said that objects are collections of name value pairs
 and those values can then be other collections of name value pairs.
 But for our purposes now,let’s look at objects from a little bit of a different perspective.Let’s think about how an object lives or resides in your computer’s memory.An object like we said is a collection of values that are given names.But, what values are we talking about?Well, an object can have properties and methods.So an object can have a primitive sitting off of it, andthat would be called a property.Remember those primitive types that we talked about, soany one of those like a Boolean or a number or a string.
 An object could have another object connected to it as a child, so to speak.
