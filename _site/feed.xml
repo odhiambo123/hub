@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-30T15:45:29-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">CSS</title><link href="http://localhost:4000/css/2022/07/30/CSS.html" rel="alternate" type="text/html" title="CSS" /><published>2022-07-30T00:00:00-07:00</published><updated>2022-07-30T00:00:00-07:00</updated><id>http://localhost:4000/css/2022/07/30/%20CSS</id><content type="html" xml:base="http://localhost:4000/css/2022/07/30/CSS.html"><![CDATA[<h1 id="css">CSS</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-30T15:52:06-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">CSS</title><link href="http://localhost:4000/css/2022/07/30/CSS.html" rel="alternate" type="text/html" title="CSS" /><published>2022-07-30T00:00:00-07:00</published><updated>2022-07-30T00:00:00-07:00</updated><id>http://localhost:4000/css/2022/07/30/%20CSS</id><content type="html" xml:base="http://localhost:4000/css/2022/07/30/CSS.html"><![CDATA[<h1 id="css">CSS</h1>
 
 <ul>
   <li>CSS stands for Cascading Style Sheets</li>
@@ -265,7 +265,293 @@
       <li><code class="language-plaintext highlighter-rouge">flex-flow</code>, which is a shorthand property that takes values for both the wrap and direction (in that order) of the flexbox</li>
     </ul>
   </li>
-</ul>]]></content><author><name></name></author><category term="CSS" /><summary type="html"><![CDATA[CSS]]></summary></entry><entry><title type="html">Code snippets</title><link href="http://localhost:4000/javascript/2022/07/29/Code-Snipets.html" rel="alternate" type="text/html" title="Code snippets" /><published>2022-07-29T00:00:00-07:00</published><updated>2022-07-29T00:00:00-07:00</updated><id>http://localhost:4000/javascript/2022/07/29/Code-Snipets</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/29/Code-Snipets.html"><![CDATA[<h1 id="getelementbyid">GetElementById</h1>
+</ul>]]></content><author><name></name></author><category term="CSS" /><summary type="html"><![CDATA[CSS]]></summary></entry><entry><title type="html">HTML</title><link href="http://localhost:4000/html/2022/07/30/HTML.html" rel="alternate" type="text/html" title="HTML" /><published>2022-07-30T00:00:00-07:00</published><updated>2022-07-30T00:00:00-07:00</updated><id>http://localhost:4000/html/2022/07/30/HTML</id><content type="html" xml:base="http://localhost:4000/html/2022/07/30/HTML.html"><![CDATA[<h1 id="html">HTML</h1>
+
+<ul>
+  <li>HyperText Markup Language</li>
+  <li>markup language for creating webpages and applications</li>
+  <li>browsers parse HTML to render the content of a webpage when we visit it</li>
+  <li>Elements in HTML define the structure of the document and are indicated by tags
+    <ul>
+      <li>the element consists of everything between the start of the opening tag and the end of the closing tag (i.e. any attributes, nested tags and elements, etc.)</li>
+      <li>the tags for elements are surrounded by angle brackets</li>
+      <li>the closing tag for an element starts with an angle bracket followed by a forward slash</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Attributes are defined within the opening tag of an element
+    <ul>
+      <li>are key/value pairs that define the characteristics of the element by giving metadata that’s important for the browser to know (e.g. element-specific styling, classes/ids, the URL for a hyperlink, etc.)</li>
+      <li>the key is the name of the attribute being set and the value is enclosed in quotations</li>
+      <li>some HTML elements have their own unique attributes, but there are also global attributes that all elements can use such as <code class="language-plaintext highlighter-rouge">class</code> and <code class="language-plaintext highlighter-rouge">id</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="the-class-attribute">The class Attribute</h2>
+
+<ul>
+  <li>classes are used to group elements that should have a common appearance</li>
+  <li>we assign the same class to multiple elements if they should have the same styling</li>
+  <li>elements can have multiple classes, they’ll just be separated by spaces in the value of the attribute</li>
+</ul>
+
+<h2 id="the-id-attribute">The id Attribute</h2>
+
+<ul>
+  <li>we use the <code class="language-plaintext highlighter-rouge">id</code> when there is styling that should be unique to a given element or if we want to provide functionality unique for that element</li>
+  <li>when assigning an <code class="language-plaintext highlighter-rouge">id</code> value, we should use a value that’s unique across our entire HTML document (i.e. we shouldn’t repeat ids)</li>
+</ul>
+
+<h2 id="starting-html-documents">Starting HTML Documents</h2>
+
+<ul>
+  <li>each HTML document begins with a special tag known as the DOCTYPE declaration, which lets browsers know which top of document they’re working with and the version of the markup language being used</li>
+  <li>for HTML5, the DOCTYPE declaration is:</li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>following the DOCTYPE declaration, we have the <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> tag that acts as the root of our document
+    <ul>
+      <li>everything within our HTML page will be nested inside of this element</li>
+    </ul>
+  </li>
+  <li>within the <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> element, we have the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> elements</li>
+</ul>
+
+<h3 id="the-head-element">The <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> element</h3>
+
+<ul>
+  <li>contains metadata associated with the page, including information for the browser such as the title, character encoding, and references to external stylesheets</li>
+  <li>elements within <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">&lt;title&gt;</code>, which holds a title for our page and is required for all valid HTML pages</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;meta&gt;</code>, which can hold the name, author, description, and keywords for our page</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;link&gt;</code>, which holds the relative path to any external CSS documents we’re using for styling</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;script&gt;</code>, which contains either internal JavaScript or a relative path to external JavaScript to provide client-side functionality for our page</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;base&gt;</code>, which allows us to set a base url for all hyperlinks in our document</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="the-body-element">The <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> Element</h3>
+
+<ul>
+  <li>we include the visible elements of our HTML page in the <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> element of our page</li>
+  <li>visible elements can be either inline or block-level elements</li>
+  <li>block elements have implicit newlines before and after, so they take the entire width of the page
+    <ul>
+      <li>e.g., <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code></li>
+    </ul>
+  </li>
+  <li>inline elements render within the line and only take the space they need
+    <ul>
+      <li>e.g., <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="common-html-elements">Common HTML Elements</h3>
+
+<p><a href="https://www.w3schools.com/tags/default.asp">HTML Elements (w3Schools)</a></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>
+    <ul>
+      <li>renders a clickable hyperlink in our page</li>
+      <li><code class="language-plaintext highlighter-rouge">href</code> attribute holds the URL that the user is redirected to when they click the link</li>
+      <li><code class="language-plaintext highlighter-rouge">target</code> attribute specifies how to open the link (e.g. in a new tab, current tab, etc.)</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;img&gt;</code>
+    <ul>
+      <li>renders an image within our page</li>
+      <li><code class="language-plaintext highlighter-rouge">src</code> attribute that holds the relative path or URL to the image we want to display</li>
+      <li><code class="language-plaintext highlighter-rouge">alt</code> attribute holds alternative text that will display in the case that the image can’t be shown (e.g. if it’s been removed from the URL) and to assist screen readers for users with sight problems</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;table&gt;</code>
+    <ul>
+      <li>renders a table in our page</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;thead&gt;</code> element that defines the table header</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;tbody&gt;</code> element that defines the table body</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;tr&gt;</code> elements that define table rows</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;th&gt;</code> elements to define a cell in the header row</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;td&gt;</code> elements to define a cell in a body row</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code>
+    <ul>
+      <li>renders an ordered list in our page</li>
+      <li>numbered by default, but we can change the delimiter by setting the <code class="language-plaintext highlighter-rouge">type</code> attribute</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code>
+    <ul>
+      <li>renders an unordered list in our page</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>
+    <ul>
+      <li>renders list items within an ordered or unordered list</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>
+    <ul>
+      <li>block-level element that defines a division of our page</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>
+    <ul>
+      <li>block-level element that defines a paragraph</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;span&gt;</code>
+    <ul>
+      <li>inline element used for grouping text or elements</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;b&gt;</code>
+    <ul>
+      <li>bolds text</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;i&gt;</code>
+    <ul>
+      <li>italicizes text</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h2&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h3&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h4&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h5&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h6&gt;</code>
+    <ul>
+      <li>header tags that are block-level elements</li>
+      <li><code class="language-plaintext highlighter-rouge">h1</code> is the largest header to <code class="language-plaintext highlighter-rouge">h6</code> as the smallest header</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;br/&gt;</code>
+    <ul>
+      <li>self-closing tag for line breaks</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;!-- --&gt;</code>
+    <ul>
+      <li>holds comments</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="semantic-markup">Semantic Markup</h2>
+
+<ul>
+  <li>some HTML tags have semantic meaning, which means that the element gives some information about the type of content it contains</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> is a semantic element, the browser interprets this element as the most important header on our webpage</li>
+  <li>semantic markup is used for search engine optimization because we can indicate the most important parts of our page and for screen readers because semantic elements better indicate the content that they contain</li>
+  <li>other semantic elements include <code class="language-plaintext highlighter-rouge">&lt;header&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;article&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;aside&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;footer&gt;</code></li>
+</ul>
+
+<h2 id="forms">Forms</h2>
+
+<ul>
+  <li>forms are sections of our HTML documents that contain controls that solicit information a user that we normally submit to the server</li>
+  <li>we use the <code class="language-plaintext highlighter-rouge">&lt;form&gt;</code> element to create forms in our page</li>
+  <li>within the form element, we’ll use <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> elements for each piece of information we want to collect from the user
+    <ul>
+      <li>to indicate the kind of information we’re collecting, we’ll use the <code class="language-plaintext highlighter-rouge">type</code> attribute of the <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> element</li>
+      <li><code class="language-plaintext highlighter-rouge">type</code> can be one of many values, including text, password, radio, checkbox, file, submit, or reset
+        <ul>
+          <li>text gives a single-line textbox input</li>
+          <li>password gives a textbox input that masks the entered characters using asterisks or periods so that the user can’t see the raw value that was entered</li>
+          <li>radio renders a set of radio buttons that a user can select one of</li>
+          <li>checkbox renders a checkbox that the user can select</li>
+          <li>file givews a fileselect box that users can upload a file to, to have it sent to the server</li>
+        </ul>
+      </li>
+      <li>whenever we include an <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> element in our form, we’ll have a <code class="language-plaintext highlighter-rouge">&lt;label&gt;</code> element before it to give a label to the input
+        <ul>
+          <li>the <code class="language-plaintext highlighter-rouge">for</code> attribute of the <code class="language-plaintext highlighter-rouge">&lt;label&gt;</code> element indicates the <code class="language-plaintext highlighter-rouge">id</code> of the <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> element that it’s associated with</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>we can also include <code class="language-plaintext highlighter-rouge">&lt;textarea&gt;</code> element in our form, which will render multiline textbox that can contain newlines
+    <ul>
+      <li>we can specify the size of the textarea through the <code class="language-plaintext highlighter-rouge">rows</code> and <code class="language-plaintext highlighter-rouge">cols</code> attributes, which determine the number of rows and the number of columns for the textarea, respectively</li>
+    </ul>
+  </li>
+  <li>we can create dropdowns through the <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code> element
+    <ul>
+      <li>inside the select element, we’ll define the different options with <code class="language-plaintext highlighter-rouge">&lt;option&gt;</code> elements, specifying the <code class="language-plaintext highlighter-rouge">value</code> attribute for each option</li>
+    </ul>
+  </li>
+  <li>to add reset and submit buttons to our form, we’ll create input elements with <code class="language-plaintext highlighter-rouge">reset</code> and <code class="language-plaintext highlighter-rouge">submit</code> for the type, respectively</li>
+  <li>the <code class="language-plaintext highlighter-rouge">submit</code> button allows us to send form data to the server</li>
+  <li>the <code class="language-plaintext highlighter-rouge">reset</code> button will clear the form data</li>
+  <li>to specify where the form data will be sent once the user clicks the <code class="language-plaintext highlighter-rouge">submit</code> button, we’ll set the <code class="language-plaintext highlighter-rouge">action</code> attribute on the <code class="language-plaintext highlighter-rouge">&lt;form&gt;</code> element
+    <ul>
+      <li>typically, the value that we’ll pass to this attribute will be the URL of the server that will receive the form sumission</li>
+    </ul>
+  </li>
+  <li>we can also set the <code class="language-plaintext highlighter-rouge">target</code> attribute on the form element to specify how the result of the submission will be displayed to the user
+    <ul>
+      <li>this attribute will specify if the result of the submission opens in a new tab, in the same tab, etc.</li>
+    </ul>
+  </li>
+  <li>we specify the <code class="language-plaintext highlighter-rouge">name</code> for the different input elements within our form
+    <ul>
+      <li>oftentimes this will match the <code class="language-plaintext highlighter-rouge">for</code> attribute of the corresponding <code class="language-plaintext highlighter-rouge">&lt;label&gt;</code></li>
+      <li>but it does not have to</li>
+      <li>we’ll use the name if we’re retrieving our elements, e.g. in JavaScript</li>
+    </ul>
+  </li>
+  <li>the <code class="language-plaintext highlighter-rouge">value</code> attribute can be given to an <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> element to specify a default value for the input field
+    <ul>
+      <li>if we’re working with a <code class="language-plaintext highlighter-rouge">submit</code> or <code class="language-plaintext highlighter-rouge">reset</code> <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> element, <code class="language-plaintext highlighter-rouge">value</code> will hold the label of the button</li>
+    </ul>
+  </li>
+  <li>the <code class="language-plaintext highlighter-rouge">placeholder</code> attribute can be given to an <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> element to give information about what we’re expecting in the input
+    <ul>
+      <li>we can use placeholders for text, password, and other input types</li>
+    </ul>
+  </li>
+  <li>the <code class="language-plaintext highlighter-rouge">required</code> attribute which requires a user to provide a value for an input field before submitting the form
+    <ul>
+      <li>the <code class="language-plaintext highlighter-rouge">required</code> attribute is a Boolean attribute (meaning that it can have a true or false value)</li>
+      <li>for Boolean HTML attributes, we can explicitly specify a true or false value</li>
+      <li>or we can simply include the attribute without a value (meaning true) or exclude the attribute (meaning false)</li>
+    </ul>
+  </li>
+  <li>the <code class="language-plaintext highlighter-rouge">min</code> and <code class="language-plaintext highlighter-rouge">max</code> attributes which hold a minimum and maximum value, respectively for the input
+    <ul>
+      <li>these attributes can be used for number, range, date, datetime-local, month, time, and week inputs</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="html-form-validation">HTML Form Validation</h2>
+
+<ul>
+  <li>whenever a user submits a form, the data will be sent to the location specified by the <code class="language-plaintext highlighter-rouge">action</code> attribute on the <code class="language-plaintext highlighter-rouge">&lt;form&gt;</code> element</li>
+  <li>however, the form will be validated before it’s sent</li>
+  <li>this client-side validation comes in two forms - validation based on HTML5 rules and JavaScript validation using JavaScript that we’ve written</li>
+  <li>validation based on HTML5 rules
+    <ul>
+      <li>any <code class="language-plaintext highlighter-rouge">required</code> <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> elements must have a value</li>
+      <li>any constraints imposed by <code class="language-plaintext highlighter-rouge">minlength</code> and <code class="language-plaintext highlighter-rouge">maxlength</code> attributes (which determine the minimum length and maximum length of an input value, respectively) must be observed</li>
+      <li>any constraints imposed by <code class="language-plaintext highlighter-rouge">min</code> and <code class="language-plaintext highlighter-rouge">max</code> attributes must be observed</li>
+      <li>the value provided must match the <code class="language-plaintext highlighter-rouge">type</code> that we’ve specified for all <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> elements</li>
+      <li>if we’ve defined a regular expression that the input value must match through the <code class="language-plaintext highlighter-rouge">pattern</code> attribute on an <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> element, that must be matched as well</li>
+    </ul>
+  </li>
+  <li>if the form input provided by the user satisfies the validation, it will be submitted</li>
+  <li>if the form input is invalid, it won’t be submitted until the user corrects the input and submits again</li>
+</ul>]]></content><author><name></name></author><category term="html" /><summary type="html"><![CDATA[HTML]]></summary></entry><entry><title type="html">Code snippets</title><link href="http://localhost:4000/javascript/2022/07/29/Code-Snipets.html" rel="alternate" type="text/html" title="Code snippets" /><published>2022-07-29T00:00:00-07:00</published><updated>2022-07-29T00:00:00-07:00</updated><id>http://localhost:4000/javascript/2022/07/29/Code-Snipets</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/29/Code-Snipets.html"><![CDATA[<h1 id="getelementbyid">GetElementById</h1>
 
 <p><img src="/getElementById.png" alt="getElement" /></p>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[GetElementById]]></summary></entry><entry><title type="html">Recap</title><link href="http://localhost:4000/general/2022/07/29/html-JS-Recap.html" rel="alternate" type="text/html" title="Recap" /><published>2022-07-29T00:00:00-07:00</published><updated>2022-07-29T00:00:00-07:00</updated><id>http://localhost:4000/general/2022/07/29/html-JS-Recap</id><content type="html" xml:base="http://localhost:4000/general/2022/07/29/html-JS-Recap.html"><![CDATA[<p>###</p>
 <ul>
@@ -892,7 +1178,23 @@ they evaluate to falsein control flow</li>
       <td><code>… , …</code></td>
     </tr>
   </tbody>
-</table>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[Operators are special functions infix means the operator sits in between the parameters]]></summary></entry><entry><title type="html">Intro</title><link href="http://localhost:4000/javascript/2022/07/28/Javascript-Intro.html" rel="alternate" type="text/html" title="Intro" /><published>2022-07-28T16:30:13-07:00</published><updated>2022-07-28T16:30:13-07:00</updated><id>http://localhost:4000/javascript/2022/07/28/Javascript-Intro</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/28/Javascript-Intro.html"><![CDATA[<h3 id="intro">Intro</h3>
+</table>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[Operators are special functions infix means the operator sits in between the parameters]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-07-28T16:30:13-07:00</published><updated>2022-07-28T16:30:13-07:00</updated><id>http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Intro</title><link href="http://localhost:4000/javascript/2022/07/28/Javascript-Intro.html" rel="alternate" type="text/html" title="Intro" /><published>2022-07-28T16:30:13-07:00</published><updated>2022-07-28T16:30:13-07:00</updated><id>http://localhost:4000/javascript/2022/07/28/Javascript-Intro</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/28/Javascript-Intro.html"><![CDATA[<h3 id="intro">Intro</h3>
 <ul>
   <li>Javascript is an interpret language that web browsers can parse and execute.</li>
   <li>It is  single threaded ; meaning that JavaScript engines will run and execute code one process at a time.</li>
@@ -983,23 +1285,7 @@ they evaluate to falsein control flow</li>
     <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">window</span><span class="p">.</span><span class="nx">libraryName</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">libraryName</span> <span class="o">||</span> <span class="dl">"</span><span class="s2">lib2</span><span class="dl">"</span><span class="p">;</span>
 </code></pre></div>    </div>
   </li>
-</ul>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[Intro Javascript is an interpret language that web browsers can parse and execute. It is single threaded ; meaning that JavaScript engines will run and execute code one process at a time. It is multi-paradigm ; meaning that it can be functional object oriented or procedural It is loosely typed and dynamically typed: No need to declare type when declaring the variables The variable types are declared at runtime.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-07-28T16:30:13-07:00</published><updated>2022-07-28T16:30:13-07:00</updated><id>http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>Jekyll requires blog post files to be named according to the following format:</p>
-
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
-
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Asynchronous</title><link href="http://localhost:4000/javascript/2022/07/28/Asynchronous.html" rel="alternate" type="text/html" title="Asynchronous" /><published>2022-07-28T00:00:00-07:00</published><updated>2022-07-28T00:00:00-07:00</updated><id>http://localhost:4000/javascript/2022/07/28/Asynchronous</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/28/Asynchronous.html"><![CDATA[<h3 id="asynchronous">Asynchronous</h3>
+</ul>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[Intro Javascript is an interpret language that web browsers can parse and execute. It is single threaded ; meaning that JavaScript engines will run and execute code one process at a time. It is multi-paradigm ; meaning that it can be functional object oriented or procedural It is loosely typed and dynamically typed: No need to declare type when declaring the variables The variable types are declared at runtime.]]></summary></entry><entry><title type="html">Asynchronous</title><link href="http://localhost:4000/javascript/2022/07/28/Asynchronous.html" rel="alternate" type="text/html" title="Asynchronous" /><published>2022-07-28T00:00:00-07:00</published><updated>2022-07-28T00:00:00-07:00</updated><id>http://localhost:4000/javascript/2022/07/28/Asynchronous</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/28/Asynchronous.html"><![CDATA[<h3 id="asynchronous">Asynchronous</h3>
 <p>what is asynchronous in javascript?</p>
 <ul>
   <li>In javascript there is the execution stack and the event cue, as soon as the execution task is empty, the event queue is entered</li>
@@ -1308,53 +1594,4 @@ So we can use this concept of setting a variable equal to this,
 and then just carrying that with us the rest of the way to
 make sure that we don’t run across any unintentional errors,
 or somehow throw things onto the global object that we didn’t mean to.
-All right, let’s move on.</p>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[when a function is invoked a new execution context is created Remember not to confuse this with the object that we’ve been discussing. The object sitting in memory that is a function has properties and methods. It has a name property and a code property where the code lives. But when that code is invoked and execution context is created and put on the execution stack. And that determines how that code is Run, is executed. So think of the execution context as focusing on that code portion of that function object. What happens when I run the code in that code property? So we know that an execution context is created. Each executions context has this variable environment. Where the variables created inside that function live. It has a reference to its outer environment. Its outer lexical environment, where it sits physically in the code, which tells it how to look down the scope chain. In other words, if I ask for a variable and it’s not there inside that function’s variable environment. It’ll go out and out further, and all the way out until it reaches the global environment looking for that variable or that function. So it has that outer reference. And we also know that in JavaScript engine every time an execution context is created, that is every time a function is Run. It gives us, without us having to create it, declare it or anything, it gives us this variable called this, which can be useful. And this will be pointing at a different object, a different thing, depending on how the function is invoked. This can cause a lot of confusion. There are a few scenarios where this will be changed depending on how the function is called. For the JavaScript engine will decide that this should point to something different. That the this keyword is a particular object or another, depending on where the function is and how it’s called. So let’s take a look at a couple of these scenarios, and we’ll see this again later in the course as well. So, the this keyword. I once again have my empty app.js file, and we’ll use some simple examples to explain what this, the keyword this will be under certain circumstances. Now you maybe thinking that you’d like to see some more concrete complete examples. I agree. As this course goes on especially toward the end, we’ll look at far more complex examples of the concepts that we’re using in the real world and in very popular JavaScript libraries and frameworks. But I believe it’s important first to understand the concept and not get bogged down in the details of implementation of more complex examples. So right now we’re focusing on just understanding what’s happening under the hood with JavaScript. And then later we’ll build on that knowledge with more complex example. For now, let’s move on talking about this keyword. We’ve already seen that this is immediately available, the keyword this. Even at the global execution context level. So I can run this, and inside the browser, it’s going to show me the window object. Because this points to the global object at this level in the code. And inside the browser, the global object is, as you might recall, the Window object. Now let’s look at another example, let’s say I have a function. I’ll just call it a, and I’m going to log this. And then, I’ll invoke a. Remember that invoking a, means run that code property which contains all the lines of code inside the function. And the first thing it does is create that execution context, and one of that pieces of the puzzle is the creation of the keyword this. So what will the keyword this be inside the execution context that’s created by invoking a? Execution context for running the a function. Now let’s take a look. It’s also the Window object. So when you create a function, the this keyword is still going to point to the global object. If you decided to use this, if you’re simply invoking the function. Similarly, if I use a function expression to set up the object, and then set that equal to a variable. Actually I mean this. So, var b gets this function expression to declare it, to create it. What will this be in that case? Well, I’ll go ahead and invoke b, using the variable name to point to that function. And it’s still Window. So whenever I create a function that’s simply a function expression or a function statement. Creating a function at this level in the code, then this will point to the global object. And that’s true even though there’s actually three execution contexts that we see here. The global one, then the one that’s created when a is invoked, and another execution context that’s created when b is invoked. And in each of those cases, they get their own this keyword. But in all those cases, the keyword points to the same address, the same location in your computer’s memory. So they’re all pointing at the global object. Makes sense? That means you could even do strange things like this.newvariable let’s say equals hello. I’ve attached it to the global object. So after I call a, I could actually console.log newvariable. Cuz that’s been created and using the dot operator, I’ve attached a new variable to the global object. And remember, any variables attached to the global object, I can just reference like that. I don’t need to use the dot operator. It just assumes I’m asking for a variable on the global object. So I can refresh this and actually see that hello, kind of strange. If you don’t understand what this keyword is pointing to and you think you’re somehow attaching this to the function, you’re not. You’re actually crashing into the global namespace and you could cause yourself a lot of problems. So when you’re just invoking the function, this points to the global variable. However, you may have seen something that looks like this when learning JavaScript. We’re gonna talk about that later in the course about what circumstance when you would use the this variable inside a function like this. Now that said, what about an object method? Let me create a little space here and I’ll create a new object literal and now that we understand function expressions, I can do something that we haven’t done before inside an object literal. I can create a method. Remember, if the value is a primitive, it’s called a property. And if the value a function, it’s called a method. So, I’ll create a name-value pair. I’ll just call it name, so we can recognize the object and I’ll call it the c object and then a comma and I’ll create a method. I’ll do log: so that’s the name and then the value I want to create a function object. So, I’ll just use a function expression. An anonymous function, no name and then I’ll console.log this and then I’ll call c.log So now I can invoke the function that was created inside this object literal, which is attached to this log. So this is the log method of the object c. See that? What will this turn out to be? Remember every time a function is invoked, a new execution context is created and the JavaScript engine decides what that keyword, the keyword this should be pointing to. In these other cases, it was the window object. But in this case, it’s a method on an object and that means, see that there at the bottom? In the case where a function is actually a method attached to an object, this keyword becomes the object that that method is sitting inside of c. See that? These functions, this keyword. The JavaScript engine said, you’re attached to an object. So when you see, when you use the this keyword I’m going to be pointing at that very object that contains you. So I could actually say, this.name = ‘Updated c object’ And then when this is logged, see that? I changed that property on this parent object, the object that holds the function. So that’s useful. I can mutate that is change the object, that contains me if I’m a method of that object by using of this keyword. You can imagine that can be very useful to be able to access other properties and methods on the same object that a particular method lives on. This is very common to use and it’s neat. Now there’s one more thing to show you and this a lot of people feel is a bug in JavaScript. Now you might be saying, what do you mean a bug in JavaScript? Well, JavaScript is a programming language and the engines and the language was designed by people and so decisions were made about how things should work. And in this one case, this decision a lot of people feel is wrong. Let me show you. Let’s suppose that I create a function inside this method, we can do that right. I’m gonna call it setname, I’ll use a variable and I’ll set a function expression. This time, I’ll pass a variable to my function. Let’s say, new name. I can do that. And inside here, I’m gonna say this.name = newname. So, I’m trying to update or mutate my object with this newname. And then let’s say that here, I’m going to go ahead and call setname and I’ll say ‘Updated again! The c object’) and then console.log(this) again. So I mutate it and I should see ‘Updated c object’. I create a function that also, well when executed, create a new execution context. And I would expect, personally that this keyword would still point to the containing object, because it’s a function inside of a function, inside of an object. And since this keyword points to the object, I would expect, well, one more function down and it’ll still point to the object and I can mutate it, change it. So I would expect that after calling this setname function, I’ll see updated again the c object as the name on that second console.log. Let’s try it. Well, that’s a problem. “Updated c object” and Updated c object”. Meaning, this ran, but this didn’t seem to do anything or did it. Oh, let’s try going back and taking a look at the window object, the global object. And if I take a good look, look at that. See that? That name property here was instead created and added by the equals operator on the global object. That means that this internal function, when its execution context was created, the this key word points to the global object, even though it’s sitting kind of inside an object that I created. I think that’s wrong and a lot of people do, but that’s the way JavaScript works in this case and there’s not a lot we can do about it at this point. So what can we do when I have this kind of scenario? To make sure that I’m using the right object. That this keyword isn’t causing me to make an unintended error. Well there’s a very common pattern that we can use in this case. And we’ll understand it because We understand that objects are set by reference. Now that we understand that, we can understand this pattern. I can simply say I’m going to set a variable. I’ll call it self. Some people call it that, but I like self. Because I’m inside this object. And I’m going to set that equal to this. It was the very first line of my object method. So what happened right here? Well, now we have a new variable called self, and since these are objects, it’s going to be set equal to by reference. So self will be pointing at the same location in memory as the this keyword. And right now, the this keyword on this line of code is pointing to my whole object. And then for sanity’s sake, we simply use self everywhere where we normally would have used this, even inside these sub-functions. That way I don’t have to think about, am I pointing to the right object? This is still pointing. The self variable is still pointing to the same location in memory as this. So when I mutate it, when I change it, when I add something to it or change it or whatever, it’s going to update the appropriate thing, in this case, my whole object. So self, I can log that, and then when I look at this new function that I created, and this gets executed right here. I don’t even worry about the this variable. I simply say self. So what’s going to happen? Well, self isn’t declared inside this function. So the JavaScript engine will look down the scope chain. Where is this function sitting physically in the code? Well, right inside here. So we can see that’ll it just go outside to the next area outside, the outer lexical reference, and look for it, a variable called self and it will find it. And so this right here, the self variable inside this function, will end up being this one here. And that’s still pointing to my whole object. So I can mutate my object here, as well. So now, this should show up properly. I have a proper reference to my object. And then I just use it from there on out, just for sanity’s sake, so I don’t have to think about it. And then I’ll mutate it, I’ll change it. And then I’ll create a function, and I’ll call that function and that will mutate the object. And I’ll put it again. So this time I should see, look at that. That’s proper. That’s what I expected. So what did we learn? We learned that no programming language is perfect. They all have their quirks, and JavaScript certainly isn’t an exception. But there are patterns we can use to get around any problems the programming language might have. Now I also wanna make mention that this pattern you’ll see very often if you’re working in any real-world JavaScript scenarios. However, the let keyword, which will be an alternative to the var keyword, is meant to clear some of these problems up. So as that becomes available in modern browsers, and depending on the kind of project you’re working on, if you’re working on a web project and you don’t have to worry about older browsers. That’s something that you’ll soon start to be able to use, and bonus lectures in this course will help with that, as time goes on. But for now, realize that this pattern is a good one. It is used quite often and is quite useful. So we’ve seen the this key word. It’s the global variable, or the global object, when just invoking a function like this. And when the function is a method of an object, the this keyword points to the object. However, any internal functions have a problem. So we can use this concept of setting a variable equal to this, and then just carrying that with us the rest of the way to make sure that we don’t run across any unintentional errors, or somehow throw things onto the global object that we didn’t mean to. All right, let’s move on.]]></summary></entry><entry><title type="html">Functions</title><link href="http://localhost:4000/javascript/2018/07/28/Functions.html" rel="alternate" type="text/html" title="Functions" /><published>2018-07-28T00:00:00-07:00</published><updated>2018-07-28T00:00:00-07:00</updated><id>http://localhost:4000/javascript/2018/07/28/Functions</id><content type="html" xml:base="http://localhost:4000/javascript/2018/07/28/Functions.html"><![CDATA[<p>Objects and Functions.</p>
-
-<p><img src="/image.PNG" alt="image" /></p>
-
-<ul>
-  <li>In Javascript Objects and functions are related in many ways.</li>
-  <li>Objects are collections of name value pairs and those values can then be other collections of name value pairs.</li>
-  <li>An object can have properties and methods as values, and these can be primitives like boolean, number or a string.</li>
-  <li>An object could also have another object connected to it as a child, so to speak.And this is also considered a property</li>
-  <li>An object can also contain functions and in those cases the function is called a method when it’s sitting on the object.</li>
-  <li>It’s still a function, but it’s connected to an object and so it’s called a method.So objects have properties and methods.And these sit in memory so the object will have some sort of address in your computer’s memory.And it will have references to these different properties and methods which are also sitting in your computer’s memory.</li>
-  <li>Now they may be related to the address of that base object concept, or they may not.But either way the object has references to the addresses or the space or the spots where these different properties and methods live.</li>
-  <li>So think about about an object as sitting in memory, and then having reference to other things sitting in memory that are connected to it.</li>
-  <li>
-    <p>So it knows where its different properties and methods are, that is,primitives, objects, and function that make it up</p>
-
-    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">function</span> <span class="nx">nameOfFunction</span><span class="p">()</span> <span class="p">{</span>
-    
-  <span class="p">}</span>
-</code></pre></div>    </div>
-
-    <ul>
-      <li>we can also assign functions as values to variables or the value for a key in an object</li>
-    </ul>
-
-    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-
-  <span class="p">}</span>
-
-  <span class="kd">let</span> <span class="nx">b</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-
-  <span class="p">}</span>
-
-  <span class="nx">a</span><span class="p">();</span>
-  <span class="nx">b</span><span class="p">();</span>
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>we can write immediately invoked functions - functions that are executed as soon as the line of code that declares them is reached</p>
-
-    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    
-  <span class="p">})();</span>
-    
-  <span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    
-  <span class="p">})();</span>
-</code></pre></div>    </div>
-  </li>
-</ul>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[Objects and Functions.]]></summary></entry></feed>
+All right, let’s move on.</p>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[when a function is invoked a new execution context is created Remember not to confuse this with the object that we’ve been discussing. The object sitting in memory that is a function has properties and methods. It has a name property and a code property where the code lives. But when that code is invoked and execution context is created and put on the execution stack. And that determines how that code is Run, is executed. So think of the execution context as focusing on that code portion of that function object. What happens when I run the code in that code property? So we know that an execution context is created. Each executions context has this variable environment. Where the variables created inside that function live. It has a reference to its outer environment. Its outer lexical environment, where it sits physically in the code, which tells it how to look down the scope chain. In other words, if I ask for a variable and it’s not there inside that function’s variable environment. It’ll go out and out further, and all the way out until it reaches the global environment looking for that variable or that function. So it has that outer reference. And we also know that in JavaScript engine every time an execution context is created, that is every time a function is Run. It gives us, without us having to create it, declare it or anything, it gives us this variable called this, which can be useful. And this will be pointing at a different object, a different thing, depending on how the function is invoked. This can cause a lot of confusion. There are a few scenarios where this will be changed depending on how the function is called. For the JavaScript engine will decide that this should point to something different. That the this keyword is a particular object or another, depending on where the function is and how it’s called. So let’s take a look at a couple of these scenarios, and we’ll see this again later in the course as well. So, the this keyword. I once again have my empty app.js file, and we’ll use some simple examples to explain what this, the keyword this will be under certain circumstances. Now you maybe thinking that you’d like to see some more concrete complete examples. I agree. As this course goes on especially toward the end, we’ll look at far more complex examples of the concepts that we’re using in the real world and in very popular JavaScript libraries and frameworks. But I believe it’s important first to understand the concept and not get bogged down in the details of implementation of more complex examples. So right now we’re focusing on just understanding what’s happening under the hood with JavaScript. And then later we’ll build on that knowledge with more complex example. For now, let’s move on talking about this keyword. We’ve already seen that this is immediately available, the keyword this. Even at the global execution context level. So I can run this, and inside the browser, it’s going to show me the window object. Because this points to the global object at this level in the code. And inside the browser, the global object is, as you might recall, the Window object. Now let’s look at another example, let’s say I have a function. I’ll just call it a, and I’m going to log this. And then, I’ll invoke a. Remember that invoking a, means run that code property which contains all the lines of code inside the function. And the first thing it does is create that execution context, and one of that pieces of the puzzle is the creation of the keyword this. So what will the keyword this be inside the execution context that’s created by invoking a? Execution context for running the a function. Now let’s take a look. It’s also the Window object. So when you create a function, the this keyword is still going to point to the global object. If you decided to use this, if you’re simply invoking the function. Similarly, if I use a function expression to set up the object, and then set that equal to a variable. Actually I mean this. So, var b gets this function expression to declare it, to create it. What will this be in that case? Well, I’ll go ahead and invoke b, using the variable name to point to that function. And it’s still Window. So whenever I create a function that’s simply a function expression or a function statement. Creating a function at this level in the code, then this will point to the global object. And that’s true even though there’s actually three execution contexts that we see here. The global one, then the one that’s created when a is invoked, and another execution context that’s created when b is invoked. And in each of those cases, they get their own this keyword. But in all those cases, the keyword points to the same address, the same location in your computer’s memory. So they’re all pointing at the global object. Makes sense? That means you could even do strange things like this.newvariable let’s say equals hello. I’ve attached it to the global object. So after I call a, I could actually console.log newvariable. Cuz that’s been created and using the dot operator, I’ve attached a new variable to the global object. And remember, any variables attached to the global object, I can just reference like that. I don’t need to use the dot operator. It just assumes I’m asking for a variable on the global object. So I can refresh this and actually see that hello, kind of strange. If you don’t understand what this keyword is pointing to and you think you’re somehow attaching this to the function, you’re not. You’re actually crashing into the global namespace and you could cause yourself a lot of problems. So when you’re just invoking the function, this points to the global variable. However, you may have seen something that looks like this when learning JavaScript. We’re gonna talk about that later in the course about what circumstance when you would use the this variable inside a function like this. Now that said, what about an object method? Let me create a little space here and I’ll create a new object literal and now that we understand function expressions, I can do something that we haven’t done before inside an object literal. I can create a method. Remember, if the value is a primitive, it’s called a property. And if the value a function, it’s called a method. So, I’ll create a name-value pair. I’ll just call it name, so we can recognize the object and I’ll call it the c object and then a comma and I’ll create a method. I’ll do log: so that’s the name and then the value I want to create a function object. So, I’ll just use a function expression. An anonymous function, no name and then I’ll console.log this and then I’ll call c.log So now I can invoke the function that was created inside this object literal, which is attached to this log. So this is the log method of the object c. See that? What will this turn out to be? Remember every time a function is invoked, a new execution context is created and the JavaScript engine decides what that keyword, the keyword this should be pointing to. In these other cases, it was the window object. But in this case, it’s a method on an object and that means, see that there at the bottom? In the case where a function is actually a method attached to an object, this keyword becomes the object that that method is sitting inside of c. See that? These functions, this keyword. The JavaScript engine said, you’re attached to an object. So when you see, when you use the this keyword I’m going to be pointing at that very object that contains you. So I could actually say, this.name = ‘Updated c object’ And then when this is logged, see that? I changed that property on this parent object, the object that holds the function. So that’s useful. I can mutate that is change the object, that contains me if I’m a method of that object by using of this keyword. You can imagine that can be very useful to be able to access other properties and methods on the same object that a particular method lives on. This is very common to use and it’s neat. Now there’s one more thing to show you and this a lot of people feel is a bug in JavaScript. Now you might be saying, what do you mean a bug in JavaScript? Well, JavaScript is a programming language and the engines and the language was designed by people and so decisions were made about how things should work. And in this one case, this decision a lot of people feel is wrong. Let me show you. Let’s suppose that I create a function inside this method, we can do that right. I’m gonna call it setname, I’ll use a variable and I’ll set a function expression. This time, I’ll pass a variable to my function. Let’s say, new name. I can do that. And inside here, I’m gonna say this.name = newname. So, I’m trying to update or mutate my object with this newname. And then let’s say that here, I’m going to go ahead and call setname and I’ll say ‘Updated again! The c object’) and then console.log(this) again. So I mutate it and I should see ‘Updated c object’. I create a function that also, well when executed, create a new execution context. And I would expect, personally that this keyword would still point to the containing object, because it’s a function inside of a function, inside of an object. And since this keyword points to the object, I would expect, well, one more function down and it’ll still point to the object and I can mutate it, change it. So I would expect that after calling this setname function, I’ll see updated again the c object as the name on that second console.log. Let’s try it. Well, that’s a problem. “Updated c object” and Updated c object”. Meaning, this ran, but this didn’t seem to do anything or did it. Oh, let’s try going back and taking a look at the window object, the global object. And if I take a good look, look at that. See that? That name property here was instead created and added by the equals operator on the global object. That means that this internal function, when its execution context was created, the this key word points to the global object, even though it’s sitting kind of inside an object that I created. I think that’s wrong and a lot of people do, but that’s the way JavaScript works in this case and there’s not a lot we can do about it at this point. So what can we do when I have this kind of scenario? To make sure that I’m using the right object. That this keyword isn’t causing me to make an unintended error. Well there’s a very common pattern that we can use in this case. And we’ll understand it because We understand that objects are set by reference. Now that we understand that, we can understand this pattern. I can simply say I’m going to set a variable. I’ll call it self. Some people call it that, but I like self. Because I’m inside this object. And I’m going to set that equal to this. It was the very first line of my object method. So what happened right here? Well, now we have a new variable called self, and since these are objects, it’s going to be set equal to by reference. So self will be pointing at the same location in memory as the this keyword. And right now, the this keyword on this line of code is pointing to my whole object. And then for sanity’s sake, we simply use self everywhere where we normally would have used this, even inside these sub-functions. That way I don’t have to think about, am I pointing to the right object? This is still pointing. The self variable is still pointing to the same location in memory as this. So when I mutate it, when I change it, when I add something to it or change it or whatever, it’s going to update the appropriate thing, in this case, my whole object. So self, I can log that, and then when I look at this new function that I created, and this gets executed right here. I don’t even worry about the this variable. I simply say self. So what’s going to happen? Well, self isn’t declared inside this function. So the JavaScript engine will look down the scope chain. Where is this function sitting physically in the code? Well, right inside here. So we can see that’ll it just go outside to the next area outside, the outer lexical reference, and look for it, a variable called self and it will find it. And so this right here, the self variable inside this function, will end up being this one here. And that’s still pointing to my whole object. So I can mutate my object here, as well. So now, this should show up properly. I have a proper reference to my object. And then I just use it from there on out, just for sanity’s sake, so I don’t have to think about it. And then I’ll mutate it, I’ll change it. And then I’ll create a function, and I’ll call that function and that will mutate the object. And I’ll put it again. So this time I should see, look at that. That’s proper. That’s what I expected. So what did we learn? We learned that no programming language is perfect. They all have their quirks, and JavaScript certainly isn’t an exception. But there are patterns we can use to get around any problems the programming language might have. Now I also wanna make mention that this pattern you’ll see very often if you’re working in any real-world JavaScript scenarios. However, the let keyword, which will be an alternative to the var keyword, is meant to clear some of these problems up. So as that becomes available in modern browsers, and depending on the kind of project you’re working on, if you’re working on a web project and you don’t have to worry about older browsers. That’s something that you’ll soon start to be able to use, and bonus lectures in this course will help with that, as time goes on. But for now, realize that this pattern is a good one. It is used quite often and is quite useful. So we’ve seen the this key word. It’s the global variable, or the global object, when just invoking a function like this. And when the function is a method of an object, the this keyword points to the object. However, any internal functions have a problem. So we can use this concept of setting a variable equal to this, and then just carrying that with us the rest of the way to make sure that we don’t run across any unintentional errors, or somehow throw things onto the global object that we didn’t mean to. All right, let’s move on.]]></summary></entry></feed>
