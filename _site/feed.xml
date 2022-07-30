@@ -1,4 +1,271 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-30T13:25:13-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Code snippets</title><link href="http://localhost:4000/javascript/2022/07/29/Code-Snipets.html" rel="alternate" type="text/html" title="Code snippets" /><published>2022-07-29T00:00:00-07:00</published><updated>2022-07-29T00:00:00-07:00</updated><id>http://localhost:4000/javascript/2022/07/29/Code-Snipets</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/29/Code-Snipets.html"><![CDATA[<h1 id="getelementbyid">GetElementById</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-30T15:45:29-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">CSS</title><link href="http://localhost:4000/css/2022/07/30/CSS.html" rel="alternate" type="text/html" title="CSS" /><published>2022-07-30T00:00:00-07:00</published><updated>2022-07-30T00:00:00-07:00</updated><id>http://localhost:4000/css/2022/07/30/%20CSS</id><content type="html" xml:base="http://localhost:4000/css/2022/07/30/CSS.html"><![CDATA[<h1 id="css">CSS</h1>
+
+<ul>
+  <li>CSS stands for Cascading Style Sheets</li>
+  <li>It’s used to style HTML pages</li>
+  <li>Whenever the browser displays an HTML page, it first loads and parses the HTML to create the Document Object Model (DOM) tree, which represents the page
+    <ul>
+      <li>Then the browser will load and parse the CSS to style the appropriate nodes of the DOM tree (i.e. the elements in our HTML)</li>
+      <li>Once this is completed, the browser will display the content of the page to the user</li>
+    </ul>
+  </li>
+  <li>Rulesets (or rules) are a collection of selectors and properties that specify which element(s) to style and the styling to apply</li>
+  <li>Declarations follow the curly braces in a ruleset and are the property/value pairs</li>
+  <li>Selectors indicate which element(s) to apply the styling to</li>
+  <li>Properties determine the kind of styling that we’re applying</li>
+  <li>Values is given to the property to specify the applied style</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">align-content</span><span class="p">:</span> <span class="nb">center</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="css-selectors">CSS Selectors</h2>
+
+<ul>
+  <li>When writing a selector, we can select by tag, class, id, and/or by other attributes</li>
+  <li>For tag selectors, we’ll just use the name of the corresponding tag to select all elements with the specified tag, e.g.</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>For class selectors, we’ll prefix the class name with a period to select all elements with the provided class</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.input</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>For id selectors, we’ll prefix the id name with a hashtag to select the element with the specified id</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#checkbox</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>To select by additional attributes, we can specify the attribute name-value pair in square brackets
+    <ul>
+      <li>e.g. to select all paragraph elements that are centered,</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span><span class="o">[</span><span class="nt">align</span><span class="o">=</span><span class="s1">"center"</span><span class="o">]</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>We can combine multiple selectors by specifying them without a space in between
+    <ul>
+      <li>e.g. to select only the paragraph elements with the <code class="language-plaintext highlighter-rouge">description</code> class</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span><span class="nc">.description</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>We can specify requirements for ancestor elements by including a space between selectors
+    <ul>
+      <li>e.g. to select only the paragraph elements within a <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> element</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="nt">p</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>To select multiple different elements with different attributes/classes, we can separate selectors by commas
+    <ul>
+      <li>e.g., to select all paragraph elements and all elements that have the <code class="language-plaintext highlighter-rouge">description</code> class</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span><span class="o">,</span><span class="nc">.description</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="css-locations">CSS Locations</h2>
+
+<ul>
+  <li>We can include CSS inline, internally in our HTML page, or externally in a separate stylesheet</li>
+  <li>We specify inline CSS by setting the <code class="language-plaintext highlighter-rouge">style</code> attribute of our HTML page
+    <ul>
+      <li>When using inline CSS, we don’t include any selectors or curly braces</li>
+      <li>Rather we just include property-value pairs</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nt">div</span> <span class="nt">style</span><span class="o">=</span><span class="s1">"background-color:blue"</span><span class="o">&gt;</span><span class="nt">This</span> <span class="nt">div</span> <span class="nt">tag</span> <span class="nt">will</span> <span class="nt">have</span> <span class="nt">a</span> <span class="nt">blue</span> <span class="nt">background</span><span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>We specify internal CSS by including a <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> element within our page’s <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code>
+    <ul>
+      <li>this will have the same appearance as external CSS (i.e. we’ll have rulesets with selectors followed by curly braces containing declarations)</li>
+    </ul>
+  </li>
+  <li>We specify external CSS by creating a <code class="language-plaintext highlighter-rouge">.css</code> file and providing a relative path to that file in the <code class="language-plaintext highlighter-rouge">&lt;link&gt;</code> element of our page’s <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code>
+    <ul>
+      <li>Within the CSS file, we’ll have rulesets with selectors followed by curly braces containing declarations</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="css-specificity">CSS Specificity</h2>
+
+<ul>
+  <li>Oftentimes, a single element in our HTML will be matched by multiple different rulesets</li>
+  <li>so we need a way to determine which ruleset will take precedence and have its declarations applied to the element</li>
+  <li>any element that contains inline styling will have those declarations applied to it - inline styling takes precedence over internal and external styling in all cases</li>
+  <li>to determine precedence between internal and external rulesets, we calculate the specifity as follows through a three-column calculation
+    <ul>
+      <li>the first column is the number of <code class="language-plaintext highlighter-rouge">id</code> values in the selector that the element matches</li>
+      <li>the second column is the number of classes and attribute selectors in the selector that the element matches</li>
+      <li>the third column is the number of tag selectors that the element matches</li>
+    </ul>
+  </li>
+  <li>once the specificity score is calculated, it’s evaluated from left to right
+    <ul>
+      <li>so the ruleset with the highest value for the first column will take precedence</li>
+      <li>if there’s a tie in the first column, the ruleset with the highest value in the second column will take precedence</li>
+      <li>if there’s a tie in the first two columns, the ruleset with the highest value for the third column will take precedence</li>
+      <li>if multiple rulesets have the same value for all three columns, the ruleset that’s declared last will take precedence</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="the-box-model">The Box Model</h2>
+
+<ul>
+  <li>The box model is a container that wraps around each HTML element in our page</li>
+  <li>It consists of four layers: (from outermost to innermost) margin, border, padding, and the content</li>
+  <li>The margin is a transparent space outside of an element’s border</li>
+  <li>The border is an opaque perimeter around the element</li>
+  <li>The padding is spacing between the border and the content</li>
+  <li>The content is the text/images of our element</li>
+</ul>
+
+<p align="center"><img src="./box_model.jpg" /></p>
+
+<ul>
+  <li>We can apply styling at each layer of the box model</li>
+</ul>
+
+<h3 id="styling-margins">Styling Margins</h3>
+
+<ul>
+  <li>We can style an element’s margins through the <code class="language-plaintext highlighter-rouge">margin</code>, <code class="language-plaintext highlighter-rouge">margin-bottom</code>, <code class="language-plaintext highlighter-rouge">margin-left</code>, <code class="language-plaintext highlighter-rouge">margin-top</code>, and/or <code class="language-plaintext highlighter-rouge">margin-right</code> properties</li>
+  <li><code class="language-plaintext highlighter-rouge">margin</code> is a shorthand property (a shorthand property implicitly determines the values of more specific properties) and lets us specify the width of the margin through either relative or absolute sizes</li>
+  <li>If we use a relative size, the margin will adapt based on the size of the window being used to view it</li>
+  <li>We specify relative sizes through percentages or the <code class="language-plaintext highlighter-rouge">em</code> unit (which relates to an element’s font)</li>
+  <li>If we use an absolute size, we have a variety of units we can use, including pixels (px), cm, and in</li>
+  <li>Because <code class="language-plaintext highlighter-rouge">margin</code> is a shorthand property, we can pass a different number of values to it
+    <ul>
+      <li>If we pass one value to <code class="language-plaintext highlighter-rouge">margin</code>, it’ll be applied to all four sides of the element</li>
+      <li>If we pass two values to the <code class="language-plaintext highlighter-rouge">margin</code>, the first will be applied to the top and bottom margin and the second will be applied to the left and right margins</li>
+      <li>If we pass three values to the <code class="language-plaintext highlighter-rouge">margin</code>, they’ll be applied to (in order) the top, left/right, and bottom margins</li>
+      <li>If we pass four values to the <code class="language-plaintext highlighter-rouge">margin</code>, they’ll be applied to (in order) the top, right, bottom, and left margins</li>
+    </ul>
+  </li>
+  <li>We can specify the margin for a particular side of the element through the <code class="language-plaintext highlighter-rouge">margin-left</code>, <code class="language-plaintext highlighter-rouge">margin-right</code>, <code class="language-plaintext highlighter-rouge">margin-top</code>, or <code class="language-plaintext highlighter-rouge">margin-bottom</code> properties, which each take a single value that applies to their respective side</li>
+</ul>
+
+<h3 id="styling-borders">Styling Borders</h3>
+
+<ul>
+  <li>Border properties include <code class="language-plaintext highlighter-rouge">border</code>, <code class="language-plaintext highlighter-rouge">border-bottom</code>, <code class="language-plaintext highlighter-rouge">border-left</code>, <code class="language-plaintext highlighter-rouge">border-top</code>, <code class="language-plaintext highlighter-rouge">border-right</code>, and <code class="language-plaintext highlighter-rouge">border-color</code></li>
+  <li>The first of these are shorthand properties</li>
+  <li>The <code class="language-plaintext highlighter-rouge">border</code> property takes values for (in order) the border width, border style, and the color of the border</li>
+  <li>border width
+    <ul>
+      <li>can be <code class="language-plaintext highlighter-rouge">thin</code>, <code class="language-plaintext highlighter-rouge">medium</code>, <code class="language-plaintext highlighter-rouge">thick</code>, a relative size, or an absolute size</li>
+      <li>it can take multiple values in an analogous way to the <code class="language-plaintext highlighter-rouge">margin</code> property</li>
+    </ul>
+  </li>
+  <li>border style
+    <ul>
+      <li>required</li>
+      <li>determines the line style of the border</li>
+      <li>can take values including <code class="language-plaintext highlighter-rouge">dotted</code>, <code class="language-plaintext highlighter-rouge">solid</code>, and <code class="language-plaintext highlighter-rouge">dashed</code></li>
+    </ul>
+  </li>
+  <li>border color
+    <ul>
+      <li>can be color names (e.g. <code class="language-plaintext highlighter-rouge">black</code> or <code class="language-plaintext highlighter-rouge">blue</code>), hexadecimal values prefixed with a hashtag, or the <code class="language-plaintext highlighter-rouge">rgb()</code> function</li>
+      <li>the <code class="language-plaintext highlighter-rouge">rgb()</code> function takes comma separated values between 0 and 255 for red, green, and blue</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">border-bottom</code>, <code class="language-plaintext highlighter-rouge">border-top</code>, <code class="language-plaintext highlighter-rouge">border-right</code>, and <code class="language-plaintext highlighter-rouge">border-left</code> hold the same values as <code class="language-plaintext highlighter-rouge">border</code> property (width, style, and color) but only apply to their respective side of the element</li>
+  <li>we can specify the border’s color separately through the <code class="language-plaintext highlighter-rouge">border-color</code> property</li>
+</ul>
+
+<h3 id="styling-padding">Styling Padding</h3>
+
+<ul>
+  <li>we specify padding through one or more of the <code class="language-plaintext highlighter-rouge">padding</code>, <code class="language-plaintext highlighter-rouge">padding-bottom</code>, <code class="language-plaintext highlighter-rouge">padding-left</code>, <code class="language-plaintext highlighter-rouge">padding-right</code>, and/or <code class="language-plaintext highlighter-rouge">padding-top</code> properties</li>
+  <li>each of these properties functions analogously to the corresponding margin property and takes a width value</li>
+</ul>
+
+<h2 id="responsive-web-design">Responsive Web Design</h2>
+
+<ul>
+  <li>to make a webpage responsive, we implement styling so that the elements on the page adapt to the size of the screen being used to view them</li>
+  <li>we can implement responsive web design by
+    <ul>
+      <li>setting the <code class="language-plaintext highlighter-rouge">viewport</code> in our <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> element
+        <ul>
+          <li>the viewport is a feature from HTML5 that allows us to tell the browser how to control the size and scale of the document based on the device being used to view it</li>
+        </ul>
+      </li>
+      <li>using <code class="language-plaintext highlighter-rouge">&lt;picture&gt;</code> tags for images
+        <ul>
+          <li>within <code class="language-plaintext highlighter-rouge">&lt;picture&gt;</code> tags, we’ll include <code class="language-plaintext highlighter-rouge">&lt;source&gt;</code> tags</li>
+          <li><code class="language-plaintext highlighter-rouge">&lt;source&gt;</code> elements have a <code class="language-plaintext highlighter-rouge">media</code> attribute that we can use to set the minimum width allowed for a particular picture to display</li>
+          <li>if the size of the screen is smaller than the specified width, the image will not render</li>
+        </ul>
+      </li>
+      <li>relative styling, such as using percentages/em values for widths rather than absolute values and also using responsive layout systems</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="flexbox">Flexbox</h2>
+
+<ul>
+  <li>Flexbox is a responsive container for holding our HTML elements</li>
+  <li>to use flexbox, we’ll set the <code class="language-plaintext highlighter-rouge">display</code> property for an element to <code class="language-plaintext highlighter-rouge">flex</code></li>
+  <li>then we can use various flexbox properties within, including
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">flex-direction</code>, which determines how our elements are rendered
+        <ul>
+          <li>can take values including <code class="language-plaintext highlighter-rouge">row</code> (which renders the elements in a row), <code class="language-plaintext highlighter-rouge">row-reverse</code> (which renders the elements in a row in the reverse of the order that they’re defined), <code class="language-plaintext highlighter-rouge">column</code> (which displays the elements in a column), and <code class="language-plaintext highlighter-rouge">column-reverse</code> (which displays the elements in a columnh in the reverse of the order in which they’re defined)</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">flex-wrap</code>, which takes a value of <code class="language-plaintext highlighter-rouge">wrap</code> and will let our elements wrap to the next line when the end of the window is reached</li>
+      <li><code class="language-plaintext highlighter-rouge">flex-flow</code>, which is a shorthand property that takes values for both the wrap and direction (in that order) of the flexbox</li>
+    </ul>
+  </li>
+</ul>]]></content><author><name></name></author><category term="CSS" /><summary type="html"><![CDATA[CSS]]></summary></entry><entry><title type="html">Code snippets</title><link href="http://localhost:4000/javascript/2022/07/29/Code-Snipets.html" rel="alternate" type="text/html" title="Code snippets" /><published>2022-07-29T00:00:00-07:00</published><updated>2022-07-29T00:00:00-07:00</updated><id>http://localhost:4000/javascript/2022/07/29/Code-Snipets</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/29/Code-Snipets.html"><![CDATA[<h1 id="getelementbyid">GetElementById</h1>
 
 <p><img src="/getElementById.png" alt="getElement" /></p>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[GetElementById]]></summary></entry><entry><title type="html">Recap</title><link href="http://localhost:4000/general/2022/07/29/html-JS-Recap.html" rel="alternate" type="text/html" title="Recap" /><published>2022-07-29T00:00:00-07:00</published><updated>2022-07-29T00:00:00-07:00</updated><id>http://localhost:4000/general/2022/07/29/html-JS-Recap</id><content type="html" xml:base="http://localhost:4000/general/2022/07/29/html-JS-Recap.html"><![CDATA[<p>###</p>
 <ul>
@@ -625,23 +892,7 @@ they evaluate to falsein control flow</li>
       <td><code>… , …</code></td>
     </tr>
   </tbody>
-</table>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[Operators are special functions infix means the operator sits in between the parameters]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-07-28T16:30:13-07:00</published><updated>2022-07-28T16:30:13-07:00</updated><id>http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>Jekyll requires blog post files to be named according to the following format:</p>
-
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
-
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Intro</title><link href="http://localhost:4000/javascript/2022/07/28/Javascript-Intro.html" rel="alternate" type="text/html" title="Intro" /><published>2022-07-28T16:30:13-07:00</published><updated>2022-07-28T16:30:13-07:00</updated><id>http://localhost:4000/javascript/2022/07/28/Javascript-Intro</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/28/Javascript-Intro.html"><![CDATA[<h3 id="intro">Intro</h3>
+</table>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[Operators are special functions infix means the operator sits in between the parameters]]></summary></entry><entry><title type="html">Intro</title><link href="http://localhost:4000/javascript/2022/07/28/Javascript-Intro.html" rel="alternate" type="text/html" title="Intro" /><published>2022-07-28T16:30:13-07:00</published><updated>2022-07-28T16:30:13-07:00</updated><id>http://localhost:4000/javascript/2022/07/28/Javascript-Intro</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/28/Javascript-Intro.html"><![CDATA[<h3 id="intro">Intro</h3>
 <ul>
   <li>Javascript is an interpret language that web browsers can parse and execute.</li>
   <li>It is  single threaded ; meaning that JavaScript engines will run and execute code one process at a time.</li>
@@ -732,7 +983,23 @@ they evaluate to falsein control flow</li>
     <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">window</span><span class="p">.</span><span class="nx">libraryName</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">libraryName</span> <span class="o">||</span> <span class="dl">"</span><span class="s2">lib2</span><span class="dl">"</span><span class="p">;</span>
 </code></pre></div>    </div>
   </li>
-</ul>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[Intro Javascript is an interpret language that web browsers can parse and execute. It is single threaded ; meaning that JavaScript engines will run and execute code one process at a time. It is multi-paradigm ; meaning that it can be functional object oriented or procedural It is loosely typed and dynamically typed: No need to declare type when declaring the variables The variable types are declared at runtime.]]></summary></entry><entry><title type="html">Asynchronous</title><link href="http://localhost:4000/javascript/2022/07/28/Asynchronous.html" rel="alternate" type="text/html" title="Asynchronous" /><published>2022-07-28T00:00:00-07:00</published><updated>2022-07-28T00:00:00-07:00</updated><id>http://localhost:4000/javascript/2022/07/28/Asynchronous</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/28/Asynchronous.html"><![CDATA[<h3 id="asynchronous">Asynchronous</h3>
+</ul>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[Intro Javascript is an interpret language that web browsers can parse and execute. It is single threaded ; meaning that JavaScript engines will run and execute code one process at a time. It is multi-paradigm ; meaning that it can be functional object oriented or procedural It is loosely typed and dynamically typed: No need to declare type when declaring the variables The variable types are declared at runtime.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-07-28T16:30:13-07:00</published><updated>2022-07-28T16:30:13-07:00</updated><id>http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/07/28/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Asynchronous</title><link href="http://localhost:4000/javascript/2022/07/28/Asynchronous.html" rel="alternate" type="text/html" title="Asynchronous" /><published>2022-07-28T00:00:00-07:00</published><updated>2022-07-28T00:00:00-07:00</updated><id>http://localhost:4000/javascript/2022/07/28/Asynchronous</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/28/Asynchronous.html"><![CDATA[<h3 id="asynchronous">Asynchronous</h3>
 <p>what is asynchronous in javascript?</p>
 <ul>
   <li>In javascript there is the execution stack and the event cue, as soon as the execution task is empty, the event queue is entered</li>
