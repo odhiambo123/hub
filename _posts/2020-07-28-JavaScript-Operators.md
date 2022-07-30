@@ -4,6 +4,8 @@ title:  "Operator Precedence"
 date:   2022-07-28 18:06
 categories: JavaScript
 ---
+- Operators are special functions
+- infix means the operator sits in between the parameters
 
 <table class="fullwidth-table">
   <tbody>
