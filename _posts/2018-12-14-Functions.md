@@ -17,3 +17,38 @@ categories: JavaScript
 - Now they may be related to the address of that base object concept, or they may not.But either way the object has references to the addresses or the space or the spots where these different properties and methods live.
 - So think about about an object as sitting in memory, and then having reference to other things sitting in memory that are connected to it.
 - So it knows where its different properties and methods are, that is,primitives, objects, and function that make it up
+- 
+
+
+```js
+function nameOfFunction() {
+
+}
+```
+
+    - we can also assign functions as values to variables or the value for a key in an object
+
+    ```js
+    let a = function() {
+
+    }
+
+    let b = () => {
+
+    }
+
+    a();
+    b();
+    ```
+
+- we can write immediately invoked functions - functions that are executed as soon as the line of code that declares them is reached
+
+```js
+(function() {
+
+})();
+
+(() => {
+
+})();
+```
