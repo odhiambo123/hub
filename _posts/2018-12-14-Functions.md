@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Functions"
-date: 2014-07-28
+date: 2018-07-28
 categories: JavaScript
 ---
 
