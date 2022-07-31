@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-30T15:52:06-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">CSS</title><link href="http://localhost:4000/css/2022/07/30/CSS.html" rel="alternate" type="text/html" title="CSS" /><published>2022-07-30T00:00:00-07:00</published><updated>2022-07-30T00:00:00-07:00</updated><id>http://localhost:4000/css/2022/07/30/%20CSS</id><content type="html" xml:base="http://localhost:4000/css/2022/07/30/CSS.html"><![CDATA[<h1 id="css">CSS</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-30T16:24:30-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">CSS</title><link href="http://localhost:4000/css/2022/07/30/CSS.html" rel="alternate" type="text/html" title="CSS" /><published>2022-07-30T00:00:00-07:00</published><updated>2022-07-30T00:00:00-07:00</updated><id>http://localhost:4000/css/2022/07/30/%20CSS</id><content type="html" xml:base="http://localhost:4000/css/2022/07/30/CSS.html"><![CDATA[<h1 id="css">CSS</h1>
 
 <ul>
   <li>CSS stands for Cascading Style Sheets</li>
@@ -551,7 +551,306 @@
   </li>
   <li>if the form input provided by the user satisfies the validation, it will be submitted</li>
   <li>if the form input is invalid, it won’t be submitted until the user corrects the input and submits again</li>
-</ul>]]></content><author><name></name></author><category term="html" /><summary type="html"><![CDATA[HTML]]></summary></entry><entry><title type="html">Code snippets</title><link href="http://localhost:4000/javascript/2022/07/29/Code-Snipets.html" rel="alternate" type="text/html" title="Code snippets" /><published>2022-07-29T00:00:00-07:00</published><updated>2022-07-29T00:00:00-07:00</updated><id>http://localhost:4000/javascript/2022/07/29/Code-Snipets</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/29/Code-Snipets.html"><![CDATA[<h1 id="getelementbyid">GetElementById</h1>
+</ul>]]></content><author><name></name></author><category term="html" /><summary type="html"><![CDATA[HTML]]></summary></entry><entry><title type="html">Asynchronous JavaScript</title><link href="http://localhost:4000/javascript/2022/07/30/Asynchronous-JavaScript.html" rel="alternate" type="text/html" title="Asynchronous JavaScript" /><published>2022-07-30T00:00:00-07:00</published><updated>2022-07-30T00:00:00-07:00</updated><id>http://localhost:4000/javascript/2022/07/30/Asynchronous-JavaScript</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/30/Asynchronous-JavaScript.html"><![CDATA[<h1 id="asynchronous-javascript">Asynchronous JavaScript</h1>
+
+<ul>
+  <li>normally our code runs synchronously - one line must finish executing before the JavaScript engine will execute the following line
+    <ul>
+      <li>so if a line of code calls a function, that function must finish execution and return before the following line will start execution, even if the function doesn’t have a returned value</li>
+    </ul>
+  </li>
+  <li>if we’re executing a very resource intensive method or if we’re making a callout to a webservice, synchronous exeuction isn’t ideal because we don’t want our code to be in a holding pattern until these operations return
+    <ul>
+      <li>so in these cases, we’d rather execute asynchronously</li>
+    </ul>
+  </li>
+  <li>in asyncrhonous execution, we invoke a method or process but continue execution in the code that called it</li>
+</ul>
+
+<h2 id="microtask-queue">Microtask Queue</h2>
+
+<ul>
+  <li>an internal queue used by JavaScript engines (the engines running our code in the browser or whatever environment we’re executing in)</li>
+  <li>the queue is FIFO (first in, first out) - so a job that’s queued will need to have all jobs queued before it finish before the job will be taken off the queue and executed</li>
+  <li>the engine only takes a task from the microtask queue when the previous task has finished execution</li>
+</ul>
+
+<h2 id="event-loop">Event Loop</h2>
+
+<ul>
+  <li>the event loop is where tasks that are pulled from the microtask queue are executed</li>
+  <li>immediately after a task has finished execution, the JavaScript engine will grab the next task from the microtask queue</li>
+  <li>only when the microtask queue is empty, will the engine turn to other tasks such as rerendering the page for the user with any updates</li>
+</ul>
+
+<h2 id="callback-functions">Callback Functions</h2>
+
+<ul>
+  <li>a callback function is a function that’s passed as an argument to another function and is executed when the first function returns</li>
+  <li>callback functions are used with asyncrhonous execution in JavaScript to tell the engine what to do when the asynchronous action has finished and returned</li>
+</ul>
+
+<h2 id="settimeout">setTimeout()</h2>
+
+<ul>
+  <li>takes two parameters
+    <ul>
+      <li>a callback function to execute after the specified time has elapsed</li>
+      <li>the time that must elapse before the callback function is executed (in milliseconds)</li>
+    </ul>
+  </li>
+  <li>will invoke the callback function after the specified amount of time has elapsed
+    <ul>
+      <li>it won’t invoke the callback function immediately after the specified amount of time has elapsed, rather the callback function is added to the microtask queue whenever the specified time has elapsed</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="setinterval">setInterval()</h2>
+
+<ul>
+  <li>takes two parameters
+    <ul>
+      <li>a callback function to execute at regular intervals after the specified time has elapsed</li>
+      <li>the time that must elapse before the callback function is executed again (in milliseconds)</li>
+    </ul>
+  </li>
+  <li>will invoke the callback function passed as the first argument every interval period
+    <ul>
+      <li>it won’t invoke callback function immediately after interval elapses, rather the callback function is added to the microtask queue whenever the interval has elapsed</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="promises">Promises</h2>
+
+<ul>
+  <li>a promise is a proxy for a value that isn’t currently available, but will eventually become available</li>
+  <li>when a promise is called, it starts in a <code class="language-plaintext highlighter-rouge">pending</code> state and the calling function continues execution</li>
+  <li>the promise will eventually move to either a <code class="language-plaintext highlighter-rouge">resolved</code> state (if it executed successfully) or a <code class="language-plaintext highlighter-rouge">rejected</code> state (if there was an error in execution)</li>
+  <li>we can create our own promises by calling the promise constructor
+    <ul>
+      <li>e.g.</li>
+    </ul>
+
+    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">let</span> <span class="nx">myPromise</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+  <span class="p">});</span>
+</code></pre></div>    </div>
+
+    <ul>
+      <li>the promise constructor takes a function as its parameter
+        <ul>
+          <li>this function is referred to as the executor function - the operation that the promise is serving as a proxy for</li>
+          <li>the executor function takes two parameters - <code class="language-plaintext highlighter-rouge">resolve</code> and <code class="language-plaintext highlighter-rouge">reject</code> callbacks</li>
+        </ul>
+      </li>
+      <li>if the promise moves to a <code class="language-plaintext highlighter-rouge">resolved</code> state, the callback method that we pass to the <code class="language-plaintext highlighter-rouge">resolve</code> parameter is invoked</li>
+      <li>if the promise moves to a <code class="language-plaintext highlighter-rouge">rejected</code> state, the callback that we pass to the <code class="language-plaintext highlighter-rouge">reject</code> parameter is invoked</li>
+      <li>when we instantiate a new promise, the executor function runs automatically</li>
+      <li>the promise constructor returns an object with <code class="language-plaintext highlighter-rouge">state</code> and <code class="language-plaintext highlighter-rouge">result</code> properties
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">state</code> is <code class="language-plaintext highlighter-rouge">pending</code> initially and becomes <code class="language-plaintext highlighter-rouge">fulfilled</code> if the promise is resolved and <code class="language-plaintext highlighter-rouge">rejected</code> if the promise is rejeted</li>
+          <li><code class="language-plaintext highlighter-rouge">result</code> is <code class="language-plaintext highlighter-rouge">undefined</code> and becomes the return from the promise when the <code class="language-plaintext highlighter-rouge">resolve</code> is invoked or the error that occurred when the <code class="language-plaintext highlighter-rouge">reject</code> callback is invoked</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="consuming-promises">Consuming Promises</h3>
+
+<ul>
+  <li>consuming functions for promises can be registered using the <code class="language-plaintext highlighter-rouge">then</code>, <code class="language-plaintext highlighter-rouge">catch</code>, and <code class="language-plaintext highlighter-rouge">finally</code> methods, whcih are called on the value returned from the promise constructor</li>
+  <li><code class="language-plaintext highlighter-rouge">then()</code>
+    <ul>
+      <li>has two parameters
+        <ul>
+          <li>the first is a function to invoke when the promise is resolved
+            <ul>
+              <li>this inner function takes a single parameter, which is result of the promise (commonly named <code class="language-plaintext highlighter-rouge">result</code>)</li>
+            </ul>
+          </li>
+          <li>the second is a function to invoke when the promise is rejected
+            <ul>
+              <li>this inner function takes a single parameter, which is the error that occurred (commonly named <code class="language-plaintext highlighter-rouge">error</code>)</li>
+            </ul>
+          </li>
+          <li>the second parameter is optoinal and is oftentimes omitted in favor of using <code class="language-plaintext highlighter-rouge">catch</code> methods to more clearly denote the error handlers for a promise</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">catch()</code>
+    <ul>
+      <li>has a single parameter, which is a function to invoke when the promise is rejected
+        <ul>
+          <li>this inner function takes a single parameter (the error that occurred, oftentimes named <code class="language-plaintext highlighter-rouge">error</code>)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">finally()</code>
+    <ul>
+      <li>has a single parameter, which is a function that executes when the promise is settled, whether it’s been resolved or rejected
+        <ul>
+          <li>this inner function doesn’t take any arguments</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>as a best practice, any asynchronous action in JavaScript should return a promise
+    <ul>
+      <li>oftentimes, we won’t construct the promise ourselves</li>
+      <li>rather, we’ll be writing the code that consumes the promise</li>
+      <li>e.g. a callout to a server or other external API will return a promise, which we’ll then handle in our code with <code class="language-plaintext highlighter-rouge">then()</code>, <code class="language-plaintext highlighter-rouge">catch()</code>, and <code class="language-plaintext highlighter-rouge">finally()</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="the-fetch-api">The Fetch API</h2>
+
+<ul>
+  <li>the fetch API is a JavaScript API available in browsers to easily make callouts to external services</li>
+  <li>we make a callout by calling the <code class="language-plaintext highlighter-rouge">fetch()</code> method</li>
+  <li><code class="language-plaintext highlighter-rouge">fetch()</code> takes two parameters
+    <ul>
+      <li>the first parameter is the url to send the request to</li>
+      <li>the second parameter is an object that can include the HTTP method we want our call to use and the headers and body for our request</li>
+      <li>the second parameter is optional - if we exclude it <code class="language-plaintext highlighter-rouge">fetch()</code> will make a GET request (which retrieves data from the specified url)to the provided url</li>
+      <li><code class="language-plaintext highlighter-rouge">fetch()</code> returns a promise</li>
+    </ul>
+  </li>
+  <li>when the promise returned by the <code class="language-plaintext highlighter-rouge">fetch()</code> method resolves, it’ll return an object of the Response class, which includes the following property</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Response Property</th>
+      <th>Holds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>status</td>
+      <td>HTTP status code associated with the response to our request.</td>
+    </tr>
+    <tr>
+      <td>ok</td>
+      <td>true if the status code is successful (i.e. the status code is in the 200s)</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>we can use the methods of the Response class to retrieve the actual response</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Response Methods</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>text()</td>
+      <td>Reads the response and returns it as text through a promise.</td>
+    </tr>
+    <tr>
+      <td>json()</td>
+      <td>Parses the response as JSON and returns it through a promise.</td>
+    </tr>
+    <tr>
+      <td>formData()</td>
+      <td>Returns the response as a FromData object through a promise.</td>
+    </tr>
+    <tr>
+      <td>blob()</td>
+      <td>Returns the response Blob through a promise.</td>
+    </tr>
+    <tr>
+      <td>arrayBuffer()</td>
+      <td>Returns the response as an ArrayBuffer through a promise.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="asyncawait-keywords">Async/Await Keywords</h2>
+
+<ul>
+  <li>the <code class="language-plaintext highlighter-rouge">async</code> and <code class="language-plaintext highlighter-rouge">await</code> keywords are another way to handle promises in JavaScript
+    <ul>
+      <li>they’re an abstraction that makes for a more readable way to work with promises</li>
+    </ul>
+  </li>
+  <li>we can declare functions with the <code class="language-plaintext highlighter-rouge">async</code> keyword (which is placed before the <code class="language-plaintext highlighter-rouge">function</code> keyword in the function declaration)
+    <ul>
+      <li>a function declared with <code class="language-plaintext highlighter-rouge">async</code> always returns a promise</li>
+      <li>any return statements in an <code class="language-plaintext highlighter-rouge">async</code> function that don’t explicitly return a promise will have their values wrapped in a resolved promise</li>
+    </ul>
+  </li>
+  <li>the <code class="language-plaintext highlighter-rouge">await</code> keyword can be used in an <code class="language-plaintext highlighter-rouge">async</code> function to suspend funtion execution at the code line that contains it until a promise settles and returns a result
+    <ul>
+      <li>when JavaScript engine suspends function execution, it doesn’t wait for the promise to resolve synchronously</li>
+      <li>rather, it places the <code class="language-plaintext highlighter-rouge">async</code> function in the microtask queue and continue executing other tasks</li>
+      <li>when the promise is settled, the engine will grab the suspended function from the microtask queue and finish execution</li>
+    </ul>
+  </li>
+  <li>e.g.</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="kd">function</span> <span class="nx">executeAsyncOperation</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">asyncOperationResult</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">asyncOperation</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>to implement error handling, we can wrap the <code class="language-plaintext highlighter-rouge">await</code> statement inside of a <code class="language-plaintext highlighter-rouge">try</code> <code class="language-plaintext highlighter-rouge">catch</code> block</li>
+</ul>
+
+<h3 id="try-catch-blocks">Try-Catch Blocks</h3>
+
+<ul>
+  <li>we can wrap code that may throw an exception in the <code class="language-plaintext highlighter-rouge">try</code> block</li>
+  <li>following the <code class="language-plaintext highlighter-rouge">try</code> block, we can use a <code class="language-plaintext highlighter-rouge">catch</code> block to handle the exception</li>
+  <li>we can optionally include a <code class="language-plaintext highlighter-rouge">finally</code> block that will run regardless of whether an exception was thrown</li>
+  <li>e.g.</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">try</span> <span class="p">{</span>
+    <span class="c1">// code that might throw an exception</span>
+<span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// handle exception</span>
+<span class="p">}</span> <span class="k">finally</span> <span class="p">{</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>we don’t declare multiple <code class="language-plaintext highlighter-rouge">catch</code> blocks for a single <code class="language-plaintext highlighter-rouge">try</code> block because all exceptions are caught by the first <code class="language-plaintext highlighter-rouge">catch</code> block since we don’t specify types for our parameters</li>
+  <li>the code in the <code class="language-plaintext highlighter-rouge">finally</code> block will execute if an exception is thrown so long as the thrown exception is handled in a previous <code class="language-plaintext highlighter-rouge">catch</code> block or somewhere in the calling code</li>
+</ul>
+
+<h2 id="json">JSON</h2>
+
+<ul>
+  <li>JavaScript Object Notation</li>
+  <li>used both in and outside of JavaScript</li>
+  <li>a data format that’s commonly used to pass information between different web applications or services</li>
+  <li>the values for keys in JSON cannot be functions, symbols, or undefined values</li>
+  <li><code class="language-plaintext highlighter-rouge">JSON.stringify()</code>
+    <ul>
+      <li>takes an object as an argument and converts to a JSON string (i.e. a JSON-encoded object/serialized object)</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">JSON.parse()</code>
+    <ul>
+      <li>takes a JSON string as an argument and converting it to a JavaScript object</li>
+    </ul>
+  </li>
+</ul>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[Asynchronous JavaScript]]></summary></entry><entry><title type="html">Code snippets</title><link href="http://localhost:4000/javascript/2022/07/29/Code-Snipets.html" rel="alternate" type="text/html" title="Code snippets" /><published>2022-07-29T00:00:00-07:00</published><updated>2022-07-29T00:00:00-07:00</updated><id>http://localhost:4000/javascript/2022/07/29/Code-Snipets</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/29/Code-Snipets.html"><![CDATA[<h1 id="getelementbyid">GetElementById</h1>
 
 <p><img src="/getElementById.png" alt="getElement" /></p>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[GetElementById]]></summary></entry><entry><title type="html">Recap</title><link href="http://localhost:4000/general/2022/07/29/html-JS-Recap.html" rel="alternate" type="text/html" title="Recap" /><published>2022-07-29T00:00:00-07:00</published><updated>2022-07-29T00:00:00-07:00</updated><id>http://localhost:4000/general/2022/07/29/html-JS-Recap</id><content type="html" xml:base="http://localhost:4000/general/2022/07/29/html-JS-Recap.html"><![CDATA[<p>###</p>
 <ul>
@@ -1310,288 +1609,4 @@ they evaluate to falsein control flow</li>
 
 <ul>
   <li>The click even above will be executed last</li>
-</ul>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[Asynchronous what is asynchronous in javascript? In javascript there is the execution stack and the event cue, as soon as the execution task is empty, the event queue is entered]]></summary></entry><entry><title type="html">Control Flow</title><link href="http://localhost:4000/javascript/2022/07/28/Control-Flow.html" rel="alternate" type="text/html" title="Control Flow" /><published>2022-07-28T00:00:00-07:00</published><updated>2022-07-28T00:00:00-07:00</updated><id>http://localhost:4000/javascript/2022/07/28/Control-Flow</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/28/Control-Flow.html"><![CDATA[]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Keyword This</title><link href="http://localhost:4000/javascript/2018/12/14/KeyWordThis.html" rel="alternate" type="text/html" title="Keyword This" /><published>2018-12-14T00:00:00-08:00</published><updated>2018-12-14T00:00:00-08:00</updated><id>http://localhost:4000/javascript/2018/12/14/KeyWordThis</id><content type="html" xml:base="http://localhost:4000/javascript/2018/12/14/KeyWordThis.html"><![CDATA[<p>when a function is invoked a new execution context is created
-Remember not to confuse this with the object that we’ve been discussing.
-The object sitting in memory that is a function has properties and methods.
-It has a name property and a code property where the code lives.
-But when that code is invoked and
-execution context is created and put on the execution stack.
-And that determines how that code is Run, is executed.
-So think of the execution context
-as focusing on that code portion of that function object.
-What happens when I run the code in that code property?
-So we know that an execution context is created.
-Each executions context has this variable environment.
-Where the variables created inside that function live.
-It has a reference to its outer environment.
-Its outer lexical environment, where it sits physically in the code,
-which tells it how to look down the scope chain.
-In other words, if I ask for a variable and
-it’s not there inside that function’s variable environment.
-It’ll go out and out further, and all the way out until it reaches the global
-environment looking for that variable or that function.
-So it has that outer reference.
-And we also know that in JavaScript engine every time
-an execution context is created, that is every time a function is Run.
-It gives us, without us having to create it, declare it or
-anything, it gives us this variable called this, which can be useful.
-And this will be pointing at a different object,
-a different thing, depending on how the function is invoked.
-This can cause a lot of confusion.
-There are a few scenarios where this
-will be changed depending on how the function is called.
-For the JavaScript engine will decide that this should point to something different.
-That the this keyword is a particular object or another,
-depending on where the function is and how it’s called.
-So let’s take a look at a couple of these scenarios, and
-we’ll see this again later in the course as well.
-So, the this keyword.
-I once again have my empty app.js file, and
-we’ll use some simple examples to explain what this,
-the keyword this will be under certain circumstances.
-Now you maybe thinking that you’d like to see some more concrete complete examples.
-I agree.
-As this course goes on especially toward the end, we’ll look at far more complex
-examples of the concepts that we’re using in the real world and
-in very popular JavaScript libraries and frameworks.
-But I believe it’s important first to understand the concept and
-not get bogged down in the details of implementation of more complex examples.
-So right now we’re focusing on just
-understanding what’s happening under the hood with JavaScript.
-And then later we’ll build on that knowledge with more complex example.
-For now, let’s move on talking about this keyword.
-We’ve already seen that this is immediately available, the keyword this.
-Even at the global execution context level.
-So I can run this, and inside the browser, it’s going to show me the window object.
-Because this points to the global object at this level in the code.
-And inside the browser, the global object is,
-as you might recall, the Window object.
-Now let’s look at another example, let’s say I have a function.
-I’ll just call it a, and I’m going to log this.
-And then, I’ll invoke a.
-Remember that invoking a, means run that code property
-which contains all the lines of code inside the function.
-And the first thing it does is create that execution context, and one of that
-pieces of the puzzle is the creation of the keyword this.
-So what will the keyword this be
-inside the execution context that’s created by invoking a?
-Execution context for running the a function.
-Now let’s take a look.
-It’s also the Window object.
-So when you create a function, the this keyword is still going to
-point to the global object.
-If you decided to use this, if you’re simply invoking the function.
-Similarly, if I use a function expression
-to set up the object, and then set that equal to a variable.
-Actually I mean this.
-So, var b gets this function expression to declare it, to create it.
-What will this be in that case?
-Well, I’ll go ahead and
-invoke b, using the variable name to point to that function.
-And it’s still Window.
-So whenever I create a function
-that’s simply a function expression or a function statement.
-Creating a function at this level in the code,
-then this will point to the global object.
-And that’s true even though there’s actually
-three execution contexts that we see here.
-The global one, then the one that’s created when a is invoked, and
-another execution context that’s created when b is invoked.
-And in each of those cases, they get their own this keyword.
-But in all those cases, the keyword points to the same address,
-the same location in your computer’s memory.
-So they’re all pointing at the global object.
-Makes sense?
-That means you could even do strange things like this.newvariable
-let’s say equals hello.
-I’ve attached it to the global object.
-So after I call a, I could actually console.log newvariable.
-Cuz that’s been created and using the dot operator,
-I’ve attached a new variable to the global object.
-And remember,
-any variables attached to the global object, I can just reference like that.
-I don’t need to use the dot operator.
-It just assumes I’m asking for a variable on the global object.
-So I can refresh this and
-actually see that hello, kind of strange.
-If you don’t understand what this keyword is pointing to and
-you think you’re somehow attaching this to the function, you’re not.
-You’re actually crashing into the global namespace and
-you could cause yourself a lot of problems.
-So when you’re just invoking the function, this points to the global variable.
-However, you may have seen something that looks like this when learning JavaScript.
-We’re gonna talk about that later in the course about what circumstance
-when you would use the this variable inside a function like this.
-Now that said, what about an object method?
-Let me create a little space here and I’ll create a new object literal and
-now that we understand function expressions,
-I can do something that we haven’t done before inside an object literal.
-I can create a method.
-Remember, if the value is a primitive, it’s called a property.
-And if the value a function, it’s called a method.
-So, I’ll create a name-value pair.
-I’ll just call it name, so we can recognize the object and
-I’ll call it the c object and then a comma and I’ll create a method.
-I’ll do log: so that’s the name and
-then the value I want to create a function object.
-So, I’ll just use a function expression.
-An anonymous function, no name and
-then I’ll console.log this and
-then I’ll call c.log So
-now I can invoke the function that was created inside this object literal,
-which is attached to this log.
-So this is the log method of the object c.
-See that?
-What will this turn out to be?
-Remember every time a function is invoked, a new execution context is created and
-the JavaScript engine decides what that keyword,
-the keyword this should be pointing to.
-In these other cases, it was the window object.
-But in this case, it’s a method on an object and
-that means, see that there at the bottom?
-In the case where a function is actually a method
-attached to an object, this keyword becomes
-the object that that method is sitting inside of c.
-See that?
-These functions, this keyword.
-The JavaScript engine said, you’re attached to an object.
-So when you see, when you use the this keyword I’m going to
-be pointing at that very object that contains you.
-So I could actually say,
-this.name = ‘Updated c object’
-And then when this is logged, see that?
-I changed that property on this parent object,
-the object that holds the function.
-So that’s useful.
-I can mutate that is change the object,
-that contains me if I’m a method of that object by using of this keyword.
-You can imagine that can be very useful to be able to access other properties and
-methods on the same object that a particular method lives on.
-This is very common to use and it’s neat.
-Now there’s one more thing to show you and
-this a lot of people feel is a bug in JavaScript.
-Now you might be saying, what do you mean a bug in JavaScript?
-Well, JavaScript is a programming language and the engines and the language was
-designed by people and so decisions were made about how things should work.
-And in this one case, this decision a lot of people feel is wrong.
-Let me show you.
-Let’s suppose that I create a function inside this method, we can do that right.
-I’m gonna call it setname, I’ll use a variable and
-I’ll set a function expression.
-This time, I’ll pass a variable to my function.
-Let’s say, new name.
-I can do that.
-And inside here, I’m gonna say this.name = newname.
-So, I’m trying to update or
-mutate my object with this newname.
-And then let’s say that here,
-I’m going to go ahead and call setname and
-I’ll say ‘Updated again!
-The c object’) and
-then console.log(this) again.
-So I mutate it and I should see ‘Updated c object’.
-I create a function that also, well when executed, create a new execution context.
-And I would expect, personally that this keyword would
-still point to the containing object,
-because it’s a function inside of a function, inside of an object.
-And since this keyword points to the object, I would expect, well, one more
-function down and it’ll still point to the object and I can mutate it, change it.
-So I would expect that after calling this setname function,
-I’ll see updated again the c object as the name on that second console.log.
-Let’s try it.
-Well, that’s a problem.
-“Updated c object” and Updated c object”.
-Meaning, this ran, but
-this didn’t seem to do anything or did it.
-Oh, let’s try going back and taking a look
-at the window object, the global object.
-And if I take a good look, look at that.
-See that?
-That name property here was instead created and
-added by the equals operator on the global object.
-That means that this internal function, when its execution
-context was created, the this key word points to the global object,
-even though it’s sitting kind of inside an object that I created.
-I think that’s wrong and a lot of people do, but
-that’s the way JavaScript works in this case and
-there’s not a lot we can do about it at this point.
-So what can we do when I have this kind of scenario?
-To make sure that I’m using the right object.
-That this keyword isn’t causing me to make an unintended error.
-Well there’s a very common pattern that we can use in this case.
-And we’ll understand it because We understand
-that objects are set by reference.
-Now that we understand that, we can understand this pattern.
-I can simply say I’m going to set a variable.
-I’ll call it self.
-Some people call it that, but I like self.
-Because I’m inside this object.
-And I’m going to set that equal to this.
-It was the very first line of my object method.
-So what happened right here?
-Well, now we have a new variable called self, and
-since these are objects, it’s going to be set equal to by reference.
-So self will be pointing at the same location in memory as the this keyword.
-And right now, the this keyword on this line of code is pointing to
-my whole object.
-And then for sanity’s sake, we simply use self everywhere where we normally
-would have used this, even inside these sub-functions.
-That way I don’t have to think about, am I pointing to the right object?
-This is still pointing.
-The self variable is still pointing to the same location in memory as this.
-So when I mutate it, when I change it, when I add something to it or change it or
-whatever, it’s going to update the appropriate thing,
-in this case, my whole object.
-So self, I can log that, and then when I look
-at this new function that I created, and this gets executed right here.
-I don’t even worry about the this variable.
-I simply say self.
-So what’s going to happen?
-Well, self isn’t declared inside this function.
-So the JavaScript engine will look down the scope chain.
-Where is this function sitting physically in the code?
-Well, right inside here.
-So we can see that’ll it just go outside to the next area outside, the outer
-lexical reference, and look for it, a variable called self and it will find it.
-And so this right here, the self variable inside this function,
-will end up being this one here.
-And that’s still pointing to my whole object.
-So I can mutate my object here, as well.
-So now, this should show up properly.
-I have a proper reference to my object.
-And then I just use it from there on out, just for sanity’s sake, so
-I don’t have to think about it.
-And then I’ll mutate it, I’ll change it.
-And then I’ll create a function, and
-I’ll call that function and that will mutate the object.
-And I’ll put it again.
-So this time I should see, look at that.
-That’s proper.
-That’s what I expected.
-So what did we learn?
-We learned that no programming language is perfect.
-They all have their quirks, and JavaScript certainly isn’t an exception.
-But there are patterns we can use to get around
-any problems the programming language might have.
-Now I also wanna make mention that this pattern you’ll see very often if
-you’re working in any real-world JavaScript scenarios.
-However, the let keyword, which will be an alternative
-to the var keyword, is meant to clear some of these problems up.
-So as that becomes available in modern browsers,
-and depending on the kind of project you’re working on,
-if you’re working on a web project and you don’t have to worry about older browsers.
-That’s something that you’ll soon start to be able to use,
-and bonus lectures in this course will help with that, as time goes on.
-But for now, realize that this pattern is a good one.
-It is used quite often and is quite useful.
-So we’ve seen the this key word.
-It’s the global variable, or
-the global object, when just invoking a function like this.
-And when the function is a method of an object,
-the this keyword points to the object.
-However, any internal functions have a problem.
-So we can use this concept of setting a variable equal to this,
-and then just carrying that with us the rest of the way to
-make sure that we don’t run across any unintentional errors,
-or somehow throw things onto the global object that we didn’t mean to.
-All right, let’s move on.</p>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[when a function is invoked a new execution context is created Remember not to confuse this with the object that we’ve been discussing. The object sitting in memory that is a function has properties and methods. It has a name property and a code property where the code lives. But when that code is invoked and execution context is created and put on the execution stack. And that determines how that code is Run, is executed. So think of the execution context as focusing on that code portion of that function object. What happens when I run the code in that code property? So we know that an execution context is created. Each executions context has this variable environment. Where the variables created inside that function live. It has a reference to its outer environment. Its outer lexical environment, where it sits physically in the code, which tells it how to look down the scope chain. In other words, if I ask for a variable and it’s not there inside that function’s variable environment. It’ll go out and out further, and all the way out until it reaches the global environment looking for that variable or that function. So it has that outer reference. And we also know that in JavaScript engine every time an execution context is created, that is every time a function is Run. It gives us, without us having to create it, declare it or anything, it gives us this variable called this, which can be useful. And this will be pointing at a different object, a different thing, depending on how the function is invoked. This can cause a lot of confusion. There are a few scenarios where this will be changed depending on how the function is called. For the JavaScript engine will decide that this should point to something different. That the this keyword is a particular object or another, depending on where the function is and how it’s called. So let’s take a look at a couple of these scenarios, and we’ll see this again later in the course as well. So, the this keyword. I once again have my empty app.js file, and we’ll use some simple examples to explain what this, the keyword this will be under certain circumstances. Now you maybe thinking that you’d like to see some more concrete complete examples. I agree. As this course goes on especially toward the end, we’ll look at far more complex examples of the concepts that we’re using in the real world and in very popular JavaScript libraries and frameworks. But I believe it’s important first to understand the concept and not get bogged down in the details of implementation of more complex examples. So right now we’re focusing on just understanding what’s happening under the hood with JavaScript. And then later we’ll build on that knowledge with more complex example. For now, let’s move on talking about this keyword. We’ve already seen that this is immediately available, the keyword this. Even at the global execution context level. So I can run this, and inside the browser, it’s going to show me the window object. Because this points to the global object at this level in the code. And inside the browser, the global object is, as you might recall, the Window object. Now let’s look at another example, let’s say I have a function. I’ll just call it a, and I’m going to log this. And then, I’ll invoke a. Remember that invoking a, means run that code property which contains all the lines of code inside the function. And the first thing it does is create that execution context, and one of that pieces of the puzzle is the creation of the keyword this. So what will the keyword this be inside the execution context that’s created by invoking a? Execution context for running the a function. Now let’s take a look. It’s also the Window object. So when you create a function, the this keyword is still going to point to the global object. If you decided to use this, if you’re simply invoking the function. Similarly, if I use a function expression to set up the object, and then set that equal to a variable. Actually I mean this. So, var b gets this function expression to declare it, to create it. What will this be in that case? Well, I’ll go ahead and invoke b, using the variable name to point to that function. And it’s still Window. So whenever I create a function that’s simply a function expression or a function statement. Creating a function at this level in the code, then this will point to the global object. And that’s true even though there’s actually three execution contexts that we see here. The global one, then the one that’s created when a is invoked, and another execution context that’s created when b is invoked. And in each of those cases, they get their own this keyword. But in all those cases, the keyword points to the same address, the same location in your computer’s memory. So they’re all pointing at the global object. Makes sense? That means you could even do strange things like this.newvariable let’s say equals hello. I’ve attached it to the global object. So after I call a, I could actually console.log newvariable. Cuz that’s been created and using the dot operator, I’ve attached a new variable to the global object. And remember, any variables attached to the global object, I can just reference like that. I don’t need to use the dot operator. It just assumes I’m asking for a variable on the global object. So I can refresh this and actually see that hello, kind of strange. If you don’t understand what this keyword is pointing to and you think you’re somehow attaching this to the function, you’re not. You’re actually crashing into the global namespace and you could cause yourself a lot of problems. So when you’re just invoking the function, this points to the global variable. However, you may have seen something that looks like this when learning JavaScript. We’re gonna talk about that later in the course about what circumstance when you would use the this variable inside a function like this. Now that said, what about an object method? Let me create a little space here and I’ll create a new object literal and now that we understand function expressions, I can do something that we haven’t done before inside an object literal. I can create a method. Remember, if the value is a primitive, it’s called a property. And if the value a function, it’s called a method. So, I’ll create a name-value pair. I’ll just call it name, so we can recognize the object and I’ll call it the c object and then a comma and I’ll create a method. I’ll do log: so that’s the name and then the value I want to create a function object. So, I’ll just use a function expression. An anonymous function, no name and then I’ll console.log this and then I’ll call c.log So now I can invoke the function that was created inside this object literal, which is attached to this log. So this is the log method of the object c. See that? What will this turn out to be? Remember every time a function is invoked, a new execution context is created and the JavaScript engine decides what that keyword, the keyword this should be pointing to. In these other cases, it was the window object. But in this case, it’s a method on an object and that means, see that there at the bottom? In the case where a function is actually a method attached to an object, this keyword becomes the object that that method is sitting inside of c. See that? These functions, this keyword. The JavaScript engine said, you’re attached to an object. So when you see, when you use the this keyword I’m going to be pointing at that very object that contains you. So I could actually say, this.name = ‘Updated c object’ And then when this is logged, see that? I changed that property on this parent object, the object that holds the function. So that’s useful. I can mutate that is change the object, that contains me if I’m a method of that object by using of this keyword. You can imagine that can be very useful to be able to access other properties and methods on the same object that a particular method lives on. This is very common to use and it’s neat. Now there’s one more thing to show you and this a lot of people feel is a bug in JavaScript. Now you might be saying, what do you mean a bug in JavaScript? Well, JavaScript is a programming language and the engines and the language was designed by people and so decisions were made about how things should work. And in this one case, this decision a lot of people feel is wrong. Let me show you. Let’s suppose that I create a function inside this method, we can do that right. I’m gonna call it setname, I’ll use a variable and I’ll set a function expression. This time, I’ll pass a variable to my function. Let’s say, new name. I can do that. And inside here, I’m gonna say this.name = newname. So, I’m trying to update or mutate my object with this newname. And then let’s say that here, I’m going to go ahead and call setname and I’ll say ‘Updated again! The c object’) and then console.log(this) again. So I mutate it and I should see ‘Updated c object’. I create a function that also, well when executed, create a new execution context. And I would expect, personally that this keyword would still point to the containing object, because it’s a function inside of a function, inside of an object. And since this keyword points to the object, I would expect, well, one more function down and it’ll still point to the object and I can mutate it, change it. So I would expect that after calling this setname function, I’ll see updated again the c object as the name on that second console.log. Let’s try it. Well, that’s a problem. “Updated c object” and Updated c object”. Meaning, this ran, but this didn’t seem to do anything or did it. Oh, let’s try going back and taking a look at the window object, the global object. And if I take a good look, look at that. See that? That name property here was instead created and added by the equals operator on the global object. That means that this internal function, when its execution context was created, the this key word points to the global object, even though it’s sitting kind of inside an object that I created. I think that’s wrong and a lot of people do, but that’s the way JavaScript works in this case and there’s not a lot we can do about it at this point. So what can we do when I have this kind of scenario? To make sure that I’m using the right object. That this keyword isn’t causing me to make an unintended error. Well there’s a very common pattern that we can use in this case. And we’ll understand it because We understand that objects are set by reference. Now that we understand that, we can understand this pattern. I can simply say I’m going to set a variable. I’ll call it self. Some people call it that, but I like self. Because I’m inside this object. And I’m going to set that equal to this. It was the very first line of my object method. So what happened right here? Well, now we have a new variable called self, and since these are objects, it’s going to be set equal to by reference. So self will be pointing at the same location in memory as the this keyword. And right now, the this keyword on this line of code is pointing to my whole object. And then for sanity’s sake, we simply use self everywhere where we normally would have used this, even inside these sub-functions. That way I don’t have to think about, am I pointing to the right object? This is still pointing. The self variable is still pointing to the same location in memory as this. So when I mutate it, when I change it, when I add something to it or change it or whatever, it’s going to update the appropriate thing, in this case, my whole object. So self, I can log that, and then when I look at this new function that I created, and this gets executed right here. I don’t even worry about the this variable. I simply say self. So what’s going to happen? Well, self isn’t declared inside this function. So the JavaScript engine will look down the scope chain. Where is this function sitting physically in the code? Well, right inside here. So we can see that’ll it just go outside to the next area outside, the outer lexical reference, and look for it, a variable called self and it will find it. And so this right here, the self variable inside this function, will end up being this one here. And that’s still pointing to my whole object. So I can mutate my object here, as well. So now, this should show up properly. I have a proper reference to my object. And then I just use it from there on out, just for sanity’s sake, so I don’t have to think about it. And then I’ll mutate it, I’ll change it. And then I’ll create a function, and I’ll call that function and that will mutate the object. And I’ll put it again. So this time I should see, look at that. That’s proper. That’s what I expected. So what did we learn? We learned that no programming language is perfect. They all have their quirks, and JavaScript certainly isn’t an exception. But there are patterns we can use to get around any problems the programming language might have. Now I also wanna make mention that this pattern you’ll see very often if you’re working in any real-world JavaScript scenarios. However, the let keyword, which will be an alternative to the var keyword, is meant to clear some of these problems up. So as that becomes available in modern browsers, and depending on the kind of project you’re working on, if you’re working on a web project and you don’t have to worry about older browsers. That’s something that you’ll soon start to be able to use, and bonus lectures in this course will help with that, as time goes on. But for now, realize that this pattern is a good one. It is used quite often and is quite useful. So we’ve seen the this key word. It’s the global variable, or the global object, when just invoking a function like this. And when the function is a method of an object, the this keyword points to the object. However, any internal functions have a problem. So we can use this concept of setting a variable equal to this, and then just carrying that with us the rest of the way to make sure that we don’t run across any unintentional errors, or somehow throw things onto the global object that we didn’t mean to. All right, let’s move on.]]></summary></entry></feed>
+</ul>]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[Asynchronous what is asynchronous in javascript? In javascript there is the execution stack and the event cue, as soon as the execution task is empty, the event queue is entered]]></summary></entry><entry><title type="html">Control Flow</title><link href="http://localhost:4000/javascript/2022/07/28/Control-Flow.html" rel="alternate" type="text/html" title="Control Flow" /><published>2022-07-28T00:00:00-07:00</published><updated>2022-07-28T00:00:00-07:00</updated><id>http://localhost:4000/javascript/2022/07/28/Control-Flow</id><content type="html" xml:base="http://localhost:4000/javascript/2022/07/28/Control-Flow.html"><![CDATA[]]></content><author><name></name></author><category term="JavaScript" /><summary type="html"><![CDATA[]]></summary></entry></feed>
