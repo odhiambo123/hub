@@ -5,7 +5,8 @@ date: 2022-07-30
 categories: CSS
 ---
 
-# CSS
+                                                            ![image](https://user-images.githubusercontent.com/8829018/183012948-134c0e05-732a-431c-a5bc-309d964cf49a.png)
+
 
 - CSS stands for Cascading Style Sheets
 - It's used to style HTML pages
