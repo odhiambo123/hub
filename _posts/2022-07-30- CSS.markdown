@@ -152,8 +152,8 @@ p,.description {
 - The first of these are shorthand properties
 - The `border` property takes values for (in order) the border width, border style, and the color of the border
 - border width
-    - can be `thin`, `medium`, `thick`, a relative size, or an absolute size
-    - it can take multiple values in an analogous way to the `margin` property
+    - Can be `thin`, `medium`, `thick`, a relative size, or an absolute size
+    - It can take multiple values in an analogous way to the `margin` property
 - border style
     - required
     - determines the line style of the border
@@ -166,26 +166,30 @@ p,.description {
 
 ### Styling Padding
 
-- we specify padding through one or more of the `padding`, `padding-bottom`, `padding-left`, `padding-right`, and/or `padding-top` properties
-- each of these properties functions analogously to the corresponding margin property and takes a width value
+- Specify padding through one or more of the 
+    - `padding`, 
+    - `padding-bottom`, 
+    - `padding-left`, 
+    - `padding-right`, and/or `padding-top` properties
+- Each of these properties functions analogously to the corresponding margin property and takes a width value
 
 ## Responsive Web Design
 
-- to make a webpage responsive, we implement styling so that the elements on the page adapt to the size of the screen being used to view them
+- To make a webpage responsive, we implement styling so that the elements on the page adapt to the size of the screen being used to view them
 - we can implement responsive web design by
-    - setting the `viewport` in our `<head>` element
-        - the viewport is a feature from HTML5 that allows us to tell the browser how to control the size and scale of the document based on the device being used to view it
-    - using `<picture>` tags for images
+    - Setting the `viewport` in our `<head>` element
+        - The viewport is a feature from HTML5 that allows us to tell the browser how to control the size and scale of the document based on the device being used to view it
+    - Using `<picture>` tags for images
         - within `<picture>` tags, we'll include `<source>` tags
         - `<source>` elements have a `media` attribute that we can use to set the minimum width allowed for a particular picture to display
-        - if the size of the screen is smaller than the specified width, the image will not render
+        - If the size of the screen is smaller than the specified width, the image will not render
     - relative styling, such as using percentages/em values for widths rather than absolute values and also using responsive layout systems
 
 ## Flexbox
 
 - Flexbox is a responsive container for holding our HTML elements
-- to use flexbox, we'll set the `display` property for an element to `flex`
-- then we can use various flexbox properties within, including
+- To use flexbox, we'll set the `display` property for an element to `flex`
+- Then we can use various flexbox properties within, including
     - `flex-direction`, which determines how our elements are rendered
         - can take values including `row` (which renders the elements in a row), `row-reverse` (which renders the elements in a row in the reverse of the order that they're defined), `column` (which displays the elements in a column), and `column-reverse` (which displays the elements in a columnh in the reverse of the order in which they're defined)
     - `flex-wrap`, which takes a value of `wrap` and will let our elements wrap to the next line when the end of the window is reached

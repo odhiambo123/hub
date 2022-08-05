@@ -162,7 +162,7 @@ let myObject = {
 - empty string
 - NaN
 - false
-they evaluate to falsein control flow
+they evaluate to false in control flow
 
 ### functions
 - 
