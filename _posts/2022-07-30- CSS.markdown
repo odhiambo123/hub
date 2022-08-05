@@ -127,7 +127,7 @@ p,.description {
 - The padding is spacing between the border and the content
 - The content is the text/images of our element
 
-<p align="center"><img src="./box_model.jpg"></p>
+![image](https://user-images.githubusercontent.com/8829018/183012667-53a8274e-3d07-4c8c-af58-7e3c4941d75e.png)
 
 - We can apply styling at each layer of the box model
 
