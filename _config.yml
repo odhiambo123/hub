@@ -22,7 +22,7 @@ title: HTML CSS Javascript
 email: 
 description: Understanding HTML, CSS AND JavaScript.
 baseurl: "/html/2022/07/30" # the subpath of your site, e.g. /blog
-url: "https://dancing-daffodil-8b301d.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Daudi3490
 github_username:  odhiambo123
 
