@@ -5,7 +5,7 @@ date: 2022-07-30
 categories: CSS
 ---
 
-![image](https://user-images.githubusercontent.com/8829018/183012948-134c0e05-732a-431c-a5bc-309d964cf49a.png)
+![image](https://user-images.githubusercontent.com/8829018/183013367-9c0f3838-649f-463f-8da5-20d3307c0327.png)
 
 
 - CSS stands for Cascading Style Sheets
