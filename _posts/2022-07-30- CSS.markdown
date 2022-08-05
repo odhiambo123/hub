@@ -26,7 +26,7 @@ div {
 
 ## CSS Selectors
 
-- When writing a selector, we can select by tag, class, id, and/or by other attributes
+- When writing a selector, we can select by `tag`, `class`, `id`, and/or by other attributes
 - For tag selectors, we'll just use the name of the corresponding tag to select all elements with the specified tag, e.g.
 
 ```css
@@ -35,7 +35,7 @@ div {
 }
 ```
 
-- For class selectors, we'll prefix the class name with a period to select all elements with the provided class
+- For `class` selectors, we'll prefix the class name with a period `.` to select all elements with the provided class
 
 ```css
 .input {
@@ -43,7 +43,7 @@ div {
 }
 ```
 
-- For id selectors, we'll prefix the id name with a hashtag to select the element with the specified id
+- For `id` selectors, we'll prefix the id name with a hashtag `#` to select the element with the specified id
 
 ```css
 #checkbox {
@@ -51,7 +51,7 @@ div {
 }
 ```
 
-- To select by additional attributes, we can specify the attribute name-value pair in square brackets
+- To select by additional attributes, we can specify the attribute name-value pair in square brackets `[]`
     - e.g. to select all paragraph elements that are centered,
 
 ```css
@@ -99,24 +99,24 @@ p,.description {
 ```
 
 - We specify internal CSS by including a `<style>` element within our page's `<head>`
-    - this will have the same appearance as external CSS (i.e. we'll have rulesets with selectors followed by curly braces containing declarations)
+    - This will have the same appearance as external CSS (i.e. we'll have rulesets with selectors followed by curly braces containing declarations)
 - We specify external CSS by creating a `.css` file and providing a relative path to that file in the `<link>` element of our page's `<head>`
     - Within the CSS file, we'll have rulesets with selectors followed by curly braces containing declarations
 
 ## CSS Specificity
 
-- Oftentimes, a single element in our HTML will be matched by multiple different rulesets
-- so we need a way to determine which ruleset will take precedence and have its declarations applied to the element
-- any element that contains inline styling will have those declarations applied to it - inline styling takes precedence over internal and external styling in all cases
-- to determine precedence between internal and external rulesets, we calculate the specifity as follows through a three-column calculation
-    - the first column is the number of `id` values in the selector that the element matches
-    - the second column is the number of classes and attribute selectors in the selector that the element matches
-    - the third column is the number of tag selectors that the element matches
-- once the specificity score is calculated, it's evaluated from left to right
-    - so the ruleset with the highest value for the first column will take precedence
-    - if there's a tie in the first column, the ruleset with the highest value in the second column will take precedence
-    - if there's a tie in the first two columns, the ruleset with the highest value for the third column will take precedence
-    - if multiple rulesets have the same value for all three columns, the ruleset that's declared last will take precedence
+- Often times, a single element in our HTML will be matched by multiple different rulesets
+- So we need a way to determine which ruleset will take precedence and have its declarations applied to the element
+- Any element that contains inline styling will have those declarations applied to it - inline styling takes precedence over internal and external styling in all cases
+- To determine precedence between internal and external rulesets, we calculate the specificity as follows through a three-column calculation
+    - First column is the number of `id` values in the selector that the element matches
+    - Second column is the number of classes and attribute selectors in the selector that the element matches
+    - Third column is the number of tag selectors that the element matches
+- Once the specificity score is calculated, it's evaluated from left to right
+    - The ruleset with the highest value for the first column will take precedence
+    - If there's a tie in the first column, the ruleset with the highest value in the second column will take precedence
+    - If there's a tie in the first two columns, the ruleset with the highest value for the third column will take precedence
+    - If multiple rulesets have the same value for all three columns, the ruleset that's `declared last` will take precedence
 
 ## The Box Model
 
