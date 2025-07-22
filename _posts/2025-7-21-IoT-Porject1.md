@@ -2,7 +2,7 @@
 layout: post
 title: "IoT Tutorial"
 date: 2025-07-20
-categories: [iot, tutorial, v2]
+categories: [blog/IoT/]
 ---
 
 Let's craft a comprehensive tutorial on using Python for IoT projects, focusing on practical applications. We'll cover key concepts, essential libraries, and a hands-on example.

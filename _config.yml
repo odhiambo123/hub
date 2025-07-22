@@ -18,11 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: HTML CSS Javascript and Python
-description: A blog about HTML, CSS, JavaScript and Python.
-author: Daudi Odhiambo
-email: end.david.odhi@gmail.com
-description: Understanding HTML, CSS, JavaScript and Python.
+title: Web Development and Programming Blog
+description: A blog about web development and programming.
+author: David Odhiambo
+email: eng.david.odhi@gmail.com
+description: Understanding web development and programming.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  odhiambo123
@@ -40,6 +40,9 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
+# Permalink structure
+# This is the permalink structure for your posts. You can customize it as needed
+permalink: /:categories/:year/:month/:day/:title/
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
@@ -51,3 +54,46 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+# ... other Jekyll configurations ...
+
+# Define your main navigation menu here
+menu:
+  - title: Home
+    url: /
+  #- title: About
+  #  url: /about.html
+  - title: Blog # This will be a dropdown parent
+    url: /blog/ # Link to the main blog page
+    subitems:
+      - title: Category JavaScript
+        url: blog/javascript/
+      - title: Category Python
+        url: /blog/python/
+      - title: Category HTML
+        url: /blog/html/
+      - title: Category CSS
+        url: /blog/css/
+      - title: Category IoT
+        url: /blog/iot/
+      - title: Category Bash
+        url: /blog/bash/
+      - title: Category Microservices
+        url: /blog/microservices/
+      - title: Category Docker
+        url: /blog/docker/
+      - title: Category Kubernetes
+        url: /blog/kubernetes/
+      - title: Category DevOps
+        url: /blog/devops/
+      - title: Category Cloud-Computing
+        url: /blog/cloud-computing/
+      - title: Category AI
+        url: /blog/ai/
+      - title: Category Web-Development
+        url: /blog/web-development/
+      - title: Archives
+        url: /blog/archives/
+  #- title: Services
+  #  url: /services.html
+  - title: Contact
+    url: /contact.html

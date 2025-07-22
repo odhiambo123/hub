@@ -2,7 +2,7 @@
 layout: post
 title: "HTML"
 date: 2022-07-30
-categories: [html]
+categories: [blog/HTML/]
 ---
 
 You're about to dive into the foundational language of the web\! HTML (HyperText Markup Language) is the backbone of every webpage you've ever visited. It provides the structure and content, telling the browser what elements are on the page.

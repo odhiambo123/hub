@@ -2,7 +2,7 @@
 layout: post
 title: "Asynchronous in Javascript"
 date: 2022-07-28
-categories: [javaScript asynchronous]
+categories: [blog/javaScript/]
 ---
 
 ### Asynchronous 

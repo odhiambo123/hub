@@ -2,7 +2,7 @@
 layout: post
 title: "Operator Precedence"
 date: 2020-07-28 18:06
-categories: [javaScript]
+categories: [blog/javaScript/]
 ---
 
 - Operators are special functions

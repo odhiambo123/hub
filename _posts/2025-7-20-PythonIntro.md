@@ -2,7 +2,7 @@
 layout: post
 title: "Python Tutorial Outline"
 date: 2025-07-20
-categories: [python schedule]
+categories: [blog/python/]
 ---
 
 ### **Python Tutorial Outline**

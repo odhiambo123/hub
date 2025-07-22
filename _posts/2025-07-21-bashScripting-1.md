@@ -2,7 +2,7 @@
 layout: post
 title: "Bash 1" 
 date: 2025-07-21
-categories: [bash scripting tutorials]
+categories: [blog/bash/]
 ---
 Let's get you started with a comprehensive tutorial on Bash scripting\! Bash is a powerful command processor that runs in a text window, allowing you to automate tasks and interact with your operating system in a highly efficient way.
 

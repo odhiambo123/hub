@@ -2,7 +2,7 @@
 layout: post
 title: "Keyword This"
 date: 2025-7-20
-categories: [javaScript]
+categories: [blog/javaScript/]
 ---
 
 ## Table of Contents

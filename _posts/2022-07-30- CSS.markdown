@@ -2,7 +2,7 @@
 layout: post
 title: "CSS"
 date: 2022-07-30
-categories: [css]
+categories: [blog/CSS/]
 ---
 
 A comprehensive tutorial on CSS would be a small book\! However, I can give you a very thorough and complete introduction to CSS, covering all the fundamental concepts you need to get started and understand how styles are applied. This will include syntax, selectors, properties, the box model, positioning, flexbox, and responsiveness.

@@ -2,7 +2,7 @@
 layout: post
 title: "Functions"
 date: 2018-07-28
-categories: [javaScript]
+categories: [blog/javaScript/]
 ---
 
  Objects and Functions.

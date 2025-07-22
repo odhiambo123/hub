@@ -2,7 +2,7 @@
 layout: post
 title: "Keyword - 'This' "
 date: 2018-12-14
-categories: [javaScript]
+categories: [blog/javaScript/]
 ---
 
 

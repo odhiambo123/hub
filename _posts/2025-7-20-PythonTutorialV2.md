@@ -2,7 +2,7 @@
 layout: post
 title: "Python Tutorial V2"
 date: 2025-07-20
-categories: [python, tutorial, v2]
+categories: [blog/python/]
 ---
 
 # **Python Tutorial: From Beginner to Advanced**

@@ -2,7 +2,7 @@
 layout: post
 title: "Python Complete Tutorial" 
 date: 2025-07-20
-categories: [python complete tutorial]
+categories: [blog/python/]
 ---
 
 ### Step 1: Create the Basic Structure

@@ -2,7 +2,7 @@
 layout: post
 title: "Recap"
 date: 2022-07-29
-categories: [general]
+categories: [blog/Web-Development/]
 ---
 
 You're embarking on a fundamental journey in web development\! Understanding how HTML, CSS, and JavaScript work together is key to building dynamic and interactive websites. Think of them as three distinct but essential layers:
