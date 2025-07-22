@@ -55,6 +55,12 @@ permalink: /:categories/:year/:month/:day/:title/
 #   - vendor/gems/
 #   - vendor/ruby/
 # ... other Jekyll configurations ...
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+paginate: 10 # Number of posts per page
+paginate_path: "/blog/page:num" # Pagination path
 
 # Define your main navigation menu here
 menu:
