@@ -2,53 +2,131 @@
 layout: post
 title: "Functions"
 date: 2018-07-28
-categories: JavaScript
+categories: [javaScript]
 ---
 
  Objects and Functions.
 
-![image](/image.PNG)
+### 1. **Objects as Collections of Name-Value Pairs**
+An object is essentially a collection of name-value pairs where each value can be another collection of name-value pairs. This nesting allows for complex data structures to be built using simple building blocks like primitives and other objects.
 
-- In Javascript Objects and functions are related in many ways.
-- Objects are collections of name value pairs and those values can then be other collections of name value pairs.
-- An object can have properties and methods as values, and these can be primitives like boolean, number or a string.
-- An object could also have another object connected to it as a child, so to speak.And this is also considered a property
-- An object can also contain functions and in those cases the function is called a method when it's sitting on the object.
-- It's still a function, but it's connected to an object and so it's called a method.So objects have properties and methods.And these sit in memory so the object will have some sort of address in your computer's memory.And it will have references to these different properties and methods which are also sitting in your computer's memory.
-- Now they may be related to the address of that base object concept, or they may not.But either way the object has references to the addresses or the space or the spots where these different properties and methods live.
-- So think about about an object as sitting in memory, and then having reference to other things sitting in memory that are connected to it.
-- So it knows where its different properties and methods are, that is,primitives, objects, and function that make it up
+**Example:**
+```javascript
+// A basic object with string, number, boolean properties.
+let obj = {
+  name: "John Doe",
+  age: 30,
+  isStudent: false // Another nested object!
+};
 
+// The `isStudent` property can be another object:
+obj.isStudent = {
+  university: "Harvard University",
+  enrolled: true
+};
+```
 
-    ```js
-    function nameOfFunction() {
-    
-    }
-    ```
+### 2. **Properties Can Be Primitives, Objects, or Functions**
+An object’s properties can hold values of different types:
 
-    - we can also assign functions as values to variables or the value for a key in an object
+- **Primitives:** Numbers, strings, booleans.
+- **Objects:** Nested objects containing more name-value pairs.
+- **Functions:** Either as standalone functions or methods attached to an object.
 
-    ```js
-    let a = function() {
+**Example:**
+```javascript
+// Object with a mix of primitives and nested objects:
+let mixedObj = {
+  num1: 42,
+  str: "Hello, world!",
+  otherObject: { 
+    propA: [1, 2, 3], // Array is another type!
+    funcRef: () => {} // Function reference
+  }
+};
 
-    }
+// Accessing properties:
+console.log(mixedObj.num1); // Output: 42
+console.log(mixedObj.str);   // Output: "Hello, world!"
+console.log(mixedObj.otherObject.propA[0]); // Output: 1
 
-    let b = () => {
+// Functions as object properties (methods):
+let objWithMethods = {
+  greet: () => { console.log("Hello!"); },
+  addNums: (a, b) => a + b
+};
 
-    }
+objWithMethods.greet(); // Outputs: "Hello!"
+```
 
-    a();
-    b();
-    ```
+### 3. **Functions Are Properties of Objects**
+In JavaScript, functions are objects and can be assigned as properties of other objects.
 
-- we can write immediately invoked functions - functions that are executed as soon as the line of code that declares them is reached
+**Example:**
+```javascript
+// Function references:
+let obj = {};
+obj.addNumbers = (a, b) => a + b;
+console.log(obj.addNumbers(2, 3)); // Outputs: 5
 
-    ```js
-    (function() {
-    
-    })();
-    
-    (() => {
-    
-    })();
-    ```
+// Adding methods dynamically using Object.defineProperty():
+Object.defineProperty(obj, 'logMessage', {
+  type: 'function',
+  normalizer: function(value) { return value.toUpperCase(); }
+});
+
+obj.logMessage("Hello"); // Outputs: "HELLO"
+```
+
+### 4. **Methods Are Function Properties**
+When you attach a function to an object’s property name (like `obj.methodName`), it becomes a method of that object.
+
+**Example:**
+```javascript
+// Object with methods attached as properties:
+let obj = {
+  // Method stored in the 'method' property.
+  method: () => { console.log("Method called!"); }
+};
+
+obj.method(); // Outputs: "Method called!"
+```
+
+### 5. **Objects and Their Memory Addresses**
+In JavaScript, objects are stored in memory with their own unique addresses (like pointers). They can reference other properties or methods located at different memory locations.
+
+**Example:**
+```javascript
+// Two separate objects referencing the same string:
+let obj1 = { a: "hello" };
+let obj2 = { a: "hello" };
+
+console.log(obj1.a === obj2.a); // Outputs: false (they are distinct instances)
+```
+
+### 6. **Nested Objects Are Common**
+Objects can contain other objects as properties, creating nested structures.
+
+**Example:**
+```javascript
+// A deeply nested object:
+let data = {
+  person: {
+    name: "Alice",
+    age: 30,
+    friends: [
+      { id: 1, name: "Bob" },
+      { id: 2, name: "Charlie" }
+    ]
+  }
+};
+
+console.log(data.friends[0].id); // Outputs: 1
+```
+
+### Summary of Key Points:
+- Objects in JavaScript are collections of properties that can hold primitives (numbers, strings), other objects, or functions.
+- Functions themselves are a type of property and can be stored as methods on an object when accessed using the method name syntax (`obj.methodName`).
+- These nested structures allow for complex data organization but remain manageable because each reference is stored in memory with its own address.
+
+By understanding how properties (including primitives, objects, and functions) relate to one another within a JavaScript object, you can build more sophisticated programs that leverage these relationships.

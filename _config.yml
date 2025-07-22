@@ -18,16 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: HTML CSS Javascript
-email: 
-description: Understanding HTML, CSS AND JavaScript.
-baseurl: "" # the subpath of your site, e.g. /blog
+title: HTML CSS Javascript and Python
+description: A blog about HTML, CSS, JavaScript and Python.
+author: Daudi Odhiambo
+email: end.david.odhi@gmail.com
+description: Understanding HTML, CSS, JavaScript and Python.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: Daudi3490
+twitter_username: 
 github_username:  odhiambo123
 
 # Build settings
-theme: minima
+theme: minima # The theme you want to use for your site. You can find themes at
 plugins:
   - jekyll-feed
 

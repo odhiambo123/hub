@@ -1,5 +1,31 @@
-_site
-.sass-cache
-.jekyll-cache
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-vendor
+
+# Bundler dependencies
+.bundle/
+vendor/
+
+# Ruby gems
+*.gem
+*.rbc
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Node (if using JS or Tailwind in Jekyll)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment files (if any)
+.env
+.env.*
