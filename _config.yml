@@ -42,7 +42,7 @@ plugins:
 #
 # Permalink structure
 # This is the permalink structure for your posts. You can customize it as needed
-permalink: /:categories/:year/:month/:day/:title/
+# permalink: /:categories/:year/:month/:day/:title/
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
@@ -57,7 +57,7 @@ permalink: /:categories/:year/:month/:day/:title/
 # ... other Jekyll configurations ...
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
+  # jekyll-seo-tag
   - jekyll-paginate
 paginate: 10 # Number of posts per page
 paginate_path: "/blog/page:num" # Pagination path
