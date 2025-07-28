@@ -21,7 +21,6 @@ permalink: /blog/ # This is crucial to make this page accessible at /blog/
   {% endfor %}
 </ul>
 
-{# Add pagination links if you have many posts #}
 {% if paginator.total_pages > 1 %}
   <div class="pagination">
     {% if paginator.previous_page %}
