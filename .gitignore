@@ -9,7 +9,7 @@ Thumbs.db
 # ignore virtual environments
 .env
 .venv
-.hubvenv
+./hubvenv
 
 
 
