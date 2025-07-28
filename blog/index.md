@@ -4,9 +4,6 @@ title: Blog Posts
 permalink: /blog/ # This is crucial to make this page accessible at /blog/
 ---
 
-{# You might put some introductory content here #}
-<h1>My Latest Blog Posts</h1>
-
 <ul class="post-list">
   {% for post in site.posts %}
     <li>
