@@ -35,8 +35,6 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "webrick", "~> 1.8"
 # paginate
 gem "jekyll-paginate", "~> 1.1.0"
-#logs
-gem "jekyll-logger", "~> 1.0"
 # SEO
 gem "jekyll-seo-tag", "~> 2.7.0"
 

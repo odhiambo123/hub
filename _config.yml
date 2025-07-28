@@ -59,7 +59,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
-  - jekyll-logger
 
 paginate: 10 # Number of posts per page
 paginate_path: "/blog/page:num" # Pagination path
