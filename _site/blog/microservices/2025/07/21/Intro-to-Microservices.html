@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Intro to Microservices | Web Development and Programming Blog</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Intro to Microservices" />
+<meta name="author" content="David Odhiambo" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Microservices are a hot topic in software development, and for good reason. They offer significant advantages for scalability, flexibility, and team autonomy. Here’s a comprehensive tutorial on microservices, designed to be accessible for those new to the concept while providing enough depth for practical understanding." />
+<meta property="og:description" content="Microservices are a hot topic in software development, and for good reason. They offer significant advantages for scalability, flexibility, and team autonomy. Here’s a comprehensive tutorial on microservices, designed to be accessible for those new to the concept while providing enough depth for practical understanding." />
+<link rel="canonical" href="http://localhost:4000/blog/microservices/2025/07/21/Intro-to-Microservices.html" />
+<meta property="og:url" content="http://localhost:4000/blog/microservices/2025/07/21/Intro-to-Microservices.html" />
+<meta property="og:site_name" content="Web Development and Programming Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-07-21T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Intro to Microservices" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/blog/microservices/2025/07/21/Intro-to-Microservices.html","@type":"BlogPosting","headline":"Intro to Microservices","dateModified":"2025-07-21T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/microservices/2025/07/21/Intro-to-Microservices.html"},"datePublished":"2025-07-21T00:00:00-07:00","description":"Microservices are a hot topic in software development, and for good reason. They offer significant advantages for scalability, flexibility, and team autonomy. Here’s a comprehensive tutorial on microservices, designed to be accessible for those new to the concept while providing enough depth for practical understanding.","author":{"@type":"Person","name":"David Odhiambo"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Web Development and Programming Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/">Web Development and Programming Blog</a>
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger">
+        <span class="menu-icon">
+          <svg viewBox="0 0 18 15" width="18px" height="15px">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+          </svg>
+        </span>
+      </label>
+
+      <div class="trigger">
+        <ul class="main-menu"><li 
+                >
+              <a class="page-link " href="/">Home</a></li><li 
+                class="menu-item-has-children">
+              <a class="page-link dropbtn" href="/blog/">Blog</a><ul class="sub-menu"><li >
+                      <a class="sub-page-link" href="/blog/javascript/">Category JavaScript</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/python/">Category Python</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/html/">Category HTML</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/css/">Category CSS</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/iot/">Category IoT</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/bash/">Category Bash</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/microservices/">Category Microservices</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/docker/">Category Docker</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/kubernetes/">Category Kubernetes</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/devops/">Category DevOps</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/cloud-computing/">Category Cloud-Computing</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/ai/">Category AI</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/web-development/">Category Web-Development</a>
+                    </li></ul></li><li 
+                >
+              <a class="page-link " href="/contact.html">Contact</a></li></ul>
+      </div>
+    </nav>
+  </div>
+</header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Intro to Microservices</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-07-21T00:00:00-07:00" itemprop="datePublished">Jul 21, 2025
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Microservices are a hot topic in software development, and for good reason. They offer significant advantages for scalability, flexibility, and team autonomy. Here’s a comprehensive tutorial on microservices, designed to be accessible for those new to the concept while providing enough depth for practical understanding.</p>
+
+<hr />
+
+<h2 id="microservices-a-comprehensive-tutorial">Microservices: A Comprehensive Tutorial</h2>
+
+<h3 id="introduction-the-evolution-of-software-architecture"><strong>Introduction: The Evolution of Software Architecture</strong></h3>
+
+<p>Before diving into microservices, it’s essential to understand why they emerged. For many years, the <strong>Monolithic Architecture</strong> was the dominant approach.</p>
+
+<ul>
+  <li><strong>Monolithic Architecture:</strong>
+    <ul>
+      <li><strong>Definition:</strong> A single, large, indivisible unit of code that contains all the application’s functionalities. All components (UI, business logic, data access, etc.) are tightly coupled and run as a single process.</li>
+      <li><strong>Analogy:</strong> Think of a large, single-block building where all offices, living spaces, and utilities are interconnected and share the same foundation.</li>
+      <li><strong>Pros:</strong>
+        <ul>
+          <li>Simpler to develop initially (especially for small teams/projects).</li>
+          <li>Easier to deploy (one executable/WAR file).</li>
+          <li>Simpler testing (one unit).</li>
+        </ul>
+      </li>
+      <li><strong>Cons:</strong>
+        <ul>
+          <li><strong>Scalability:</strong> Hard to scale individual components. The entire application must be scaled, even if only one part needs more resources.</li>
+          <li><strong>Maintainability:</strong> Codebase grows large and complex, making it harder to understand and modify.</li>
+          <li><strong>Technology Lock-in:</strong> Difficult to adopt new technologies or frameworks without rewriting large parts of the application.</li>
+          <li><strong>Deployment:</strong> Small changes require redeploying the entire application, leading to longer deployment cycles and higher risk.</li>
+          <li><strong>Team Autonomy:</strong> Teams often step on each other’s toes in a shared codebase.</li>
+          <li><strong>Fault Tolerance:</strong> A single bug or failure can bring down the entire application.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="what-are-microservices"><strong>What are Microservices?</strong></h3>
+
+<p>The microservices architecture emerged as a response to the challenges of monolithic systems, particularly as applications grew in scale and complexity.</p>
+
+<ul>
+  <li><strong>Definition:</strong> An architectural style that structures an application as a collection of loosely coupled, independently deployable services. Each service typically focuses on a single business capability.</li>
+  <li><strong>Analogy:</strong> Imagine a city made of many smaller, specialized buildings. Each building has its own purpose (a restaurant, a library, a school), its own staff, and can be built, renovated, or demolished independently without affecting the others, as long as the roads (APIs) between them remain consistent.</li>
+  <li><strong>Key Characteristics:</strong>
+    <ol>
+      <li><strong>Small and Focused:</strong> Each service does one thing and does it well (Single Responsibility Principle).</li>
+      <li><strong>Loosely Coupled:</strong> Services interact via well-defined APIs (Application Programming Interfaces), usually over HTTP/REST or message queues. Changes in one service ideally don’t break others.</li>
+      <li><strong>Independently Deployable:</strong> Each service can be built, tested, and deployed independently of other services. This allows for continuous delivery.</li>
+      <li><strong>Decentralized Data Management:</strong> Each service typically manages its own database, optimized for its specific needs. No shared database across services.</li>
+      <li><strong>Technology Heterogeneity:</strong> Different services can be written in different programming languages and use different technologies (e.g., one service in Python, another in Java, another in Node.js).</li>
+      <li><strong>Resilience/Fault Isolation:</strong> A failure in one service ideally doesn’t cascade and bring down the entire application.</li>
+      <li><strong>Automation Friendly:</strong> Requires a strong emphasis on automation for deployment, monitoring, and scaling.</li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="when-to-choose-microservices-and-when-not-to"><strong>When to Choose Microservices (and When Not To)</strong></h3>
+
+<p>Microservices aren’t a silver bullet. They introduce their own set of complexities.</p>
+
+<p><strong>Good Fit For:</strong></p>
+
+<ul>
+  <li>Large, complex applications with many distinct business capabilities.</li>
+  <li>Applications requiring high scalability for specific components.</li>
+  <li>Large development teams that can be organized into small, autonomous units.</li>
+  <li>Organizations aiming for continuous delivery and rapid iteration.</li>
+  <li>Situations where different technologies are truly advantageous for specific components.</li>
+</ul>
+
+<p><strong>Not a Good Fit For:</strong></p>
+
+<ul>
+  <li>Small, simple applications that don’t anticipate significant growth.</li>
+  <li>Small development teams (1-5 people) where the overhead outweighs the benefits.</li>
+  <li>Projects with tight deadlines where initial development speed is paramount.</li>
+  <li>When a strong DevOps culture and automation expertise are lacking.</li>
+</ul>
+
+<h3 id="core-concepts--components-in-a-microservices-architecture"><strong>Core Concepts &amp; Components in a Microservices Architecture</strong></h3>
+
+<ol>
+  <li><strong>Service:</strong> The fundamental building block, encapsulating a single business capability.</li>
+  <li><strong>API Gateway:</strong>
+    <ul>
+      <li><strong>Purpose:</strong> A single entry point for clients (web browsers, mobile apps) to access various microservices. It acts as a reverse proxy.</li>
+      <li><strong>Functions:</strong> Authentication/Authorization, routing requests to the correct service, rate limiting, load balancing, caching, API composition (aggregating responses from multiple services).</li>
+      <li><strong>Tools:</strong> Nginx, Zuul (Netflix), Spring Cloud Gateway, Kong, Apigee.</li>
+    </ul>
+  </li>
+  <li><strong>Inter-Service Communication:</strong> How services talk to each other.
+    <ul>
+      <li><strong>Synchronous:</strong>
+        <ul>
+          <li><strong>RESTful APIs (HTTP/JSON):</strong> Most common. Simple, widely understood. Each service exposes endpoints that other services can call.</li>
+          <li><strong>gRPC:</strong> High-performance, language-agnostic RPC (Remote Procedure Call) framework. Uses Protocol Buffers for efficient serialization.</li>
+        </ul>
+      </li>
+      <li><strong>Asynchronous:</strong>
+        <ul>
+          <li><strong>Message Queues/Brokers:</strong> Services publish messages to a queue, and other services consume them. Decouples sender and receiver. Good for long-running tasks, event-driven architectures.</li>
+          <li><strong>Tools:</strong> RabbitMQ, Apache Kafka, Amazon SQS, Google Pub/Sub, Azure Service Bus.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Service Discovery:</strong>
+    <ul>
+      <li><strong>Problem:</strong> Services are constantly being deployed, scaled up/down, and moved. How do clients/other services find the current network location of a service instance?</li>
+      <li><strong>Solution:</strong> A service discovery mechanism.
+        <ul>
+          <li><strong>Client-Side Discovery:</strong> Client queries a service registry (e.g., Consul, Eureka) to get service instances and then load-balances.</li>
+          <li><strong>Server-Side Discovery:</strong> Router/load balancer queries the service registry and forwards the request.</li>
+        </ul>
+      </li>
+      <li><strong>Tools:</strong> Consul, Eureka (Netflix), etcd, Kubernetes built-in service discovery.</li>
+    </ul>
+  </li>
+  <li><strong>Centralized Logging:</strong>
+    <ul>
+      <li><strong>Problem:</strong> Logs are scattered across many independent services.</li>
+      <li><strong>Solution:</strong> Aggregate logs into a central system for analysis, monitoring, and debugging.</li>
+      <li><strong>Tools:</strong> ELK Stack (Elasticsearch, Logstash, Kibana), Splunk, Datadog.</li>
+    </ul>
+  </li>
+  <li><strong>Distributed Tracing:</strong>
+    <ul>
+      <li><strong>Problem:</strong> A single user request might traverse multiple services. How do you trace its path and identify bottlenecks?</li>
+      <li><strong>Solution:</strong> Assign a unique ID to each request and pass it along as it hops between services.</li>
+      <li><strong>Tools:</strong> Jaeger, Zipkin, OpenTelemetry.</li>
+    </ul>
+  </li>
+  <li><strong>Monitoring &amp; Alerting:</strong>
+    <ul>
+      <li><strong>Problem:</strong> Need to track the health, performance, and resource usage of individual services.</li>
+      <li><strong>Solution:</strong> Collect metrics (CPU, memory, latency, error rates) from all services.</li>
+      <li><strong>Tools:</strong> Prometheus, Grafana, Datadog, New Relic.</li>
+    </ul>
+  </li>
+  <li><strong>Containerization &amp; Orchestration:</strong>
+    <ul>
+      <li><strong>Purpose:</strong> Package services with their dependencies into isolated containers, and then manage (deploy, scale, network) these containers.</li>
+      <li><strong>Containers:</strong> Docker</li>
+      <li><strong>Orchestration:</strong> Kubernetes, Docker Swarm</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="designing-microservices-key-principles"><strong>Designing Microservices: Key Principles</strong></h3>
+
+<ol>
+  <li><strong>Bounded Contexts (Domain-Driven Design - DDD):</strong> Identify natural boundaries for your services based on business domains. Each service should own its domain model and data.
+    <ul>
+      <li>Example: An “Order Service” handles everything related to orders, distinct from a “Customer Service.”</li>
+    </ul>
+  </li>
+  <li><strong>Single Responsibility Principle:</strong> Each service should do one thing and do it well. Avoid creating “god services.”</li>
+  <li><strong>Loose Coupling, High Cohesion:</strong> Services should be independent (loose coupling) but internally cohesive (their internal components work well together for their specific function).</li>
+  <li><strong>“Smart Endpoints, Dumb Pipes”:</strong> Services should contain their own logic. The communication mechanism (pipes) should be simple (e.g., raw HTTP, message queues) rather than having complex logic in the communication layer.</li>
+  <li><strong>Decentralized Governance:</strong> No single technology standard enforced across all services. Teams choose the best tool for their service.</li>
+  <li><strong>Fault Tolerance:</strong> Design services to handle failures gracefully (e.g., circuit breakers, retries, fallbacks).</li>
+</ol>
+
+<h3 id="refactoring-from-monolith-to-microservices"><strong>Refactoring from Monolith to Microservices</strong></h3>
+
+<p>This is a common journey for many organizations.</p>
+
+<ul>
+  <li><strong>Strangler Fig Pattern:</strong> Gradually extract functionalities from the monolith into new microservices. The monolith shrinks over time, “strangled” by the new services.
+    <ul>
+      <li><strong>Process:</strong>
+        <ol>
+          <li>Identify a cohesive business capability within the monolith.</li>
+          <li>Create a new microservice for that capability.</li>
+          <li>Redirect relevant traffic from the monolith to the new microservice (e.g., via the API Gateway).</li>
+          <li>Remove the extracted code from the monolith.</li>
+        </ol>
+      </li>
+      <li><strong>Benefit:</strong> Allows for incremental migration with less risk than a “big bang” rewrite.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="challenges-of-microservices"><strong>Challenges of Microservices</strong></h3>
+
+<p>It’s crucial to be aware of the complexities before adopting microservices.</p>
+
+<ol>
+  <li><strong>Increased Operational Overhead:</strong> More services mean more things to deploy, monitor, and manage. Requires robust DevOps.</li>
+  <li><strong>Distributed System Complexity:</strong>
+    <ul>
+      <li><strong>Network Latency:</strong> Communication between services adds overhead.</li>
+      <li><strong>Data Consistency:</strong> Maintaining eventual consistency across decentralized databases can be challenging.</li>
+      <li><strong>Distributed Transactions:</strong> Hard to implement atomic transactions across multiple services (often avoided in favor of eventual consistency and Sagas).</li>
+      <li><strong>Debugging:</strong> Tracing issues across many services is harder.</li>
+    </ul>
+  </li>
+  <li><strong>Testing:</strong> Integration testing across multiple services is more complex.</li>
+  <li><strong>Deployment:</strong> Requires sophisticated CI/CD pipelines.</li>
+  <li><strong>Security:</strong> More network endpoints to secure.</li>
+  <li><strong>Cost:</strong> Can be more expensive due to increased infrastructure and tooling.</li>
+  <li><strong>Team Structure:</strong> Requires highly autonomous and skilled teams.</li>
+</ol>
+
+<h3 id="practical-example-conceptual-an-e-commerce-application"><strong>Practical Example (Conceptual): An E-commerce Application</strong></h3>
+
+<p>Let’s imagine breaking down a monolithic e-commerce application:</p>
+
+<p><strong>Monolith:</strong>
+<code class="language-plaintext highlighter-rouge">E-commerce App (Single deployment)</code>
+    * User Management (authentication, profiles)
+    * Product Catalog (product details, inventory)
+    * Order Processing (cart, checkout, payment integration)
+    * Shipping &amp; Logistics
+    * Notifications (email, SMS)
+    * Reviews &amp; Ratings</p>
+
+<p><strong>Microservices:</strong></p>
+
+<ul>
+  <li><strong>User Service:</strong>
+    <ul>
+      <li>Responsibilities: User registration, login, profile management.</li>
+      <li>Data: User database.</li>
+    </ul>
+  </li>
+  <li><strong>Product Catalog Service:</strong>
+    <ul>
+      <li>Responsibilities: Managing product information, search, inventory updates.</li>
+      <li>Data: Product database.</li>
+    </ul>
+  </li>
+  <li><strong>Shopping Cart Service:</strong>
+    <ul>
+      <li>Responsibilities: Adding/removing items from cart, calculating totals.</li>
+      <li>Data: Cart contents database.</li>
+    </ul>
+  </li>
+  <li><strong>Order Service:</strong>
+    <ul>
+      <li>Responsibilities: Creating orders, processing payments (via Payment Gateway), managing order status.</li>
+      <li>Data: Order database.</li>
+    </ul>
+  </li>
+  <li><strong>Payment Gateway Service:</strong>
+    <ul>
+      <li>Responsibilities: Interface with external payment providers (Stripe, PayPal).</li>
+      <li>Data: Transaction logs.</li>
+    </ul>
+  </li>
+  <li><strong>Shipping Service:</strong>
+    <ul>
+      <li>Responsibilities: Calculating shipping costs, tracking shipments (via external APIs).</li>
+      <li>Data: Shipping details.</li>
+    </ul>
+  </li>
+  <li><strong>Notification Service:</strong>
+    <ul>
+      <li>Responsibilities: Sending emails (e.g., order confirmation), SMS messages.</li>
+      <li>Data: Notification templates, history.</li>
+    </ul>
+  </li>
+  <li><strong>Review Service:</strong>
+    <ul>
+      <li>Responsibilities: Managing product reviews and ratings.</li>
+      <li>Data: Review database.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>How they interact:</strong></p>
+
+<ol>
+  <li>A user accesses the <strong>API Gateway</strong>.</li>
+  <li>The <strong>API Gateway</strong> routes user registration to the <strong>User Service</strong>.</li>
+  <li>When a user views a product, the <strong>API Gateway</strong> routes to the <strong>Product Catalog Service</strong>.</li>
+  <li>Adding to cart involves the <strong>Shopping Cart Service</strong>.</li>
+  <li>Checkout might involve the <strong>API Gateway</strong> orchestrating calls to the <strong>Shopping Cart Service</strong> (get cart contents), <strong>Order Service</strong> (create order), <strong>Payment Gateway Service</strong> (process payment), and <strong>Shipping Service</strong> (calculate shipping).</li>
+  <li>The <strong>Order Service</strong> might then asynchronously send a message to the <strong>Notification Service</strong> to send an order confirmation email.</li>
+</ol>
+
+<h3 id="tools-and-technologies-brief-overview"><strong>Tools and Technologies (Brief Overview)</strong></h3>
+
+<ul>
+  <li><strong>Languages:</strong> Python (Flask, FastAPI), Java (Spring Boot), Node.js (Express), Go, C#.</li>
+  <li><strong>Frameworks:</strong> Spring Boot (Java), Flask/FastAPI (Python), Express (Node.js).</li>
+  <li><strong>Containerization:</strong> Docker</li>
+  <li><strong>Orchestration:</strong> Kubernetes, Docker Swarm</li>
+  <li><strong>API Gateways:</strong> Nginx, Envoy, Kong, Spring Cloud Gateway, AWS API Gateway.</li>
+  <li><strong>Service Discovery:</strong> Consul, Eureka, Kubernetes DNS.</li>
+  <li><strong>Message Brokers:</strong> Apache Kafka, RabbitMQ, Redis Streams, AWS SQS/SNS.</li>
+  <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Cassandra, DynamoDB (each service chooses its best fit).</li>
+  <li><strong>Observability (Logging, Tracing, Monitoring):</strong> ELK Stack, Prometheus/Grafana, Jaeger, Zipkin, Datadog, New Relic.</li>
+  <li><strong>CI/CD:</strong> Jenkins, GitLab CI/CD, GitHub Actions, CircleCI, Travis CI.</li>
+</ul>
+
+<h3 id="conclusion-is-microservices-right-for-you"><strong>Conclusion: Is Microservices Right for You?</strong></h3>
+
+<p>Microservices are a powerful architectural style for building scalable, resilient, and independently deployable applications. However, they introduce significant operational and development complexities.</p>
+
+<p>Before adopting microservices, carefully consider:</p>
+
+<ul>
+  <li><strong>Your team’s size and expertise (especially in DevOps).</strong></li>
+  <li><strong>The complexity and anticipated growth of your application.</strong></li>
+  <li><strong>Your organization’s culture and readiness for decentralized decision-making.</strong></li>
+</ul>
+
+<p>For many projects, starting with a well-designed monolith and refactoring to microservices as complexity and scale demand can be a more pragmatic approach. It’s not about microservices or monoliths, but about choosing the <em>right architecture for the right problem at the right time</em>.</p>
+
+<hr />
+
+<p>This tutorial provides a solid foundation. To truly learn, you’d move from conceptual understanding to hands-on practice, perhaps by building a very small, two-service application with an API Gateway and some basic communication using Docker and Flask/Spring Boot.</p>
+
+  </div><a class="u-url" href="/blog/microservices/2025/07/21/Intro-to-Microservices.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Web Development and Programming Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">David Odhiambo</li><li><a class="u-email" href="mailto:eng.david.odhi@gmail.com">eng.david.odhi@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/odhiambo123"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">odhiambo123</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Understanding web development and programming.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

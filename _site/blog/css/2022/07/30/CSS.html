@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>CSS | Web Development and Programming Blog</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="CSS" />
+<meta name="author" content="David Odhiambo" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A comprehensive tutorial on CSS would be a small book! However, I can give you a very thorough and complete introduction to CSS, covering all the fundamental concepts you need to get started and understand how styles are applied. This will include syntax, selectors, properties, the box model, positioning, flexbox, and responsiveness." />
+<meta property="og:description" content="A comprehensive tutorial on CSS would be a small book! However, I can give you a very thorough and complete introduction to CSS, covering all the fundamental concepts you need to get started and understand how styles are applied. This will include syntax, selectors, properties, the box model, positioning, flexbox, and responsiveness." />
+<link rel="canonical" href="http://localhost:4000/blog/css/2022/07/30/CSS.html" />
+<meta property="og:url" content="http://localhost:4000/blog/css/2022/07/30/CSS.html" />
+<meta property="og:site_name" content="Web Development and Programming Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-07-30T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="CSS" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/blog/css/2022/07/30/CSS.html","@type":"BlogPosting","headline":"CSS","dateModified":"2022-07-30T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/css/2022/07/30/CSS.html"},"datePublished":"2022-07-30T00:00:00-07:00","description":"A comprehensive tutorial on CSS would be a small book! However, I can give you a very thorough and complete introduction to CSS, covering all the fundamental concepts you need to get started and understand how styles are applied. This will include syntax, selectors, properties, the box model, positioning, flexbox, and responsiveness.","author":{"@type":"Person","name":"David Odhiambo"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Web Development and Programming Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/">Web Development and Programming Blog</a>
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger">
+        <span class="menu-icon">
+          <svg viewBox="0 0 18 15" width="18px" height="15px">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+          </svg>
+        </span>
+      </label>
+
+      <div class="trigger">
+        <ul class="main-menu"><li 
+                >
+              <a class="page-link " href="/">Home</a></li><li 
+                class="menu-item-has-children">
+              <a class="page-link dropbtn" href="/blog/">Blog</a><ul class="sub-menu"><li >
+                      <a class="sub-page-link" href="/blog/javascript/">Category JavaScript</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/python/">Category Python</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/html/">Category HTML</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/css/">Category CSS</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/iot/">Category IoT</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/bash/">Category Bash</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/microservices/">Category Microservices</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/docker/">Category Docker</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/kubernetes/">Category Kubernetes</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/devops/">Category DevOps</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/cloud-computing/">Category Cloud-Computing</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/ai/">Category AI</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/web-development/">Category Web-Development</a>
+                    </li></ul></li><li 
+                >
+              <a class="page-link " href="/contact.html">Contact</a></li></ul>
+      </div>
+    </nav>
+  </div>
+</header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">CSS</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2022-07-30T00:00:00-07:00" itemprop="datePublished">Jul 30, 2022
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>A comprehensive tutorial on CSS would be a small book! However, I can give you a very thorough and complete introduction to CSS, covering all the fundamental concepts you need to get started and understand how styles are applied. This will include syntax, selectors, properties, the box model, positioning, flexbox, and responsiveness.</p>
+
+<hr />
+
+<h2 id="the-complete-beginners-guide-to-css">The Complete Beginner’s Guide to CSS</h2>
+
+<p>CSS (Cascading Style Sheets) is the language we use to style an HTML document. It describes how HTML elements should be displayed. Without CSS, web pages would look like plain text documents – functional, but certainly not appealing.</p>
+
+<h3 id="what-youll-learn">What You’ll Learn:</h3>
+
+<ol>
+  <li><strong>What is CSS?</strong></li>
+  <li><strong>How to Add CSS to HTML</strong>
+    <ul>
+      <li>Inline Styles</li>
+      <li>Internal Stylesheet</li>
+      <li>External Stylesheet (Best Practice)</li>
+    </ul>
+  </li>
+  <li><strong>CSS Syntax</strong></li>
+  <li><strong>CSS Selectors (The Heart of CSS)</strong>
+    <ul>
+      <li>Element Selectors</li>
+      <li>ID Selectors</li>
+      <li>Class Selectors</li>
+      <li>Grouping Selectors</li>
+      <li>Universal Selector</li>
+      <li>Descendant Combinator</li>
+      <li>Child Combinator</li>
+      <li>Adjacent Sibling Combinator</li>
+      <li>General Sibling Combinator</li>
+      <li>Attribute Selectors</li>
+      <li>Pseudo-classes</li>
+      <li>Pseudo-elements</li>
+    </ul>
+  </li>
+  <li><strong>Common CSS Properties</strong>
+    <ul>
+      <li>Color &amp; Background</li>
+      <li>Text &amp; Font</li>
+      <li>Box Model (Margin, Border, Padding, Content)</li>
+      <li>Display Property</li>
+      <li>Positioning</li>
+      <li>Flexbox (Modern Layout)</li>
+      <li>Grid (Advanced Layout - brief mention)</li>
+      <li>Transitions &amp; Transformations (brief mention)</li>
+    </ul>
+  </li>
+  <li><strong>CSS Specificity</strong></li>
+  <li><strong>The Cascade &amp; Inheritance</strong></li>
+  <li><strong>Responsive Design (Media Queries)</strong></li>
+  <li><strong>Best Practices</strong></li>
+</ol>
+
+<hr />
+
+<h3 id="1-what-is-css">1. What is CSS?</h3>
+
+<p>CSS is a stylesheet language used to describe the presentation of a document written in HTML. CSS can control the layout of multiple web pages, all at once.</p>
+
+<h3 id="2-how-to-add-css-to-html">2. How to Add CSS to HTML</h3>
+
+<p>There are three ways to insert a style sheet:</p>
+
+<h4 id="a-inline-styles-discouraged-for-general-use">a) Inline Styles (Discouraged for General Use)</h4>
+
+<p>Applies a unique style to a single HTML element using the <code class="language-plaintext highlighter-rouge">style</code> attribute.</p>
+
+<p><strong>Pros:</strong> Quick for small tests.
+<strong>Cons:</strong> Mixes structure and style, hard to maintain, no reuse.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">index.html</code>:</strong></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"color: blue; font-size: 18px;"</span><span class="nt">&gt;</span>This text is blue and larger.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<h4 id="b-internal-stylesheet">b) Internal Stylesheet</h4>
+
+<p>Defined within the <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> element inside the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> section of an HTML page. Useful for single-page styles.</p>
+
+<p><strong>Pros:</strong> Styles are in one place for that page.
+<strong>Cons:</strong> Doesn’t allow reuse across multiple pages.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">index.html</code>:</strong></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;title&gt;</span>Internal CSS<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+  <span class="nt">h1</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nx">green</span><span class="p">;</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">p</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Courier New'</span><span class="p">,</span> <span class="nb">monospace</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This paragraph uses internal CSS.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="c-external-stylesheet-best-practice">c) External Stylesheet (BEST PRACTICE)</h4>
+
+<p>The most common and recommended method. Styles are defined in a separate <code class="language-plaintext highlighter-rouge">.css</code> file and linked to the HTML document.</p>
+
+<p><strong>Pros:</strong></p>
+
+<ul>
+  <li>Separation of concerns (HTML for structure, CSS for style).</li>
+  <li>Easy to maintain and update styles across an entire website.</li>
+  <li>Faster page loading (CSS file is cached by the browser).</li>
+</ul>
+
+<p><strong><code class="language-plaintext highlighter-rouge">index.html</code>:</strong></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;title&gt;</span>External CSS<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"style.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>My Website<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This paragraph gets its style from an external file.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p><strong><code class="language-plaintext highlighter-rouge">style.css</code>:</strong></p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* This is an external stylesheet */</span>
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">lightblue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nx">navy</span><span class="p">;</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="3-css-syntax">3. CSS Syntax</h3>
+
+<p>A CSS rule-set consists of a <strong>selector</strong> and a <strong>declaration block</strong>.</p>
+
+<ul>
+  <li><strong>Selector:</strong> Points to the HTML element(s) you want to style.</li>
+  <li><strong>Declaration Block:</strong> Contains one or more <strong>declarations</strong> separated by semicolons.</li>
+  <li><strong>Declaration:</strong> Includes a <strong>property</strong> name and a <strong>value</strong>, separated by a colon.</li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">selector</span> <span class="p">{</span>
+  <span class="py">property</span><span class="p">:</span> <span class="n">value</span><span class="p">;</span> <span class="c">/* Declaration 1 */</span>
+  <span class="py">property2</span><span class="p">:</span> <span class="n">value2</span><span class="p">;</span> <span class="c">/* Declaration 2 */</span>
+  <span class="c">/* ... more declarations */</span>
+<span class="p">}</span>
+
+<span class="c">/* Example */</span>
+<span class="nt">p</span> <span class="p">{</span> <span class="c">/* p is the selector */</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nx">red</span><span class="p">;</span> <span class="c">/* color is the property, red is the value */</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span> <span class="c">/* font-size is the property, 16px is the value */</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="4-css-selectors-the-heart-of-css">4. CSS Selectors (The Heart of CSS)</h3>
+
+<p>Selectors are used to “find” (or select) HTML elements based on their name, id, class, attributes, and more.</p>
+
+<h4 id="a-element-type-selector">a) Element (Type) Selector</h4>
+
+<p>Selects all HTML elements of a given type.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nx">green</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="nx">black</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="b-id-selector">b) ID Selector</h4>
+
+<p>Selects the element with a specific <code class="language-plaintext highlighter-rouge">id</code> attribute. An ID must be unique within an HTML page.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"header"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#header</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">#f0f0f0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="c-class-selector">c) Class Selector</h4>
+
+<p>Selects all elements with a specific <code class="language-plaintext highlighter-rouge">class</code> attribute. A class can be used by multiple HTML elements.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"intro"</span><span class="nt">&gt;</span>This is an introduction.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"intro"</span><span class="nt">&gt;</span>Also an intro.<span class="nt">&lt;/span&gt;</span>
+</code></pre></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.intro</span> <span class="p">{</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="d-grouping-selectors">d) Grouping Selectors</h4>
+
+<p>Selects multiple HTML elements with the same style. Separate selectors with a comma.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="e-universal-selector-">e) Universal Selector (<code class="language-plaintext highlighter-rouge">*</code>)</h4>
+
+<p>Selects all HTML elements on the page. Use sparingly, as it can be slow and affect too many elements.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">*</span> <span class="p">{</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="nb">border-box</span><span class="p">;</span> <span class="c">/* Good for consistent box model */</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="f-descendant-combinator-space">f) Descendant Combinator (Space)</h4>
+
+<p>Selects all elements that are descendants of a specified element.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This paragraph is inside the container.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;span&gt;</span>
+    <span class="nt">&lt;p&gt;</span>This paragraph is also inside the container.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span> <span class="nt">p</span> <span class="p">{</span> <span class="c">/* Selects ALL &lt;p&gt; elements inside .container */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">yellow</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="g-child-combinator-">g) Child Combinator (<code class="language-plaintext highlighter-rouge">&gt;</code>)</h4>
+
+<p>Selects all elements that are <em>direct children</em> of a specified element.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"parent"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Direct child paragraph.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;span&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Grandchild paragraph.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.parent</span> <span class="o">&gt;</span> <span class="nt">p</span> <span class="p">{</span> <span class="c">/* Selects only the direct child &lt;p&gt; */</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="nx">orange</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="h-adjacent-sibling-combinator-">h) Adjacent Sibling Combinator (<code class="language-plaintext highlighter-rouge">+</code>)</h4>
+
+<p>Selects an element that is immediately preceded by a specified element.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>First paragraph.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Second paragraph.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="o">+</span> <span class="nt">p</span> <span class="p">{</span> <span class="c">/* Selects only the first paragraph immediately after h1 */</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="i-general-sibling-combinator-">i) General Sibling Combinator (<code class="language-plaintext highlighter-rouge">~</code>)</h4>
+
+<p>Selects all elements that are siblings of a specified element.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>First paragraph.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;div&gt;</span>A div.<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;p&gt;</span>Second paragraph.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="o">~</span> <span class="nt">p</span> <span class="p">{</span> <span class="c">/* Selects both paragraphs that are siblings of h1 */</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nx">purple</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="j-attribute-selectors">j) Attribute Selectors</h4>
+
+<p>Selects elements based on their HTML attributes.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">[attribute]</code></li>
+  <li><code class="language-plaintext highlighter-rouge">[attribute="value"]</code></li>
+  <li><code class="language-plaintext highlighter-rouge">[attribute~="value"]</code> (contains a word)</li>
+  <li><code class="language-plaintext highlighter-rouge">[attribute^="value"]</code> (starts with)</li>
+  <li><code class="language-plaintext highlighter-rouge">[attribute$="value"]</code> (ends with)</li>
+  <li><code class="language-plaintext highlighter-rouge">[attribute*="value"]</code> (contains)</li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="o">[</span><span class="nt">target</span><span class="o">=</span><span class="s1">"_blank"</span><span class="o">]</span> <span class="p">{</span> <span class="c">/* Links opening in new tab */</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nx">blue</span><span class="p">;</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"text"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="nx">gray</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="k-pseudo-classes">k) Pseudo-classes</h4>
+
+<p>Selects elements when they are in a certain state (e.g., hovered, visited, focused) or based on their position in the DOM.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">:hover</code></li>
+  <li><code class="language-plaintext highlighter-rouge">:active</code></li>
+  <li><code class="language-plaintext highlighter-rouge">:focus</code></li>
+  <li><code class="language-plaintext highlighter-rouge">:link</code>, <code class="language-plaintext highlighter-rouge">:visited</code></li>
+  <li><code class="language-plaintext highlighter-rouge">:nth-child(n)</code>, <code class="language-plaintext highlighter-rouge">:first-child</code>, <code class="language-plaintext highlighter-rouge">:last-child</code></li>
+  <li><code class="language-plaintext highlighter-rouge">:not(selector)</code></li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">input</span><span class="nd">:focus</span> <span class="p">{</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="nx">blue</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">odd</span><span class="o">)</span> <span class="p">{</span> <span class="c">/* Every odd list item */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">#f2f2f2</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="l-pseudo-elements">l) Pseudo-elements</h4>
+
+<p>Styles a specific part of an element.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">::before</code> (inserts content before an element)</li>
+  <li><code class="language-plaintext highlighter-rouge">::after</code> (inserts content after an element)</li>
+  <li><code class="language-plaintext highlighter-rouge">::first-letter</code></li>
+  <li><code class="language-plaintext highlighter-rouge">::first-line</code></li>
+  <li><code class="language-plaintext highlighter-rouge">::selection</code></li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span><span class="nd">::first-letter</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">200%</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nx">#8A2BE2</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span><span class="nd">::after</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s1">" ---"</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nx">#ccc</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="5-common-css-properties">5. Common CSS Properties</h3>
+
+<h4 id="a-color--background">a) Color &amp; Background</h4>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">color</span><span class="o">:</span> <span class="err">#333</span><span class="o">;</span> <span class="c">/* Text color (hex code) */</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nt">rgb</span><span class="o">(</span><span class="err">255</span><span class="o">,</span> <span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">);</span> <span class="c">/* Text color (RGB) */</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nt">rgba</span><span class="o">(</span><span class="err">0</span><span class="o">,</span> <span class="err">0</span><span class="o">,</span> <span class="err">255</span><span class="o">,</span> <span class="err">0</span><span class="o">.</span><span class="err">5</span><span class="o">);</span> <span class="c">/* Text color (RGBA - with transparency) */</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nt">hotpink</span><span class="o">;</span> <span class="c">/* Text color (named color) */</span>
+
+<span class="nt">background-color</span><span class="o">:</span> <span class="nt">lightgray</span><span class="o">;</span>
+<span class="nt">background-image</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s2">'image.png'</span><span class="o">);</span>
+<span class="nt">background-repeat</span><span class="o">:</span> <span class="nt">no-repeat</span><span class="o">;</span> <span class="c">/* repeat-x, repeat-y, round, space */</span>
+<span class="nt">background-position</span><span class="o">:</span> <span class="nt">center</span> <span class="nt">top</span><span class="o">;</span> <span class="c">/* x-position y-position */</span>
+<span class="nt">background-size</span><span class="o">:</span> <span class="nt">cover</span><span class="o">;</span> <span class="c">/* cover, contain, 100% 100% */</span>
+<span class="nt">background</span><span class="o">:</span> <span class="nf">#eee</span> <span class="nt">url</span><span class="o">(</span><span class="s2">'bg.png'</span><span class="o">)</span> <span class="nt">no-repeat</span> <span class="nt">center</span> <span class="o">/</span> <span class="nt">cover</span><span class="o">;</span> <span class="c">/* Shorthand */</span>
+</code></pre></div></div>
+
+<h4 id="b-text--font">b) Text &amp; Font</h4>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">font-family</span><span class="o">:</span> <span class="s2">'Open Sans'</span><span class="o">,</span> <span class="nt">sans-serif</span><span class="o">;</span> <span class="c">/* Fallback fonts are crucial */</span>
+<span class="nt">font-size</span><span class="o">:</span> <span class="err">16</span><span class="nt">px</span><span class="o">;</span> <span class="c">/* px, em, rem, vw */</span>
+<span class="nt">font-weight</span><span class="o">:</span> <span class="nt">bold</span><span class="o">;</span> <span class="c">/* normal, bold, 100-900 */</span>
+<span class="nt">font-style</span><span class="o">:</span> <span class="nt">italic</span><span class="o">;</span> <span class="c">/* normal, italic, oblique */</span>
+<span class="nt">text-align</span><span class="o">:</span> <span class="nt">center</span><span class="o">;</span> <span class="c">/* left, right, justify */</span>
+<span class="nt">text-decoration</span><span class="o">:</span> <span class="nt">none</span><span class="o">;</span> <span class="c">/* underline, line-through, overline */</span>
+<span class="nt">text-transform</span><span class="o">:</span> <span class="nt">uppercase</span><span class="o">;</span> <span class="c">/* lowercase, capitalize */</span>
+<span class="nt">line-height</span><span class="o">:</span> <span class="err">1</span><span class="o">.</span><span class="err">5</span><span class="o">;</span> <span class="c">/* Spacing between lines */</span>
+<span class="nt">letter-spacing</span><span class="o">:</span> <span class="err">0</span><span class="o">.</span><span class="err">5</span><span class="nt">px</span><span class="o">;</span>
+<span class="nt">word-spacing</span><span class="o">:</span> <span class="err">2</span><span class="nt">px</span><span class="o">;</span>
+</code></pre></div></div>
+
+<h4 id="c-the-box-model-critical-concept">c) The Box Model (CRITICAL Concept!)</h4>
+
+<p>Every HTML element is a rectangular box. The box model describes how margin, border, padding, and content are arranged.</p>
+
+<ul>
+  <li><strong>Content:</strong> The actual content of the element (text, images, etc.).</li>
+  <li><strong>Padding:</strong> Space between the content and the border.</li>
+  <li><strong>Border:</strong> A line between the padding and the margin.</li>
+  <li><strong>Margin:</strong> Space outside the border, pushing other elements away.</li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span> <span class="c">/* Dimensions of the content area */</span>
+  
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span> <span class="c">/* 10px on all sides */</span>
+  <span class="nl">padding-top</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">padding-right</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">20px</span><span class="p">;</span> <span class="c">/* Top/Bottom Left/Right */</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">5px</span> <span class="m">10px</span> <span class="m">15px</span> <span class="m">20px</span><span class="p">;</span> <span class="c">/* Top Right Bottom Left */</span>
+
+  <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="nx">red</span><span class="p">;</span> <span class="c">/* Width style color */</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">dashed</span> <span class="nx">blue</span><span class="p">;</span> <span class="c">/* Specific border side */</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span> <span class="c">/* Rounds corners */</span>
+
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span> <span class="c">/* 20px on all sides */</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">10px</span> <span class="nb">auto</span><span class="p">;</span> <span class="c">/* Top/Bottom 10px, Left/Right auto (centers block element) */</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="c">/* etc. */</span>
+
+  <span class="c">/* box-sizing: border-box; is crucial!
+     It includes padding and border within the defined width/height.
+     Without it, padding/border ADD to the width/height, making layout harder. */</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="nb">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="d-display-property">d) Display Property</h4>
+
+<p>Controls how an element behaves in terms of layout.</p>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">block</code></strong>: Takes up the full width available, starts on a new line (e.g., <code class="language-plaintext highlighter-rouge">div</code>, <code class="language-plaintext highlighter-rouge">p</code>, <code class="language-plaintext highlighter-rouge">h1</code>).</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">inline</code></strong>: Takes up only as much width as necessary, does not start on a new line (e.g., <code class="language-plaintext highlighter-rouge">span</code>, <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">img</code>).</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">inline-block</code></strong>: Like <code class="language-plaintext highlighter-rouge">inline</code> but you can set width and height (e.g., buttons, navigation items).</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">none</code></strong>: Hides the element completely.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">flex</code></strong>: Enables Flexbox layout for its direct children.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">grid</code></strong>: Enables Grid layout for its direct children.</li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">span</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span> <span class="c">/* Now behaves like a div */</span>
+<span class="p">}</span>
+<span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">inline-block</span><span class="p">;</span> <span class="c">/* Useful for horizontal navigation */</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.hidden-element</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="e-positioning">e) Positioning</h4>
+
+<p>Allows you to control the exact position of an element.</p>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">static</code> (Default):</strong> Elements are positioned according to the normal flow of the document. <code class="language-plaintext highlighter-rouge">top</code>, <code class="language-plaintext highlighter-rouge">bottom</code>, <code class="language-plaintext highlighter-rouge">left</code>, <code class="language-plaintext highlighter-rouge">right</code> have no effect.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">relative</code>:</strong> Positioned relative to its <em>normal position</em>. <code class="language-plaintext highlighter-rouge">top</code>, <code class="language-plaintext highlighter-rouge">bottom</code>, <code class="language-plaintext highlighter-rouge">left</code>, <code class="language-plaintext highlighter-rouge">right</code> will move it away from that normal position. The space it <em>would have taken</em> is still reserved.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">absolute</code>:</strong> Positioned relative to its <em>nearest positioned ancestor</em> (an ancestor with <code class="language-plaintext highlighter-rouge">position: relative</code>, <code class="language-plaintext highlighter-rouge">absolute</code>, <code class="language-plaintext highlighter-rouge">fixed</code>, or <code class="language-plaintext highlighter-rouge">sticky</code>). If no such ancestor exists, it’s relative to the initial containing block (usually <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code>). Taken out of the normal flow.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">fixed</code>:</strong> Positioned relative to the <em>viewport</em>. Stays in the same place even if the page scrolls (e.g., sticky headers/footers). Taken out of the normal flow.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">sticky</code>:</strong> Behaves like <code class="language-plaintext highlighter-rouge">relative</code> until a certain scroll position is met, then becomes <code class="language-plaintext highlighter-rouge">fixed</code>.</li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span> <span class="c">/* This is crucial for absolute children */</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="nx">blue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span> <span class="c">/* Positions relative to .container */</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">right</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">red</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.sticky-header</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">sticky</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="c">/* Stays at the top when scrolled */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">lightgray</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="m">100</span><span class="p">;</span> <span class="c">/* Controls stacking order (higher value is on top) */</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="f-flexbox-flexible-box-layout---essential-for-modern-layouts">f) Flexbox (Flexible Box Layout) - Essential for Modern Layouts</h4>
+
+<p>A one-dimensional layout system for distributing space among items in an interface and aligning them. Great for rows or columns.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flex-container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flex-item"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flex-item"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flex-item"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.flex-container</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">flex</span><span class="p">;</span> <span class="c">/* Makes the container a flex container */</span>
+  <span class="c">/* Properties for the container: */</span>
+  <span class="nl">flex-direction</span><span class="p">:</span> <span class="nb">row</span><span class="p">;</span> <span class="c">/* row | row-reverse | column | column-reverse */</span>
+  <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span> <span class="c">/* How items are aligned along the main axis (start, end, center, space-between, space-around, space-evenly) */</span>
+  <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span> <span class="c">/* How items are aligned along the cross axis (stretch, flex-start, flex-end, center, baseline) */</span>
+  <span class="nl">flex-wrap</span><span class="p">:</span> <span class="nb">wrap</span><span class="p">;</span> <span class="c">/* nowrap | wrap | wrap-reverse (if items should wrap) */</span>
+  <span class="nl">gap</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span> <span class="c">/* Space between flex items */</span>
+
+  <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span> <span class="c">/* For demonstration of alignment */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">#eee</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.flex-item</span> <span class="p">{</span>
+  <span class="c">/* Properties for the items: */</span>
+  <span class="nl">flex-grow</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span> <span class="c">/* Allows item to grow if space available */</span>
+  <span class="nl">flex-shrink</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span> <span class="c">/* Allows item to shrink if needed */</span>
+  <span class="nl">flex-basis</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span> <span class="c">/* Initial size before growing/shrinking */</span>
+  <span class="c">/* flex: 1; is shorthand for flex-grow: 1, flex-shrink: 1, flex-basis: 0 */</span>
+
+  <span class="nl">width</span><span class="p">:</span> <span class="m">80px</span><span class="p">;</span> <span class="c">/* Can still set width */</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">80px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">dodgerblue</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nx">white</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">flex</span><span class="p">;</span> <span class="c">/* To center content within the item */</span>
+  <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="g-grid-css-grid-layout---for-two-dimensional-layouts">g) Grid (CSS Grid Layout) - For Two-Dimensional Layouts</h4>
+
+<p>A two-dimensional layout system that allows you to lay out elements in rows and columns. Ideal for overall page layout.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-item"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-item"</span><span class="nt">&gt;</span>Sidebar<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-item"</span><span class="nt">&gt;</span>Main Content<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-item"</span><span class="nt">&gt;</span>Footer<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.grid-container</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">grid</span><span class="p">;</span> <span class="c">/* Makes the container a grid container */</span>
+  <span class="nl">grid-template-columns</span><span class="p">:</span> <span class="m">1fr</span> <span class="m">2fr</span> <span class="m">1fr</span><span class="p">;</span> <span class="c">/* Defines 3 columns: 1 fractional unit, 2 fractional units, 1 fractional unit */</span>
+  <span class="nl">grid-template-rows</span><span class="p">:</span> <span class="nb">auto</span> <span class="m">1fr</span> <span class="nb">auto</span><span class="p">;</span> <span class="c">/* Defines 3 rows: auto height, 1 fractional unit, auto height */</span>
+  <span class="nl">gap</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span> <span class="c">/* Space between grid items */</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span> <span class="c">/* For demonstration */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">#f9f9f9</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.grid-item</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">1</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">grid-column</span><span class="p">:</span> <span class="m">1</span> <span class="o">/</span> <span class="m">-1</span><span class="p">;</span> <span class="c">/* Header spans all columns */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">lightcoral</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.grid-item</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">2</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">lightgreen</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.grid-item</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">3</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">lightblue</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.grid-item</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">4</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">grid-column</span><span class="p">:</span> <span class="m">1</span> <span class="o">/</span> <span class="m">-1</span><span class="p">;</span> <span class="c">/* Footer spans all columns */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">lightsalmon</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* You would typically use grid-area for more semantic naming */</span>
+</code></pre></div></div>
+
+<h4 id="h-transitions--transformations-basic">h) Transitions &amp; Transformations (Basic)</h4>
+
+<p>Adds smooth animations to property changes.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.button</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">blue</span><span class="p">;</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">background-color</span> <span class="m">0.3s</span> <span class="nb">ease-in-out</span><span class="p">;</span> <span class="c">/* Animate background color change */</span>
+<span class="p">}</span>
+<span class="nc">.button</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">darkblue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="nf">rotate</span><span class="p">(</span><span class="m">0deg</span><span class="p">)</span> <span class="nf">scale</span><span class="p">(</span><span class="m">1</span><span class="p">);</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">transform</span> <span class="m">0.5s</span> <span class="nb">ease</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="nf">rotate</span><span class="p">(</span><span class="m">45deg</span><span class="p">)</span> <span class="nf">scale</span><span class="p">(</span><span class="m">1.1</span><span class="p">);</span> <span class="c">/* Rotate and slightly enlarge on hover */</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="6-css-specificity">6. CSS Specificity</h3>
+
+<p>When multiple CSS rules apply to the same element, <strong>specificity</strong> determines which rule’s styles get applied.</p>
+
+<p><strong>Order of Specificity (Highest to Lowest):</strong></p>
+
+<ol>
+  <li><strong>Inline Styles:</strong> Styles defined directly in the <code class="language-plaintext highlighter-rouge">style</code> attribute. (e.g., <code class="language-plaintext highlighter-rouge">&lt;p style="..."&gt;</code>)</li>
+  <li><strong>IDs:</strong> Selectors targeting an element’s <code class="language-plaintext highlighter-rouge">id</code>. (e.g., <code class="language-plaintext highlighter-rouge">#myId</code>)</li>
+  <li><strong>Classes, Attributes, Pseudo-classes:</strong> Selectors targeting <code class="language-plaintext highlighter-rouge">class</code>, <code class="language-plaintext highlighter-rouge">[attribute]</code>, or <code class="language-plaintext highlighter-rouge">:hover</code>. (e.g., <code class="language-plaintext highlighter-rouge">.myClass</code>, <code class="language-plaintext highlighter-rouge">[type="text"]</code>, <code class="language-plaintext highlighter-rouge">:nth-child(2)</code>)</li>
+  <li><strong>Elements and Pseudo-elements:</strong> Selectors targeting HTML element names or <code class="language-plaintext highlighter-rouge">::before</code>. (e.g., <code class="language-plaintext highlighter-rouge">p</code>, <code class="language-plaintext highlighter-rouge">::first-letter</code>)</li>
+  <li><strong>Universal Selector (<code class="language-plaintext highlighter-rouge">*</code>)</strong></li>
+</ol>
+
+<p><strong>Example:</strong></p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Specificity: 0,0,1,0 (Element) */</span>
+<span class="nt">p</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="nx">red</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="c">/* Specificity: 0,0,1,0 (Element) */</span>
+<span class="nt">div</span> <span class="nt">p</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="nx">blue</span><span class="p">;</span> <span class="p">}</span> <span class="c">/* Still element level for 'p' */</span>
+
+<span class="c">/* Specificity: 0,0,1,0 (Class) */</span>
+<span class="nc">.my-text</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="nx">green</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="c">/* Specificity: 0,1,0,0 (ID) */</span>
+<span class="nf">#special-text</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="nx">purple</span><span class="p">;</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"my-div"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"my-text"</span> <span class="na">id=</span><span class="s">"special-text"</span><span class="nt">&gt;</span>Hello World<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>The text will be <strong>purple</strong> because the ID selector (<code class="language-plaintext highlighter-rouge">#special-text</code>) has the highest specificity.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">!important</code>:</strong> You can override any specificity by adding <code class="language-plaintext highlighter-rouge">!important</code> to a declaration, but this is generally <strong>discouraged</strong> as it makes debugging and maintenance much harder. Only use as a last resort.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nx">red</span> <span class="cp">!important</span><span class="p">;</span> <span class="c">/* This will always win */</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="7-the-cascade--inheritance">7. The Cascade &amp; Inheritance</h3>
+
+<ul>
+  <li><strong>The Cascade:</strong> How CSS rules are applied and prioritized. It considers:
+    <ol>
+      <li><strong>Origin:</strong> Browser default styles &lt; User custom styles &lt; Author styles (your CSS).</li>
+      <li><strong>Specificity:</strong> (As described above).</li>
+      <li><strong>Order:</strong> If specificity is equal, the last defined rule wins.</li>
+    </ol>
+  </li>
+  <li><strong>Inheritance:</strong> Some CSS properties are inherited by child elements from their parent elements.
+    <ul>
+      <li><strong>Inherited:</strong> <code class="language-plaintext highlighter-rouge">color</code>, <code class="language-plaintext highlighter-rouge">font-family</code>, <code class="language-plaintext highlighter-rouge">font-size</code>, <code class="language-plaintext highlighter-rouge">text-align</code>, <code class="language-plaintext highlighter-rouge">line-height</code>, etc.</li>
+      <li><strong>Not Inherited:</strong> <code class="language-plaintext highlighter-rouge">margin</code>, <code class="language-plaintext highlighter-rouge">padding</code>, <code class="language-plaintext highlighter-rouge">border</code>, <code class="language-plaintext highlighter-rouge">background-color</code>, <code class="language-plaintext highlighter-rouge">width</code>, <code class="language-plaintext highlighter-rouge">height</code>, <code class="language-plaintext highlighter-rouge">display</code>, <code class="language-plaintext highlighter-rouge">position</code>, etc.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Example:</strong></p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nx">#333</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">yellow</span><span class="p">;</span> <span class="c">/* Not inherited */</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>This text inherits Arial font and #333 color from body, but not the yellow background from div.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</code></pre></div></div>
+
+<h3 id="8-responsive-design-media-queries">8. Responsive Design (Media Queries)</h3>
+
+<p>Responsive design ensures your website looks good on all screen sizes (desktops, tablets, phones). Media queries allow you to apply CSS rules conditionally based on characteristics like screen width.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Default styles for all screen sizes */</span>
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">lightgray</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">90%</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nx">white</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Styles for screens smaller than 768px (e.g., tablets/phones) */</span>
+<span class="k">@media</span> <span class="nb">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span> <span class="c">/* Smaller font on smaller screens */</span>
+  <span class="p">}</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span> <span class="c">/* Full width on smaller screens */</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">10px</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* Styles for screens smaller than 480px (e.g., phones) */</span>
+<span class="k">@media</span> <span class="nb">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">480px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">h1</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.5em</span><span class="p">;</span> <span class="c">/* Even smaller heading */</span>
+  <span class="p">}</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="c">/* No rounded corners on tiny screens */</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* Example for orientation */</span>
+<span class="k">@media</span> <span class="nb">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">orientation</span><span class="p">:</span> <span class="nb">landscape</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nx">#e0f2f7</span><span class="p">;</span> <span class="c">/* Light blue background in landscape mode */</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="9-best-practices">9. Best Practices</h3>
+
+<ul>
+  <li><strong>Use External Stylesheets:</strong> Always prefer external CSS for maintainability.</li>
+  <li><strong>Semantic HTML:</strong> Write clean, meaningful HTML. This makes it easier to target elements with CSS.</li>
+  <li><strong>Organize Your CSS:</strong>
+    <ul>
+      <li>Use comments (<code class="language-plaintext highlighter-rouge">/* This is a comment */</code>) generously.</li>
+      <li>Group related rules.</li>
+      <li>Consider a consistent naming convention (e.g., BEM, OOCSS).</li>
+    </ul>
+  </li>
+  <li><strong>Mobile First:</strong> Design for small screens first, then progressively enhance for larger screens using media queries (<code class="language-plaintext highlighter-rouge">min-width</code> queries). This generally leads to better performance.</li>
+  <li><strong>Learn Flexbox and Grid:</strong> These are the modern, powerful ways to build layouts.</li>
+  <li><strong>Understand the Box Model:</strong> It’s fundamental to layout.</li>
+  <li><strong>Test on Different Browsers:</strong> Ensure cross-browser compatibility.</li>
+  <li><strong>Validate Your CSS:</strong> Use a CSS validator to catch syntax errors.</li>
+  <li><strong>Keep it DRY (Don’t Repeat Yourself):</strong> Avoid redundant CSS by using grouping selectors and well-structured HTML.</li>
+</ul>
+
+<hr />
+
+<p>This tutorial provides a solid foundation for understanding CSS. The best way to learn is by doing: start experimenting with these properties and selectors on your own HTML files!</p>
+
+  </div><a class="u-url" href="/blog/css/2022/07/30/CSS.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Web Development and Programming Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">David Odhiambo</li><li><a class="u-email" href="mailto:eng.david.odhi@gmail.com">eng.david.odhi@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/odhiambo123"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">odhiambo123</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Understanding web development and programming.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

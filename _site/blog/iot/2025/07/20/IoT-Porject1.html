@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>IoT Tutorial | Web Development and Programming Blog</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="IoT Tutorial" />
+<meta name="author" content="David Odhiambo" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Let’s craft a comprehensive tutorial on using Python for IoT projects, focusing on practical applications. We’ll cover key concepts, essential libraries, and a hands-on example." />
+<meta property="og:description" content="Let’s craft a comprehensive tutorial on using Python for IoT projects, focusing on practical applications. We’ll cover key concepts, essential libraries, and a hands-on example." />
+<link rel="canonical" href="http://localhost:4000/blog/iot/2025/07/20/IoT-Porject1.html" />
+<meta property="og:url" content="http://localhost:4000/blog/iot/2025/07/20/IoT-Porject1.html" />
+<meta property="og:site_name" content="Web Development and Programming Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-07-20T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="IoT Tutorial" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/blog/iot/2025/07/20/IoT-Porject1.html","@type":"BlogPosting","headline":"IoT Tutorial","dateModified":"2025-07-20T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/iot/2025/07/20/IoT-Porject1.html"},"datePublished":"2025-07-20T00:00:00-07:00","description":"Let’s craft a comprehensive tutorial on using Python for IoT projects, focusing on practical applications. We’ll cover key concepts, essential libraries, and a hands-on example.","author":{"@type":"Person","name":"David Odhiambo"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Web Development and Programming Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/">Web Development and Programming Blog</a>
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger">
+        <span class="menu-icon">
+          <svg viewBox="0 0 18 15" width="18px" height="15px">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+          </svg>
+        </span>
+      </label>
+
+      <div class="trigger">
+        <ul class="main-menu"><li 
+                >
+              <a class="page-link " href="/">Home</a></li><li 
+                class="menu-item-has-children">
+              <a class="page-link dropbtn" href="/blog/">Blog</a><ul class="sub-menu"><li >
+                      <a class="sub-page-link" href="/blog/javascript/">Category JavaScript</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/python/">Category Python</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/html/">Category HTML</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/css/">Category CSS</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/iot/">Category IoT</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/bash/">Category Bash</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/microservices/">Category Microservices</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/docker/">Category Docker</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/kubernetes/">Category Kubernetes</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/devops/">Category DevOps</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/cloud-computing/">Category Cloud-Computing</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/ai/">Category AI</a>
+                    </li><li >
+                      <a class="sub-page-link" href="/blog/web-development/">Category Web-Development</a>
+                    </li></ul></li><li 
+                >
+              <a class="page-link " href="/contact.html">Contact</a></li></ul>
+      </div>
+    </nav>
+  </div>
+</header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">IoT Tutorial</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-07-20T00:00:00-07:00" itemprop="datePublished">Jul 20, 2025
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Let’s craft a comprehensive tutorial on using Python for IoT projects, focusing on practical applications. We’ll cover key concepts, essential libraries, and a hands-on example.</p>
+
+<hr />
+
+<h2 id="python-for-iot-a-practical-project-tutorial">Python for IoT: A Practical Project Tutorial</h2>
+
+<p>Python is an incredibly popular language for Internet of Things (IoT) projects due to its simplicity, extensive libraries, and strong community support. It’s well-suited for everything from controlling hardware on a Raspberry Pi to processing sensor data and communicating with cloud platforms.</p>
+
+<h3 id="what-youll-learn">What You’ll Learn:</h3>
+
+<ol>
+  <li><strong>Why Python for IoT?</strong></li>
+  <li><strong>Key Concepts in IoT with Python</strong>
+    <ul>
+      <li>Hardware Interfacing</li>
+      <li>Communication Protocols (MQTT, HTTP)</li>
+      <li>Data Handling</li>
+      <li>Cloud Integration</li>
+    </ul>
+  </li>
+  <li><strong>Essential Python Libraries for IoT</strong></li>
+  <li><strong>Hardware Spotlight: Raspberry Pi</strong></li>
+  <li><strong>Practical Project: Raspberry Pi Temperature and Humidity Monitor</strong>
+    <ul>
+      <li>Project Overview</li>
+      <li>Hardware Requirements</li>
+      <li>Software Setup (Raspberry Pi OS, Python Libraries)</li>
+      <li>Circuit Diagram</li>
+      <li>Python Code (Reading Sensor, Publishing to MQTT)</li>
+      <li>Testing and Verification</li>
+    </ul>
+  </li>
+  <li><strong>Next Steps &amp; Further Exploration</strong></li>
+</ol>
+
+<hr />
+
+<h3 id="1-why-python-for-iot">1. Why Python for IoT?</h3>
+
+<ul>
+  <li><strong>Simplicity and Readability:</strong> Python’s clean syntax allows for faster development and easier debugging.</li>
+  <li><strong>Rich Ecosystem:</strong> A vast collection of libraries for almost every IoT need:
+    <ul>
+      <li><strong>Hardware Interaction:</strong> <code class="language-plaintext highlighter-rouge">RPi.GPIO</code>, <code class="language-plaintext highlighter-rouge">smbus</code> (for I2C), <code class="language-plaintext highlighter-rouge">spidev</code> (for SPI).</li>
+      <li><strong>Networking:</strong> <code class="language-plaintext highlighter-rouge">requests</code> (HTTP), <code class="language-plaintext highlighter-rouge">paho-mqtt</code> (MQTT).</li>
+      <li><strong>Data Science/Processing:</strong> <code class="language-plaintext highlighter-rouge">NumPy</code>, <code class="language-plaintext highlighter-rouge">pandas</code> (for advanced analytics).</li>
+    </ul>
+  </li>
+  <li><strong>Cross-Platform Compatibility:</strong> Runs on various IoT devices (Raspberry Pi, ESP32 microcontrollers with MicroPython, etc.) and operating systems.</li>
+  <li><strong>Strong Community Support:</strong> Abundant resources, tutorials, and forums.</li>
+  <li><strong>Rapid Prototyping:</strong> Get your ideas from concept to working prototype quickly.</li>
+</ul>
+
+<h3 id="2-key-concepts-in-iot-with-python">2. Key Concepts in IoT with Python</h3>
+
+<h4 id="a-hardware-interfacing">a) Hardware Interfacing</h4>
+
+<p>This is about how your Python code talks to physical components like sensors, LEDs, motors, etc.</p>
+
+<ul>
+  <li><strong>GPIO (General Purpose Input/Output):</strong> Digital pins on devices like Raspberry Pi that can be set as inputs (to read sensor data) or outputs (to control LEDs).</li>
+  <li><strong>Serial Communication (UART):</strong> For direct communication with other microcontrollers or modules.</li>
+  <li><strong>I2C (Inter-Integrated Circuit):</strong> A two-wire serial interface for connecting low-speed peripherals (common for many sensors like DHT11/DHT22, BMP280).</li>
+  <li><strong>SPI (Serial Peripheral Interface):</strong> A fast, four-wire serial interface often used for displays or high-speed sensors.</li>
+</ul>
+
+<h4 id="b-communication-protocols">b) Communication Protocols</h4>
+
+<p>How your IoT device sends and receives data.</p>
+
+<ul>
+  <li><strong>MQTT (Message Queuing Telemetry Transport):</strong> A lightweight, publish-subscribe messaging protocol ideal for IoT due to its low bandwidth usage and efficient handling of unreliable networks.</li>
+  <li><strong>HTTP/HTTPS:</strong> The standard web protocol, suitable for requesting data or sending data to web servers/APIs, but can be less efficient for constant small data streams than MQTT.</li>
+  <li><strong>CoAP (Constrained Application Protocol):</strong> Designed for constrained devices and networks, similar to HTTP but optimized for IoT.</li>
+</ul>
+
+<h4 id="c-data-handling">c) Data Handling</h4>
+
+<p>Processing the data your device collects.</p>
+
+<ul>
+  <li><strong>Sensor Reading:</strong> Acquiring raw data from hardware.</li>
+  <li><strong>Data Cleaning/Filtering:</strong> Removing noise or errors.</li>
+  <li><strong>Data Formatting:</strong> Converting data into suitable formats (e.g., JSON) for transmission or storage.</li>
+</ul>
+
+<h4 id="d-cloud-integration">d) Cloud Integration</h4>
+
+<p>Connecting your device to cloud services for data storage, visualization, analytics, and remote control.</p>
+
+<ul>
+  <li><strong>Cloud Platforms:</strong> AWS IoT, Google Cloud IoT Core, Azure IoT Hub, Adafruit IO, ThingsBoard, etc.</li>
+  <li><strong>APIs:</strong> Using Python’s <code class="language-plaintext highlighter-rouge">requests</code> library to interact with RESTful APIs.</li>
+</ul>
+
+<h3 id="3-essential-python-libraries-for-iot">3. Essential Python Libraries for IoT</h3>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">RPi.GPIO</code> (Raspberry Pi specific):</strong> Controls the GPIO pins on a Raspberry Pi.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">smbus</code> (I2C):</strong> Python bindings for I2C communication.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">spidev</code> (SPI):</strong> Python bindings for SPI communication.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">paho-mqtt</code>:</strong> A robust client library for the MQTT protocol.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">requests</code>:</strong> For making HTTP/HTTPS requests to web APIs.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">json</code>:</strong> For encoding and decoding JSON data, a common format for IoT messages.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">time</code>:</strong> For adding delays (<code class="language-plaintext highlighter-rouge">time.sleep()</code>) and working with timestamps.</li>
+</ul>
+
+<h3 id="4-hardware-spotlight-raspberry-pi">4. Hardware Spotlight: Raspberry Pi</h3>
+
+<p>The Raspberry Pi is an excellent choice for learning Python for IoT. It’s a full-fledged computer with GPIO pins, Wi-Fi, Ethernet, and runs a Linux-based operating system (Raspberry Pi OS), making it easy to install Python and its libraries.</p>
+
+<p><strong>Why Raspberry Pi?</strong></p>
+
+<ul>
+  <li><strong>Powerful:</strong> Can run complex Python scripts.</li>
+  <li><strong>Linux Environment:</strong> Familiar to developers, easy to manage.</li>
+  <li><strong>Versatile Connectivity:</strong> Wi-Fi, Bluetooth, Ethernet, USB.</li>
+  <li><strong>GPIO Pins:</strong> Direct hardware interaction.</li>
+  <li><strong>Cost-Effective:</strong> Affordable for experimenting.</li>
+</ul>
+
+<h3 id="5-practical-project-raspberry-pi-temperature-and-humidity-monitor">5. Practical Project: Raspberry Pi Temperature and Humidity Monitor</h3>
+
+<p>Let’s build a simple system where a Raspberry Pi reads temperature and humidity data from a DHT11 sensor and publishes it to an MQTT broker.</p>
+
+<h4 id="project-overview">Project Overview:</h4>
+
+<ul>
+  <li><strong>Sensor:</strong> DHT11 (or DHT22 for better accuracy) to measure temperature and humidity.</li>
+  <li><strong>Microcontroller:</strong> Raspberry Pi (any model with GPIO pins).</li>
+  <li><strong>Communication:</strong> MQTT protocol.</li>
+  <li><strong>MQTT Broker:</strong> We’ll use a public test broker (like <code class="language-plaintext highlighter-rouge">broker.hivemq.com</code>) for simplicity, but for real projects, you’d use a cloud IoT platform’s MQTT endpoint or self-host one.</li>
+  <li><strong>Goal:</strong> Read data every few seconds and send it to an MQTT topic.</li>
+</ul>
+
+<h4 id="hardware-requirements">Hardware Requirements:</h4>
+
+<ul>
+  <li>Raspberry Pi (e.g., Pi 3B+, Pi 4, Pi Zero W) with Raspberry Pi OS installed.</li>
+  <li>MicroSD card (8GB or more)</li>
+  <li>Power supply for Raspberry Pi</li>
+  <li>DHT11 or DHT22 Temperature &amp; Humidity Sensor</li>
+  <li>10k Ohm Resistor (pull-up resistor for DHT sensor)</li>
+  <li>Breadboard</li>
+  <li>Jumper Wires (Male-to-Male)</li>
+</ul>
+
+<h4 id="software-setup-on-raspberry-pi">Software Setup (on Raspberry Pi):</h4>
+
+<ol>
+  <li><strong>Update your Raspberry Pi OS:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt upgrade <span class="nt">-y</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Install Python3 and pip (if not already installed):</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>python3 python3-pip <span class="nt">-y</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Install necessary Python libraries:</strong>
+    <ul>
+      <li><strong><code class="language-plaintext highlighter-rouge">Adafruit_DHT</code>:</strong> A robust library for DHT sensors.</li>
+      <li><strong><code class="language-plaintext highlighter-rouge">paho-mqtt</code>:</strong> For MQTT communication.
+<!-- end list -->
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip3 <span class="nb">install </span>Adafruit_DHT paho-mqtt
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="circuit-diagram">Circuit Diagram:</h4>
+
+<p>The DHT11/DHT22 sensor typically has 3 or 4 pins. We’ll use a 3-pin version (VCC, Data, GND).</p>
+
+<p><strong>DHT11/DHT22 Pinout (commonly):</strong></p>
+
+<ol>
+  <li><strong>VCC (Power):</strong> Connect to Raspberry Pi’s <strong>5V</strong> pin (or 3.3V, check sensor datasheet).</li>
+  <li><strong>Data:</strong> Connect to a Raspberry Pi <strong>GPIO pin</strong> (e.g., GPIO4, which is physical pin 7). <strong>Crucially, place a 10k Ohm pull-up resistor between the Data pin and VCC (3.3V or 5V).</strong></li>
+  <li><strong>GND (Ground):</strong> Connect to Raspberry Pi’s <strong>Ground</strong> pin.</li>
+</ol>
+
+<p><strong>Raspberry Pi GPIO Pinout Reference:</strong></p>
+
+<ul>
+  <li><strong>GPIO4:</strong> Physical Pin 7</li>
+  <li><strong>5V:</strong> Physical Pin 2 or 4</li>
+  <li><strong>3.3V:</strong> Physical Pin 1</li>
+  <li><strong>GND:</strong> Physical Pin 6, 9, 14, 20, 25, 30, 34, 39</li>
+</ul>
+
+<p><strong>Connection Steps:</strong></p>
+
+<ol>
+  <li>Connect <strong>DHT11 VCC</strong> to Raspberry Pi <strong>5V (Pin 2)</strong>.</li>
+  <li>Connect <strong>DHT11 GND</strong> to Raspberry Pi <strong>GND (Pin 6)</strong>.</li>
+  <li>Connect <strong>DHT11 Data</strong> to Raspberry Pi <strong>GPIO4 (Pin 7)</strong>.</li>
+  <li>Place the <strong>10k Ohm Resistor</strong> between <strong>DHT11 Data Pin</strong> and <strong>DHT11 VCC Pin</strong>. This is a pull-up resistor that ensures the data line is high when idle.</li>
+</ol>
+
+<p><em>(Self-Correction/Detail: Some DHT sensors come on a small PCB with the pull-up resistor already integrated. If yours does, you might not need an external one. Check your module. For DHT11/22, a pull-up to 3.3V is generally safer than 5V for the Pi’s GPIOs if your sensor supports it, but 5V is common for power.)</em></p>
+
+<h4 id="python-code-dht_mqtt_monitorpy">Python Code (<code class="language-plaintext highlighter-rouge">dht_mqtt_monitor.py</code>):</h4>
+
+<p>Create a new file named <code class="language-plaintext highlighter-rouge">dht_mqtt_monitor.py</code> on your Raspberry Pi and paste the following code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">Adafruit_DHT</span>
+<span class="kn">import</span> <span class="n">paho.mqtt.client</span> <span class="k">as</span> <span class="n">mqtt</span>
+<span class="kn">import</span> <span class="n">time</span>
+<span class="kn">import</span> <span class="n">json</span> <span class="c1"># For formatting data as JSON
+</span>
+<span class="c1"># --- Sensor Configuration ---
+# Sensor type: Adafruit_DHT.DHT11 or Adafruit_DHT.DHT22
+</span><span class="n">DHT_SENSOR</span> <span class="o">=</span> <span class="n">Adafruit_DHT</span><span class="p">.</span><span class="n">DHT11</span>
+<span class="c1"># GPIO pin connected to the DHT sensor (using BCM numbering)
+# GPIO4 is physical pin 7 on the Raspberry Pi header
+</span><span class="n">DHT_PIN</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="c1"># --- MQTT Configuration ---
+</span><span class="n">MQTT_BROKER</span> <span class="o">=</span> <span class="sh">"</span><span class="s">broker.hivemq.com</span><span class="sh">"</span> <span class="c1"># Public test broker
+</span><span class="n">MQTT_PORT</span> <span class="o">=</span> <span class="mi">1883</span>
+<span class="n">MQTT_TOPIC</span> <span class="o">=</span> <span class="sh">"</span><span class="s">your_unique_topic/temperature_humidity</span><span class="sh">"</span> <span class="c1"># **CHANGE THIS to something unique for you!**
+# Example: "myiotproject/raspberrypi_sensor_data"
+</span>
+<span class="c1"># Generate a unique client ID for the MQTT client
+# You can use a static string, but unique IDs help avoid conflicts
+</span><span class="n">MQTT_CLIENT_ID</span> <span class="o">=</span> <span class="sh">"</span><span class="s">RaspberryPiDHTClient_</span><span class="sh">"</span> <span class="o">+</span> <span class="nf">str</span><span class="p">(</span><span class="nf">int</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="nf">time</span><span class="p">()))</span>
+
+<span class="c1"># --- MQTT Callbacks (Optional but good practice) ---
+</span><span class="k">def</span> <span class="nf">on_connect</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">userdata</span><span class="p">,</span> <span class="n">flags</span><span class="p">,</span> <span class="n">rc</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Callback function when the client connects to the MQTT broker.</span><span class="sh">"""</span>
+    <span class="k">if</span> <span class="n">rc</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Connected to MQTT Broker: </span><span class="si">{</span><span class="n">MQTT_BROKER</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Failed to connect, return code </span><span class="si">{</span><span class="n">rc</span><span class="si">}</span><span class="se">\n</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">on_disconnect</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">userdata</span><span class="p">,</span> <span class="n">rc</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Callback function when the client disconnects from the MQTT broker.</span><span class="sh">"""</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Disconnected from MQTT Broker with code </span><span class="si">{</span><span class="n">rc</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">on_publish</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">userdata</span><span class="p">,</span> <span class="n">mid</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Callback function when a message is published.</span><span class="sh">"""</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Message Published (MID: </span><span class="si">{</span><span class="n">mid</span><span class="si">}</span><span class="s">)</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># --- Setup MQTT Client ---
+</span><span class="n">client</span> <span class="o">=</span> <span class="n">mqtt</span><span class="p">.</span><span class="nc">Client</span><span class="p">(</span><span class="n">client_id</span><span class="o">=</span><span class="n">MQTT_CLIENT_ID</span><span class="p">)</span>
+<span class="n">client</span><span class="p">.</span><span class="n">on_connect</span> <span class="o">=</span> <span class="n">on_connect</span>
+<span class="n">client</span><span class="p">.</span><span class="n">on_disconnect</span> <span class="o">=</span> <span class="n">on_disconnect</span>
+<span class="n">client</span><span class="p">.</span><span class="n">on_publish</span> <span class="o">=</span> <span class="n">on_publish</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">client</span><span class="p">.</span><span class="nf">connect</span><span class="p">(</span><span class="n">MQTT_BROKER</span><span class="p">,</span> <span class="n">MQTT_PORT</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span> <span class="c1"># Connect to the broker
+</span>    <span class="n">client</span><span class="p">.</span><span class="nf">loop_start</span><span class="p">()</span> <span class="c1"># Start a non-blocking loop for network traffic
+</span><span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Could not connect to MQTT Broker: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+    <span class="nf">exit</span><span class="p">()</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Starting DHT11 sensor readings on GPIO </span><span class="si">{</span><span class="n">DHT_PIN</span><span class="si">}</span><span class="s">...</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Read data from DHT sensor
+</span>        <span class="n">humidity</span><span class="p">,</span> <span class="n">temperature</span> <span class="o">=</span> <span class="n">Adafruit_DHT</span><span class="p">.</span><span class="nf">read_retry</span><span class="p">(</span><span class="n">DHT_SENSOR</span><span class="p">,</span> <span class="n">DHT_PIN</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">humidity</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span> <span class="ow">and</span> <span class="n">temperature</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Temp=</span><span class="si">{</span><span class="n">temperature</span><span class="si">:</span><span class="p">.</span><span class="mi">1</span><span class="n">f</span><span class="si">}</span><span class="s">°C Humidity=</span><span class="si">{</span><span class="n">humidity</span><span class="si">:</span><span class="p">.</span><span class="mi">1</span><span class="n">f</span><span class="si">}</span><span class="s">%</span><span class="sh">"</span><span class="p">)</span>
+
+            <span class="c1"># Create a JSON payload for the data
+</span>            <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="sh">"</span><span class="s">timestamp</span><span class="sh">"</span><span class="p">:</span> <span class="n">time</span><span class="p">.</span><span class="nf">time</span><span class="p">(),</span>
+                <span class="sh">"</span><span class="s">temperature_celsius</span><span class="sh">"</span><span class="p">:</span> <span class="nf">round</span><span class="p">(</span><span class="n">temperature</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+                <span class="sh">"</span><span class="s">humidity_percent</span><span class="sh">"</span><span class="p">:</span> <span class="nf">round</span><span class="p">(</span><span class="n">humidity</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="p">}</span>
+            <span class="n">json_payload</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="nf">dumps</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+
+            <span class="c1"># Publish the data to the MQTT topic
+</span>            <span class="n">client</span><span class="p">.</span><span class="nf">publish</span><span class="p">(</span><span class="n">MQTT_TOPIC</span><span class="p">,</span> <span class="n">json_payload</span><span class="p">)</span>
+            <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Published to topic </span><span class="sh">'</span><span class="si">{</span><span class="n">MQTT_TOPIC</span><span class="si">}</span><span class="sh">'</span><span class="s">: </span><span class="si">{</span><span class="n">json_payload</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Failed to retrieve data from humidity sensor. Retrying...</span><span class="sh">"</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="nb">RuntimeError</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="c1"># Errors happen fairly often, DHT sensors are tricky to read,
+</span>        <span class="c1"># so just print the error and try again
+</span>        <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">time</span><span class="p">.</span><span class="nf">sleep</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span>
+        <span class="k">continue</span>
+    <span class="k">except</span> <span class="nb">KeyboardInterrupt</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="se">\n</span><span class="s">Exiting program.</span><span class="sh">"</span><span class="p">)</span>
+        <span class="k">break</span> <span class="c1"># Exit the loop on Ctrl+C
+</span>    <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">An unexpected error occurred: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+        <span class="k">break</span> <span class="c1"># Exit on other errors
+</span>
+    <span class="n">time</span><span class="p">.</span><span class="nf">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="c1"># Wait for 5 seconds before next reading
+</span>
+<span class="c1"># --- Cleanup ---
+</span><span class="n">client</span><span class="p">.</span><span class="nf">loop_stop</span><span class="p">()</span> <span class="c1"># Stop the MQTT network loop
+</span><span class="n">client</span><span class="p">.</span><span class="nf">disconnect</span><span class="p">()</span> <span class="c1"># Disconnect from the broker
+</span></code></pre></div></div>
+
+<p><strong>IMPORTANT:</strong> <strong>Change <code class="language-plaintext highlighter-rouge">MQTT_TOPIC</code></strong> to something unique (e.g., <code class="language-plaintext highlighter-rouge">your_name/pi_sensor_data</code>). If you use a common topic, you’ll see everyone else’s data, and they’ll see yours!</p>
+
+<h4 id="testing-and-verification">Testing and Verification:</h4>
+
+<ol>
+  <li>
+    <p><strong>Run the Python script on your Raspberry Pi:</strong></p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 dht_mqtt_monitor.py
+</code></pre></div>    </div>
+
+    <p>You should see output indicating sensor readings and MQTT messages being published.</p>
+  </li>
+  <li>
+    <p><strong>Monitor MQTT Messages:</strong>
+You’ll need an MQTT client to subscribe to your topic and see the data coming in.</p>
+
+    <ul>
+      <li>
+        <p><strong>Online MQTT Client:</strong> Use a web-based client like <a href="http://www.hivemq.com/demos/websocket-client/">MQTT Explorer Web Client</a>.</p>
+
+        <ul>
+          <li>Go to the link.</li>
+          <li>Enter <code class="language-plaintext highlighter-rouge">broker.hivemq.com</code> as the Host.</li>
+          <li>Click “Connect”.</li>
+          <li>Once connected, go to “Subscriptions” and enter your <code class="language-plaintext highlighter-rouge">MQTT_TOPIC</code> (e.g., <code class="language-plaintext highlighter-rouge">your_name/pi_sensor_data</code>) and click “Subscribe”.</li>
+          <li>You should start seeing JSON messages appear in the client.</li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Desktop MQTT Client:</strong> <a href="https://mqtt-explorer.com/">MQTT Explorer</a> (Windows, macOS, Linux) is excellent for visually inspecting MQTT traffic.</p>
+
+        <ul>
+          <li>Download and install.</li>
+          <li>Create a new connection with <code class="language-plaintext highlighter-rouge">broker.hivemq.com</code> as the Host.</li>
+          <li>Connect and then subscribe to your <code class="language-plaintext highlighter-rouge">MQTT_TOPIC</code>.</li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Another Raspberry Pi / Python Script:</strong> You could write a second Python script using <code class="language-plaintext highlighter-rouge">paho-mqtt</code> to subscribe to the same topic and print the incoming messages.</p>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p>If you see data flowing into your MQTT client, congratulations! Your Raspberry Pi IoT project is successfully reading sensor data and publishing it via MQTT.</p>
+
+<h3 id="6-next-steps--further-exploration">6. Next Steps &amp; Further Exploration</h3>
+
+<p>This project is a solid foundation. Here’s where you can go next:</p>
+
+<ul>
+  <li><strong>Cloud IoT Platform:</strong> Instead of a public broker, integrate with a real cloud IoT platform (AWS IoT, Google Cloud IoT Core, Azure IoT Hub, Adafruit IO, ThingsBoard). They offer secure connections, data storage, visualization dashboards, and rules engines.</li>
+  <li><strong>Data Visualization:</strong> Build a simple web dashboard (using Flask/Django in Python, or a frontend framework) to display your data, or use a platform like Grafana.</li>
+  <li><strong>Remote Control:</strong> Add functionality to control an LED or a relay on the Pi by subscribing to a different MQTT topic.</li>
+  <li><strong>Error Handling and Robustness:</strong>
+    <ul>
+      <li>Implement more robust error handling for sensor readings and network disconnections.</li>
+      <li>Add logging (<code class="language-plaintext highlighter-rouge">logging</code> module) instead of just <code class="language-plaintext highlighter-rouge">print()</code> statements.</li>
+      <li>Run the script as a systemd service so it starts automatically on boot.</li>
+    </ul>
+  </li>
+  <li><strong>More Sensors:</strong> Integrate other sensors (e.g., motion, light, pressure, air quality).</li>
+  <li><strong>Edge Computing:</strong> Process data locally on the Pi before sending aggregated results to the cloud.</li>
+  <li><strong>Security:</strong> For production-ready IoT, learn about TLS/SSL for encrypted MQTT connections and device authentication.</li>
+  <li><strong>MicroPython:</strong> For smaller, lower-power microcontrollers (like ESP32/ESP8266), explore MicroPython, a lean implementation of Python 3.</li>
+</ul>
+
+<p>Python’s versatility makes it a fantastic tool for bringing your IoT ideas to life. Keep building, experimenting, and connecting things!</p>
+
+  </div><a class="u-url" href="/blog/iot/2025/07/20/IoT-Porject1.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Web Development and Programming Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">David Odhiambo</li><li><a class="u-email" href="mailto:eng.david.odhi@gmail.com">eng.david.odhi@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/odhiambo123"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">odhiambo123</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Understanding web development and programming.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
