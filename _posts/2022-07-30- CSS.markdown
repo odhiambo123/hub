@@ -1,0 +1,763 @@
+---
+layout: post
+title: "CSS"
+date: 2022-07-30
+categories: [blog/CSS/]
+---
+
+A comprehensive tutorial on CSS would be a small book\! However, I can give you a very thorough and complete introduction to CSS, covering all the fundamental concepts you need to get started and understand how styles are applied. This will include syntax, selectors, properties, the box model, positioning, flexbox, and responsiveness.
+
+-----
+
+## The Complete Beginner's Guide to CSS
+
+CSS (Cascading Style Sheets) is the language we use to style an HTML document. It describes how HTML elements should be displayed. Without CSS, web pages would look like plain text documents – functional, but certainly not appealing.
+
+### What You'll Learn:
+
+1.  **What is CSS?**
+2.  **How to Add CSS to HTML**
+      * Inline Styles
+      * Internal Stylesheet
+      * External Stylesheet (Best Practice)
+3.  **CSS Syntax**
+4.  **CSS Selectors (The Heart of CSS)**
+      * Element Selectors
+      * ID Selectors
+      * Class Selectors
+      * Grouping Selectors
+      * Universal Selector
+      * Descendant Combinator
+      * Child Combinator
+      * Adjacent Sibling Combinator
+      * General Sibling Combinator
+      * Attribute Selectors
+      * Pseudo-classes
+      * Pseudo-elements
+5.  **Common CSS Properties**
+      * Color & Background
+      * Text & Font
+      * Box Model (Margin, Border, Padding, Content)
+      * Display Property
+      * Positioning
+      * Flexbox (Modern Layout)
+      * Grid (Advanced Layout - brief mention)
+      * Transitions & Transformations (brief mention)
+6.  **CSS Specificity**
+7.  **The Cascade & Inheritance**
+8.  **Responsive Design (Media Queries)**
+9.  **Best Practices**
+
+-----
+
+### 1\. What is CSS?
+
+CSS is a stylesheet language used to describe the presentation of a document written in HTML. CSS can control the layout of multiple web pages, all at once.
+
+### 2\. How to Add CSS to HTML
+
+There are three ways to insert a style sheet:
+
+#### a) Inline Styles (Discouraged for General Use)
+
+Applies a unique style to a single HTML element using the `style` attribute.
+
+**Pros:** Quick for small tests.
+**Cons:** Mixes structure and style, hard to maintain, no reuse.
+
+**`index.html`:**
+
+```html
+<p style="color: blue; font-size: 18px;">This text is blue and larger.</p>
+```
+
+#### b) Internal Stylesheet
+
+Defined within the `<style>` element inside the `<head>` section of an HTML page. Useful for single-page styles.
+
+**Pros:** Styles are in one place for that page.
+**Cons:** Doesn't allow reuse across multiple pages.
+
+**`index.html`:**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Internal CSS</title>
+<style>
+  h1 {
+    color: green;
+    text-align: center;
+  }
+  p {
+    font-family: 'Courier New', monospace;
+  }
+</style>
+</head>
+<body>
+  <h1>Hello World</h1>
+  <p>This paragraph uses internal CSS.</p>
+</body>
+</html>
+```
+
+#### c) External Stylesheet (BEST PRACTICE)
+
+The most common and recommended method. Styles are defined in a separate `.css` file and linked to the HTML document.
+
+**Pros:**
+
+  * Separation of concerns (HTML for structure, CSS for style).
+  * Easy to maintain and update styles across an entire website.
+  * Faster page loading (CSS file is cached by the browser).
+
+**`index.html`:**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>External CSS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Website</h1>
+  <p>This paragraph gets its style from an external file.</p>
+</body>
+</html>
+```
+
+**`style.css`:**
+
+```css
+/* This is an external stylesheet */
+body {
+  font-family: sans-serif;
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  text-decoration: underline;
+}
+```
+
+### 3\. CSS Syntax
+
+A CSS rule-set consists of a **selector** and a **declaration block**.
+
+  * **Selector:** Points to the HTML element(s) you want to style.
+  * **Declaration Block:** Contains one or more **declarations** separated by semicolons.
+  * **Declaration:** Includes a **property** name and a **value**, separated by a colon.
+
+<!-- end list -->
+
+```css
+selector {
+  property: value; /* Declaration 1 */
+  property2: value2; /* Declaration 2 */
+  /* ... more declarations */
+}
+
+/* Example */
+p { /* p is the selector */
+  color: red; /* color is the property, red is the value */
+  font-size: 16px; /* font-size is the property, 16px is the value */
+  text-align: center;
+}
+```
+
+### 4\. CSS Selectors (The Heart of CSS)
+
+Selectors are used to "find" (or select) HTML elements based on their name, id, class, attributes, and more.
+
+#### a) Element (Type) Selector
+
+Selects all HTML elements of a given type.
+
+```css
+p {
+  color: green;
+}
+h2 {
+  border: 1px solid black;
+}
+```
+
+#### b) ID Selector
+
+Selects the element with a specific `id` attribute. An ID must be unique within an HTML page.
+
+```html
+<div id="header"></div>
+```
+
+```css
+#header {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+```
+
+#### c) Class Selector
+
+Selects all elements with a specific `class` attribute. A class can be used by multiple HTML elements.
+
+```html
+<p class="intro">This is an introduction.</p>
+<span class="intro">Also an intro.</span>
+```
+
+```css
+.intro {
+  font-style: italic;
+}
+```
+
+#### d) Grouping Selectors
+
+Selects multiple HTML elements with the same style. Separate selectors with a comma.
+
+```css
+h1, h2, p {
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+```
+
+#### e) Universal Selector (`*`)
+
+Selects all HTML elements on the page. Use sparingly, as it can be slow and affect too many elements.
+
+```css
+* {
+  box-sizing: border-box; /* Good for consistent box model */
+  margin: 0;
+  padding: 0;
+}
+```
+
+#### f) Descendant Combinator (Space)
+
+Selects all elements that are descendants of a specified element.
+
+```html
+<div class="container">
+  <p>This paragraph is inside the container.</p>
+  <span>
+    <p>This paragraph is also inside the container.</p>
+  </span>
+</div>
+```
+
+```css
+.container p { /* Selects ALL <p> elements inside .container */
+  background-color: yellow;
+}
+```
+
+#### g) Child Combinator (`>`)
+
+Selects all elements that are *direct children* of a specified element.
+
+```html
+<div class="parent">
+  <p>Direct child paragraph.</p>
+  <span>
+    <p>Grandchild paragraph.</p>
+  </span>
+</div>
+```
+
+```css
+.parent > p { /* Selects only the direct child <p> */
+  border: 2px solid orange;
+}
+```
+
+#### h) Adjacent Sibling Combinator (`+`)
+
+Selects an element that is immediately preceded by a specified element.
+
+```html
+<h1>Title</h1>
+<p>First paragraph.</p>
+<p>Second paragraph.</p>
+```
+
+```css
+h1 + p { /* Selects only the first paragraph immediately after h1 */
+  font-weight: bold;
+}
+```
+
+#### i) General Sibling Combinator (`~`)
+
+Selects all elements that are siblings of a specified element.
+
+```html
+<h1>Title</h1>
+<p>First paragraph.</p>
+<div>A div.</div>
+<p>Second paragraph.</p>
+```
+
+```css
+h1 ~ p { /* Selects both paragraphs that are siblings of h1 */
+  color: purple;
+}
+```
+
+#### j) Attribute Selectors
+
+Selects elements based on their HTML attributes.
+
+  * `[attribute]`
+  * `[attribute="value"]`
+  * `[attribute~="value"]` (contains a word)
+  * `[attribute^="value"]` (starts with)
+  * `[attribute$="value"]` (ends with)
+  * `[attribute*="value"]` (contains)
+
+<!-- end list -->
+
+```css
+a[target="_blank"] { /* Links opening in new tab */
+  color: blue;
+  text-decoration: none;
+}
+input[type="text"] {
+  border: 1px solid gray;
+}
+```
+
+#### k) Pseudo-classes
+
+Selects elements when they are in a certain state (e.g., hovered, visited, focused) or based on their position in the DOM.
+
+  * `:hover`
+  * `:active`
+  * `:focus`
+  * `:link`, `:visited`
+  * `:nth-child(n)`, `:first-child`, `:last-child`
+  * `:not(selector)`
+
+<!-- end list -->
+
+```css
+a:hover {
+  text-decoration: underline;
+}
+input:focus {
+  border-color: blue;
+}
+li:nth-child(odd) { /* Every odd list item */
+  background-color: #f2f2f2;
+}
+```
+
+#### l) Pseudo-elements
+
+Styles a specific part of an element.
+
+  * `::before` (inserts content before an element)
+  * `::after` (inserts content after an element)
+  * `::first-letter`
+  * `::first-line`
+  * `::selection`
+
+<!-- end list -->
+
+```css
+p::first-letter {
+  font-size: 200%;
+  color: #8A2BE2;
+}
+h2::after {
+  content: " ---";
+  color: #ccc;
+}
+```
+
+### 5\. Common CSS Properties
+
+#### a) Color & Background
+
+```css
+color: #333; /* Text color (hex code) */
+color: rgb(255, 0, 0); /* Text color (RGB) */
+color: rgba(0, 0, 255, 0.5); /* Text color (RGBA - with transparency) */
+color: hotpink; /* Text color (named color) */
+
+background-color: lightgray;
+background-image: url('image.png');
+background-repeat: no-repeat; /* repeat-x, repeat-y, round, space */
+background-position: center top; /* x-position y-position */
+background-size: cover; /* cover, contain, 100% 100% */
+background: #eee url('bg.png') no-repeat center / cover; /* Shorthand */
+```
+
+#### b) Text & Font
+
+```css
+font-family: 'Open Sans', sans-serif; /* Fallback fonts are crucial */
+font-size: 16px; /* px, em, rem, vw */
+font-weight: bold; /* normal, bold, 100-900 */
+font-style: italic; /* normal, italic, oblique */
+text-align: center; /* left, right, justify */
+text-decoration: none; /* underline, line-through, overline */
+text-transform: uppercase; /* lowercase, capitalize */
+line-height: 1.5; /* Spacing between lines */
+letter-spacing: 0.5px;
+word-spacing: 2px;
+```
+
+#### c) The Box Model (CRITICAL Concept\!)
+
+Every HTML element is a rectangular box. The box model describes how margin, border, padding, and content are arranged.
+
+  * **Content:** The actual content of the element (text, images, etc.).
+  * **Padding:** Space between the content and the border.
+  * **Border:** A line between the padding and the margin.
+  * **Margin:** Space outside the border, pushing other elements away.
+
+<!-- end list -->
+
+```css
+div {
+  width: 200px;
+  height: 100px; /* Dimensions of the content area */
+  
+  padding: 10px; /* 10px on all sides */
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding: 10px 20px; /* Top/Bottom Left/Right */
+  padding: 5px 10px 15px 20px; /* Top Right Bottom Left */
+
+  border: 2px solid red; /* Width style color */
+  border-bottom: 1px dashed blue; /* Specific border side */
+  border-radius: 8px; /* Rounds corners */
+
+  margin: 20px; /* 20px on all sides */
+  margin: 10px auto; /* Top/Bottom 10px, Left/Right auto (centers block element) */
+  margin-top: 15px;
+  /* etc. */
+
+  /* box-sizing: border-box; is crucial!
+     It includes padding and border within the defined width/height.
+     Without it, padding/border ADD to the width/height, making layout harder. */
+  box-sizing: border-box;
+}
+```
+
+#### d) Display Property
+
+Controls how an element behaves in terms of layout.
+
+  * **`block`**: Takes up the full width available, starts on a new line (e.g., `div`, `p`, `h1`).
+  * **`inline`**: Takes up only as much width as necessary, does not start on a new line (e.g., `span`, `a`, `img`).
+  * **`inline-block`**: Like `inline` but you can set width and height (e.g., buttons, navigation items).
+  * **`none`**: Hides the element completely.
+  * **`flex`**: Enables Flexbox layout for its direct children.
+  * **`grid`**: Enables Grid layout for its direct children.
+
+<!-- end list -->
+
+```css
+span {
+  display: block; /* Now behaves like a div */
+}
+li {
+  display: inline-block; /* Useful for horizontal navigation */
+  margin-right: 10px;
+}
+.hidden-element {
+  display: none;
+}
+```
+
+#### e) Positioning
+
+Allows you to control the exact position of an element.
+
+  * **`static` (Default):** Elements are positioned according to the normal flow of the document. `top`, `bottom`, `left`, `right` have no effect.
+  * **`relative`:** Positioned relative to its *normal position*. `top`, `bottom`, `left`, `right` will move it away from that normal position. The space it *would have taken* is still reserved.
+  * **`absolute`:** Positioned relative to its *nearest positioned ancestor* (an ancestor with `position: relative`, `absolute`, `fixed`, or `sticky`). If no such ancestor exists, it's relative to the initial containing block (usually `<html>`). Taken out of the normal flow.
+  * **`fixed`:** Positioned relative to the *viewport*. Stays in the same place even if the page scrolls (e.g., sticky headers/footers). Taken out of the normal flow.
+  * **`sticky`:** Behaves like `relative` until a certain scroll position is met, then becomes `fixed`.
+
+<!-- end list -->
+
+```css
+.container {
+  position: relative; /* This is crucial for absolute children */
+  height: 300px;
+  border: 1px solid blue;
+}
+
+.box {
+  position: absolute; /* Positions relative to .container */
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0; /* Stays at the top when scrolled */
+  background-color: lightgray;
+  padding: 10px;
+  z-index: 100; /* Controls stacking order (higher value is on top) */
+}
+```
+
+#### f) Flexbox (Flexible Box Layout) - Essential for Modern Layouts
+
+A one-dimensional layout system for distributing space among items in an interface and aligning them. Great for rows or columns.
+
+```html
+<div class="flex-container">
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
+</div>
+```
+
+```css
+.flex-container {
+  display: flex; /* Makes the container a flex container */
+  /* Properties for the container: */
+  flex-direction: row; /* row | row-reverse | column | column-reverse */
+  justify-content: center; /* How items are aligned along the main axis (start, end, center, space-between, space-around, space-evenly) */
+  align-items: center; /* How items are aligned along the cross axis (stretch, flex-start, flex-end, center, baseline) */
+  flex-wrap: wrap; /* nowrap | wrap | wrap-reverse (if items should wrap) */
+  gap: 10px; /* Space between flex items */
+
+  height: 200px; /* For demonstration of alignment */
+  background-color: #eee;
+}
+
+.flex-item {
+  /* Properties for the items: */
+  flex-grow: 1; /* Allows item to grow if space available */
+  flex-shrink: 1; /* Allows item to shrink if needed */
+  flex-basis: auto; /* Initial size before growing/shrinking */
+  /* flex: 1; is shorthand for flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
+
+  width: 80px; /* Can still set width */
+  height: 80px;
+  background-color: dodgerblue;
+  color: white;
+  display: flex; /* To center content within the item */
+  justify-content: center;
+  align-items: center;
+}
+```
+
+#### g) Grid (CSS Grid Layout) - For Two-Dimensional Layouts
+
+A two-dimensional layout system that allows you to lay out elements in rows and columns. Ideal for overall page layout.
+
+```html
+<div class="grid-container">
+  <div class="grid-item">Header</div>
+  <div class="grid-item">Sidebar</div>
+  <div class="grid-item">Main Content</div>
+  <div class="grid-item">Footer</div>
+</div>
+```
+
+```css
+.grid-container {
+  display: grid; /* Makes the container a grid container */
+  grid-template-columns: 1fr 2fr 1fr; /* Defines 3 columns: 1 fractional unit, 2 fractional units, 1 fractional unit */
+  grid-template-rows: auto 1fr auto; /* Defines 3 rows: auto height, 1 fractional unit, auto height */
+  gap: 10px; /* Space between grid items */
+  height: 400px; /* For demonstration */
+  background-color: #f9f9f9;
+}
+
+.grid-item:nth-child(1) {
+  grid-column: 1 / -1; /* Header spans all columns */
+  background-color: lightcoral;
+}
+.grid-item:nth-child(2) {
+  background-color: lightgreen;
+}
+.grid-item:nth-child(3) {
+  background-color: lightblue;
+}
+.grid-item:nth-child(4) {
+  grid-column: 1 / -1; /* Footer spans all columns */
+  background-color: lightsalmon;
+}
+/* You would typically use grid-area for more semantic naming */
+```
+
+#### h) Transitions & Transformations (Basic)
+
+Adds smooth animations to property changes.
+
+```css
+.button {
+  background-color: blue;
+  transition: background-color 0.3s ease-in-out; /* Animate background color change */
+}
+.button:hover {
+  background-color: darkblue;
+}
+
+.box {
+  transform: rotate(0deg) scale(1);
+  transition: transform 0.5s ease;
+}
+.box:hover {
+  transform: rotate(45deg) scale(1.1); /* Rotate and slightly enlarge on hover */
+}
+```
+
+### 6\. CSS Specificity
+
+When multiple CSS rules apply to the same element, **specificity** determines which rule's styles get applied.
+
+**Order of Specificity (Highest to Lowest):**
+
+1.  **Inline Styles:** Styles defined directly in the `style` attribute. (e.g., `<p style="...">`)
+2.  **IDs:** Selectors targeting an element's `id`. (e.g., `#myId`)
+3.  **Classes, Attributes, Pseudo-classes:** Selectors targeting `class`, `[attribute]`, or `:hover`. (e.g., `.myClass`, `[type="text"]`, `:nth-child(2)`)
+4.  **Elements and Pseudo-elements:** Selectors targeting HTML element names or `::before`. (e.g., `p`, `::first-letter`)
+5.  **Universal Selector (`*`)**
+
+**Example:**
+
+```css
+/* Specificity: 0,0,1,0 (Element) */
+p { color: red; }
+
+/* Specificity: 0,0,1,0 (Element) */
+div p { color: blue; } /* Still element level for 'p' */
+
+/* Specificity: 0,0,1,0 (Class) */
+.my-text { color: green; }
+
+/* Specificity: 0,1,0,0 (ID) */
+#special-text { color: purple; }
+```
+
+```html
+<div class="my-div">
+  <p class="my-text" id="special-text">Hello World</p>
+</div>
+```
+
+The text will be **purple** because the ID selector (`#special-text`) has the highest specificity.
+
+**`!important`:** You can override any specificity by adding `!important` to a declaration, but this is generally **discouraged** as it makes debugging and maintenance much harder. Only use as a last resort.
+
+```css
+p {
+  color: red !important; /* This will always win */
+}
+```
+
+### 7\. The Cascade & Inheritance
+
+  * **The Cascade:** How CSS rules are applied and prioritized. It considers:
+    1.  **Origin:** Browser default styles \< User custom styles \< Author styles (your CSS).
+    2.  **Specificity:** (As described above).
+    3.  **Order:** If specificity is equal, the last defined rule wins.
+  * **Inheritance:** Some CSS properties are inherited by child elements from their parent elements.
+      * **Inherited:** `color`, `font-family`, `font-size`, `text-align`, `line-height`, etc.
+      * **Not Inherited:** `margin`, `padding`, `border`, `background-color`, `width`, `height`, `display`, `position`, etc.
+
+**Example:**
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+div {
+  background-color: yellow; /* Not inherited */
+}
+```
+
+```html
+<body>
+  <div>
+    <p>This text inherits Arial font and #333 color from body, but not the yellow background from div.</p>
+  </div>
+</body>
+```
+
+### 8\. Responsive Design (Media Queries)
+
+Responsive design ensures your website looks good on all screen sizes (desktops, tablets, phones). Media queries allow you to apply CSS rules conditionally based on characteristics like screen width.
+
+```css
+/* Default styles for all screen sizes */
+body {
+  font-size: 16px;
+  background-color: lightgray;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: white;
+}
+
+/* Styles for screens smaller than 768px (e.g., tablets/phones) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* Smaller font on smaller screens */
+  }
+  .container {
+    width: 100%; /* Full width on smaller screens */
+    margin: 10px 0;
+    padding: 10px;
+  }
+}
+
+/* Styles for screens smaller than 480px (e.g., phones) */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em; /* Even smaller heading */
+  }
+  .container {
+    border-radius: 0; /* No rounded corners on tiny screens */
+  }
+}
+
+/* Example for orientation */
+@media screen and (orientation: landscape) {
+  body {
+    background-color: #e0f2f7; /* Light blue background in landscape mode */
+  }
+}
+```
+
+### 9\. Best Practices
+
+  * **Use External Stylesheets:** Always prefer external CSS for maintainability.
+  * **Semantic HTML:** Write clean, meaningful HTML. This makes it easier to target elements with CSS.
+  * **Organize Your CSS:**
+      * Use comments (`/* This is a comment */`) generously.
+      * Group related rules.
+      * Consider a consistent naming convention (e.g., BEM, OOCSS).
+  * **Mobile First:** Design for small screens first, then progressively enhance for larger screens using media queries (`min-width` queries). This generally leads to better performance.
+  * **Learn Flexbox and Grid:** These are the modern, powerful ways to build layouts.
+  * **Understand the Box Model:** It's fundamental to layout.
+  * **Test on Different Browsers:** Ensure cross-browser compatibility.
+  * **Validate Your CSS:** Use a CSS validator to catch syntax errors.
+  * **Keep it DRY (Don't Repeat Yourself):** Avoid redundant CSS by using grouping selectors and well-structured HTML.
+
+-----
+
+This tutorial provides a solid foundation for understanding CSS. The best way to learn is by doing: start experimenting with these properties and selectors on your own HTML files\!
